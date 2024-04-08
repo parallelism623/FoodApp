@@ -1,0 +1,155 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "FoodShop.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "FoodShop.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FoodShop.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FoodShop.Application.dll": {}
+        }
+      },
+      "FoodShop.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/FoodShop.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FoodShop.Domain.dll": {}
+        }
+      },
+      "FoodShop.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "FoodShop.Application": "1.0.0",
+          "FoodShop.Persistence": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FoodShop.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FoodShop.Infrastructure.dll": {}
+        }
+      },
+      "FoodShop.Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "FoodShop.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FoodShop.Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FoodShop.Persistence.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FoodShop.Application/1.0.0": {
+      "type": "project",
+      "path": "../FoodShop.Application/FoodShop.Application.csproj",
+      "msbuildProject": "../FoodShop.Application/FoodShop.Application.csproj"
+    },
+    "FoodShop.Domain/1.0.0": {
+      "type": "project",
+      "path": "../FoodShop.Domain/FoodShop.Domain.csproj",
+      "msbuildProject": "../FoodShop.Domain/FoodShop.Domain.csproj"
+    },
+    "FoodShop.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../FoodShop.Infrastructure/FoodShop.Infrastructure.csproj",
+      "msbuildProject": "../FoodShop.Infrastructure/FoodShop.Infrastructure.csproj"
+    },
+    "FoodShop.Persistence/1.0.0": {
+      "type": "project",
+      "path": "../FoodShop.Persistence/FoodShop.Persistence.csproj",
+      "msbuildProject": "../FoodShop.Persistence/FoodShop.Persistence.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "FoodShop.Application >= 1.0.0",
+      "FoodShop.Infrastructure >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\hieud\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\ShopApp\\src\\FoodShop.Presentation\\FoodShop.Presentation.csproj",
+      "projectName": "FoodShop.Presentation",
+      "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\ShopApp\\src\\FoodShop.Presentation\\FoodShop.Presentation.csproj",
+      "packagesPath": "C:\\Users\\hieud\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\ShopApp\\src\\FoodShop.Presentation\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\hieud\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\Users\\hieud\\Code\\C#\\FoodShop\\ShopApp\\src\\FoodShop.Application\\FoodShop.Application.csproj": {
+              "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\ShopApp\\src\\FoodShop.Application\\FoodShop.Application.csproj"
+            },
+            "C:\\Users\\hieud\\Code\\C#\\FoodShop\\ShopApp\\src\\FoodShop.Infrastructure\\FoodShop.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\ShopApp\\src\\FoodShop.Infrastructure\\FoodShop.Infrastructure.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
