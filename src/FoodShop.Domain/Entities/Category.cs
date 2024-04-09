@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FoodShop.Domain.Entities
 {
-    internal class Category
+    public class Category
     {
     }
 }

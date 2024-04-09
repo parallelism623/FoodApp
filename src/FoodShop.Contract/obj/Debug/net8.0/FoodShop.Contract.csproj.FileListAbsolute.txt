@@ -1,0 +1,12 @@
+C:\Users\hieud\Code\C#\FoodShop\ShopApp\src\FoodShop.Contract\bin\Debug\net8.0\FoodShop.Contract.deps.json
+C:\Users\hieud\Code\C#\FoodShop\ShopApp\src\FoodShop.Contract\bin\Debug\net8.0\FoodShop.Contract.dll
+C:\Users\hieud\Code\C#\FoodShop\ShopApp\src\FoodShop.Contract\bin\Debug\net8.0\FoodShop.Contract.pdb
+C:\Users\hieud\Code\C#\FoodShop\ShopApp\src\FoodShop.Contract\obj\Debug\net8.0\FoodShop.Contract.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hieud\Code\C#\FoodShop\ShopApp\src\FoodShop.Contract\obj\Debug\net8.0\FoodShop.Contract.AssemblyInfoInputs.cache
+C:\Users\hieud\Code\C#\FoodShop\ShopApp\src\FoodShop.Contract\obj\Debug\net8.0\FoodShop.Contract.AssemblyInfo.cs
+C:\Users\hieud\Code\C#\FoodShop\ShopApp\src\FoodShop.Contract\obj\Debug\net8.0\FoodShop.Contract.csproj.CoreCompileInputs.cache
+C:\Users\hieud\Code\C#\FoodShop\ShopApp\src\FoodShop.Contract\obj\Debug\net8.0\FoodShop.Contract.sourcelink.json
+C:\Users\hieud\Code\C#\FoodShop\ShopApp\src\FoodShop.Contract\obj\Debug\net8.0\FoodShop.Contract.dll
+C:\Users\hieud\Code\C#\FoodShop\ShopApp\src\FoodShop.Contract\obj\Debug\net8.0\refint\FoodShop.Contract.dll
+C:\Users\hieud\Code\C#\FoodShop\ShopApp\src\FoodShop.Contract\obj\Debug\net8.0\FoodShop.Contract.pdb
+C:\Users\hieud\Code\C#\FoodShop\ShopApp\src\FoodShop.Contract\obj\Debug\net8.0\ref\FoodShop.Contract.dll

@@ -1,0 +1,6 @@
+C:\Users\hieud\Code\C#\FoodShop\ShopApp\src\FoodShop.Domain\obj\Debug\net8.0\FoodShop.Domain.csproj.AssemblyReference.cache
+C:\Users\hieud\Code\C#\FoodShop\ShopApp\src\FoodShop.Domain\obj\Debug\net8.0\FoodShop.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hieud\Code\C#\FoodShop\ShopApp\src\FoodShop.Domain\obj\Debug\net8.0\FoodShop.Domain.AssemblyInfoInputs.cache
+C:\Users\hieud\Code\C#\FoodShop\ShopApp\src\FoodShop.Domain\obj\Debug\net8.0\FoodShop.Domain.AssemblyInfo.cs
+C:\Users\hieud\Code\C#\FoodShop\ShopApp\src\FoodShop.Domain\obj\Debug\net8.0\FoodShop.Domain.csproj.CoreCompileInputs.cache
+C:\Users\hieud\Code\C#\FoodShop\ShopApp\src\FoodShop.Domain\obj\Debug\net8.0\FoodShop.Domain.sourcelink.json
