@@ -18,6 +18,7 @@ namespace FoodShop.Persistence.Configuration
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Name).HasMaxLength(200).IsRequired(true);
             builder.Property(x => x.Description).HasMaxLength(250).IsRequired(true);
+            builder.HasIndex(x => x.Code).IsUnique();
             builder.HasMany(x => x.CartProducts)
                    .WithOne()
                    .HasForeignKey(x => x.ProductId)

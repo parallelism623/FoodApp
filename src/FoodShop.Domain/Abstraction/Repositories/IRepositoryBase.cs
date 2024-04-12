@@ -13,8 +13,8 @@ namespace FoodShop.Domain.Abstraction.Repositories
         public void Add(TEntity entity);
         public IQueryable<TEntity> FindAll(params Expression<Func<TEntity, object>>[] includeProperties);
         public IQueryable<TEntity> FindAll(Expression<Func<TEntity, bool>> predicate, params Expression<Func<TEntity, object>>[] includeProperties);
-        public Task<TEntity> FindByIdAsync (TKey id, CancellationToken cancellationToken, params Expression<Func<TEntity, object>>[] includeProperties);
-        public Task<TEntity> FindSingleAsync(Expression<Func<TEntity, bool>> predicate, CancellationToken cancellationToken, params Expression<Func<TEntity, object>>[] includeProperties);
+        public Task<TEntity> FindByIdAsync (TKey id, CancellationToken cancellationToken = default, params Expression<Func<TEntity, object>>[] includeProperties);
+        public Task<TEntity> FindSingleAsync(Expression<Func<TEntity, bool>> predicate, CancellationToken cancellationToken = default, params Expression<Func<TEntity, object>>[] includeProperties);
         public void Remove(TEntity entity);
 
         public void RemoveMultiple(List<TEntity> entities);

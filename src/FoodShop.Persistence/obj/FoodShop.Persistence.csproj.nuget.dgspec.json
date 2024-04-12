@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hieud\\Code\\C#\\FoodShop\\ShopApp\\src\\FoodShop.Persistence\\FoodShop.Persistence.csproj": {}
+    "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Persistence\\FoodShop.Persistence.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hieud\\Code\\C#\\FoodShop\\ShopApp\\src\\FoodShop.Domain\\FoodShop.Domain.csproj": {
+    "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Domain\\FoodShop.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\ShopApp\\src\\FoodShop.Domain\\FoodShop.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Domain\\FoodShop.Domain.csproj",
         "projectName": "FoodShop.Domain",
-        "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\ShopApp\\src\\FoodShop.Domain\\FoodShop.Domain.csproj",
+        "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Domain\\FoodShop.Domain.csproj",
         "packagesPath": "C:\\Users\\hieud\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\ShopApp\\src\\FoodShop.Domain\\obj\\",
+        "outputPath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hieud\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -70,14 +70,14 @@
         }
       }
     },
-    "C:\\Users\\hieud\\Code\\C#\\FoodShop\\ShopApp\\src\\FoodShop.Persistence\\FoodShop.Persistence.csproj": {
+    "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Persistence\\FoodShop.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\ShopApp\\src\\FoodShop.Persistence\\FoodShop.Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Persistence\\FoodShop.Persistence.csproj",
         "projectName": "FoodShop.Persistence",
-        "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\ShopApp\\src\\FoodShop.Persistence\\FoodShop.Persistence.csproj",
+        "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Persistence\\FoodShop.Persistence.csproj",
         "packagesPath": "C:\\Users\\hieud\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\ShopApp\\src\\FoodShop.Persistence\\obj\\",
+        "outputPath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hieud\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -94,8 +94,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\hieud\\Code\\C#\\FoodShop\\ShopApp\\src\\FoodShop.Domain\\FoodShop.Domain.csproj": {
-                "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\ShopApp\\src\\FoodShop.Domain\\FoodShop.Domain.csproj"
+              "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Domain\\FoodShop.Domain.csproj": {
+                "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Domain\\FoodShop.Domain.csproj"
               }
             }
           }

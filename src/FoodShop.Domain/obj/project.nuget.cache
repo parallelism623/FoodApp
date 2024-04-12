@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8fbHxLj7AQ7aA8/fKQ2IgHiVfu9rAG4gD1Ujd/qnqtr6bqGaXnju0pPJ29uALeefAPC6oTj6iFU6Qqm/I1XX1w==",
+  "dgSpecHash": "esD/d9SbcrjjcuMpbH+jRxpSMrYshMxzfsMuWK1rEMMq6rkgALacqtSDAqo1/BhueiCzuuMj5gpdkch9caQk7A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\ShopApp\\src\\FoodShop.Domain\\FoodShop.Domain.csproj",
+  "projectFilePath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Domain\\FoodShop.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hieud\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.3\\microsoft.aspnetcore.cryptography.internal.8.0.3.nupkg.sha512",
     "C:\\Users\\hieud\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.3\\microsoft.aspnetcore.cryptography.keyderivation.8.0.3.nupkg.sha512",

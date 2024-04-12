@@ -153,3 +153,14 @@ C:\Users\hieud\Code\C#\FoodShop\ShopApp\src\FoodShop.API\bin\Debug\net8.0\tr\Mic
 C:\Users\hieud\Code\C#\FoodShop\ShopApp\src\FoodShop.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\hieud\Code\C#\FoodShop\ShopApp\src\FoodShop.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\hieud\Code\C#\FoodShop\ShopApp\src\FoodShop.API\obj\Debug\net8.0\FoodShop.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\obj\Debug\net8.0\FoodShop.API.csproj.AssemblyReference.cache
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\obj\Debug\net8.0\FoodShop.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\obj\Debug\net8.0\FoodShop.API.AssemblyInfoInputs.cache
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\obj\Debug\net8.0\FoodShop.API.AssemblyInfo.cs
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\obj\Debug\net8.0\FoodShop.API.csproj.CoreCompileInputs.cache
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\obj\Debug\net8.0\FoodShop.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\obj\Debug\net8.0\FoodShop.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\obj\Debug\net8.0\FoodShop.API.sourcelink.json
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\obj\Debug\net8.0\FoodShop.API.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\obj\Debug\net8.0\refint\FoodShop.API.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\obj\Debug\net8.0\FoodShop.API.pdb

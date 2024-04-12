@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "lhv2HHJ1g08l1ubiow3Xod7iwOqGue5heefe8oja50/BioJlVbbxe/naOHlKbEcdKcxyiRXsh5q8v9z21c6bZg==",
+  "dgSpecHash": "BUftARMA4r4CcRt192vsvJqxjKLed9dVBfIuILaF08bdjHaGhGhy/rn2jztP58CmaZ+CWMHyIA4AGRrZxiDrbg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\ShopApp\\src\\FoodShop.Infrastructure\\FoodShop.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Infrastructure\\FoodShop.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\hieud\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\hieud\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\hieud\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\hieud\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\hieud\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
+    "C:\\Users\\hieud\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.0\\fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
     "C:\\Users\\hieud\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\hieud\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\hieud\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.3\\microsoft.aspnetcore.cryptography.internal.8.0.3.nupkg.sha512",

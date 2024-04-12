@@ -17,7 +17,7 @@ namespace FoodShop.Contract.Abstraction.Shared
         public Error Error { get;}
         public bool IsSuccess { get;}
         public bool IsFailure => !IsSuccess;
-
+      
         public static Result Success() => new(true, Error.None);
         public static Result Failure() => new(false, Error.NullVable);
         public static Result<T> Success<T>(T result) => new(result, true, Error.None);

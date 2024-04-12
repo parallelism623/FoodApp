@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RIxdbZZfpQ+c+Nf9zYqehmQbI+rrhUxzNsX51V530PheH8VTD7PSlsVB1XWFso2a9eCr5SyGdwvPMA4jOeEJgA==",
+  "dgSpecHash": "QXyGQN1waoKimts8RXkkx6Ckq9mAS/OoLJgC9cVOn6MRpTnthGuQq7GRp1zYrncLoGwHaseaQtKJL5HO02T5bg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\ShopApp\\src\\FoodShop.Persistence\\FoodShop.Persistence.csproj",
+  "projectFilePath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Persistence\\FoodShop.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hieud\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\hieud\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

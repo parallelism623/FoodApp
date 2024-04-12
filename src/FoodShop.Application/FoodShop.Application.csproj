@@ -9,11 +9,20 @@
   <ItemGroup>
     <ProjectReference Include="..\FoodShop.Contract\FoodShop.Contract.csproj" />
     <ProjectReference Include="..\FoodShop.Domain\FoodShop.Domain.csproj" />
+    <ProjectReference Include="..\FoodShop.Persistence\FoodShop.Persistence.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DependencyInjection\" />
     <Folder Include="Abstraction\" />
+    <Folder Include="UseCases\V1\DomainEvents\Product\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.9.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
   </ItemGroup>
 
 </Project>
