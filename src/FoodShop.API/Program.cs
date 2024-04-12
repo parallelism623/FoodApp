@@ -1,4 +1,6 @@
+using Asp.Versioning;
 using FoodShop.Persistence.DependencyInjection.Extensions;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +15,23 @@ builder.Services.AddSwaggerGen();
 #region AddServices
 builder.Services.AddSqlConfiguration();
 #endregion AddServices
+
+#region VersionApiController
+builder.Services.AddApiVersioning(opt =>
+{
+    opt.AssumeDefaultVersionWhenUnspecified = true;
+    opt.DefaultApiVersion = new ApiVersion(1, 0);
+    opt.ReportApiVersions = true;
+    opt.ApiVersionReader = ApiVersionReader.Combine(
+        new QueryStringApiVersionReader("api-version"),
+        new HeaderApiVersionReader("X-Version"),
+        new MediaTypeApiVersionReader("ver"));
+}).AddApiExplorer(opt =>
+{
+    opt.GroupNameFormat = "'v'VVV";
+    opt.SubstituteApiVersionInUrl = true;
+});
+#endregion VersionApiController
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

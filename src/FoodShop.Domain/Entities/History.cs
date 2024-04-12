@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FoodShop.Domain.Entities
 {
-    public class History : DomainEntity<T>
+    public class History : DomainEntity<Guid>
     {
     }
 }

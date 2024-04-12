@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "NAbvXmn234DI9gYzZ8c5dp2A0a9V7EkGbqP+050p+XWr8w6isTjWf2xRvMlM82KoM/+ozA3pe4dNa7okoLCOBA==",
+  "dgSpecHash": "LQ46JtIMclaDS99BvVSPPINgojQXQS1Jr4CFfF5rpA99BPQSHB+KGe0M+YYonYmQ9evXQt7rvQhlKoNzU3Sj2A==",
   "success": true,
   "projectFilePath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\ShopApp\\src\\FoodShop.Contract\\FoodShop.Contract.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\hieud\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\hieud\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\hieud\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
