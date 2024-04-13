@@ -27,6 +27,7 @@ namespace FoodShop.Presentation.Controllers.V1
         public async Task<IActionResult> GetProducts(string? searchTerm, string? sortColumn, string? sortOrder,
                                                string? sortOrderandColumn, int pageIndex = 1, int pageSize = 10) 
         {
+       
             var productsQuery = new Query.GetProductsQuery(searchTerm, sortColumn,
                                                            SortOrderExtensions.ConvertStringToSortOrder(sortOrder),
                                                            SortOrderExtensions.ConvertStringToDictSortOrder(sortOrderandColumn),

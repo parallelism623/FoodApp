@@ -1,6 +1,7 @@
 using Asp.Versioning;
 using FoodShop.API.Middleware;
 using FoodShop.Application.DependencyInjection.Extensions;
+using FoodShop.Infrastructure.DependencyInjection.Extensions;
 using FoodShop.Persistence.DependencyInjection.Extensions;
 using Microsoft.Extensions.Options;
 using Serilog;
@@ -25,14 +26,18 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddTransient<ExceptionHandlingMiddleware>();
 #region AddServices
-builder.Services.AddSqlConfiguration();
-builder.Services.AddConfigureMediatR()
+builder
+    .Services.AddSqlConfiguration();
+builder
+    .Services.AddConfigureMediatR()
                 .AddConfigureAutoMapper()
                 .AddRepositoriesConfiguration();
 builder
     .Services
     .AddControllers()
     .AddApplicationPart(FoodShop.Presentation.AssemblyReference.Assembly);
+builder
+    .Services.AddJwtTokenConfiguration(builder.Configuration.GetRequiredSection("JwtTokenOptions"));
 #endregion AddServices
 
 #region VersionApiController

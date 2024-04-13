@@ -1,5 +1,7 @@
 ﻿using FoodShop.Domain.Abstraction.Entities;
 using FoodShop.Domain.Abstraction.Repositories;
+using FoodShop.Domain.Entities.Identity;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

@@ -55,6 +55,7 @@ namespace FoodShop.Persistence.DependencyInjection.Extensions
         public static void AddRepositoriesConfiguration(this IServiceCollection services)
         {
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
         }
     }
 }

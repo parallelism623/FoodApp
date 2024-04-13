@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FoodShop.Domain.Abstraction.Repositories
 {
-    public interface IProductRepository : IRepositoryBase<Product, Guid>
+    public interface IProductRepository
     {
 
     }
