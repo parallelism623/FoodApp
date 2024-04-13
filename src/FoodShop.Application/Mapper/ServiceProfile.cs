@@ -14,10 +14,10 @@ namespace FoodShop.Application.Mapper
     {
         public ServiceProfile()
         {
-            CreateMap<Product, ProductResponseList>().ReverseMap();
-            CreateMap<Product, ProductResponse>().ReverseMap();
-            CreateMap<Product, CreateProductRequest>().ReverseMap();
-            CreateMap<Product, UpdateProductRequest>().ReverseMap();
+            CreateMap<Product, ProductResponseList>();
+            CreateMap<Product, ProductResponse>();
+            CreateMap<CreateProductRequest, Product>();
+            CreateMap<UpdateProductRequest, Product>();
         }
     }
 }

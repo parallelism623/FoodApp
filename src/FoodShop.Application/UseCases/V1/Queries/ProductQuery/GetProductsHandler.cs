@@ -68,7 +68,7 @@ namespace FoodShop.Application.UseCases.V1.Queries.ProductQuery
                 ? productsQuery.OrderByDescending(GetSortProperty(request.SortColumn))
                 : productsQuery.OrderBy(GetSortProperty(request.SortColumn));
 
-                IQueryable<ProductResponseList> productsResult = _mapper.Map<IQueryable<ProductResponseList>>(productsQuery);
+                IQueryable<ProductResponseList> productsResult = _mapper.ProjectTo<ProductResponseList>(productsQuery);
                 var products = await PagedResult<ProductResponseList>.CreateAsync(productsResult,
                     request.PageIndex,
                     request.PageSize);

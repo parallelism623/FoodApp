@@ -1,9 +1,21 @@
 using Asp.Versioning;
+using FoodShop.API.Middleware;
+using FoodShop.Application.DependencyInjection.Extensions;
 using FoodShop.Persistence.DependencyInjection.Extensions;
 using Microsoft.Extensions.Options;
+using Serilog;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
+Log.Logger = new LoggerConfiguration().ReadFrom
+    .Configuration(builder.Configuration)
+    .CreateLogger();
+builder.Logging
+    .ClearProviders()
+    .AddSerilog();
+
+builder.Host.UseSerilog();
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -11,9 +23,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
+builder.Services.AddTransient<ExceptionHandlingMiddleware>();
 #region AddServices
 builder.Services.AddSqlConfiguration();
+builder.Services.AddConfigureMediatR()
+                .AddConfigureAutoMapper()
+                .AddRepositoriesConfiguration();
 #endregion AddServices
 
 #region VersionApiController
@@ -40,6 +55,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 app.UseHttpsRedirection();
 
@@ -47,4 +63,18 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.Run();
+try
+{
+    await app.RunAsync();
+    Log.Information("Stopped cleanly");
+}
+catch (Exception ex)
+{
+    Log.Fatal(ex, "An unhandled exception occured during bootstrapping");
+    await app.StopAsync();
+}
+finally
+{
+    Log.CloseAndFlush();
+    await app.DisposeAsync();
+}

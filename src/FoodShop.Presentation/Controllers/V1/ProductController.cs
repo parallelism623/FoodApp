@@ -1,22 +1,24 @@
 ﻿using Asp.Versioning;
 using FoodShop.Application.Services.Product;
-using FoodShop.Application.UseCases.V1.Queries.Product;
 using FoodShop.Contract.Abstraction.Constrant;
 using FoodShop.Contract.Abstraction.Shared;
+using FoodShop.Contract.DataTransferObjects.Request.V1;
 using FoodShop.Contract.DataTransferObjects.Response.V1;
+
 using FoodShop.Contract.Extensions;
 using FoodShop.Presentation.Abstraction;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
+
 namespace FoodShop.Presentation.Controllers.V1
 {
     [ApiVersion(ApiVerions.Version1)]
-    public class ProductsController : ApiController
+    public class ProductController : ApiController
     {
 
-        public ProductsController(ISender sender) : base(sender) { }
+        public ProductController(ISender sender) : base(sender) { }
 
         #region GET
         [HttpGet]
@@ -42,5 +44,40 @@ namespace FoodShop.Presentation.Controllers.V1
             return Ok(result);
         }
         #endregion
+        #region POST
+        [HttpPost("{Id}")]
+        [ProducesResponseType(typeof(Result), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> CreateProductById(Guid Id, [FromBody] CreateProductRequest request)
+        {
+            var productByIdCommand = new CreateProductCommand(Id, request);
+            var result = await _sender.Send(productByIdCommand);
+            return Ok(result);
+        }
+        #endregion POST
+
+        #region PUT
+        [HttpPut("{Id}")]
+        [ProducesResponseType(typeof(Result), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> UpdateProductById(Guid Id, [FromBody] UpdateProductRequest request)
+        {
+            var productByIdCommand = new UpdateProductCommand(Id, request);
+            var result = await _sender.Send(productByIdCommand);
+            return Ok(result);
+        }
+        #endregion PUT
+        #region DELETE
+        [HttpDelete("{Id}")]
+        [ProducesResponseType(typeof(Result), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> UpdateProductById(Guid Id)
+        {
+            var productByIdCommand = new DeleteProductCommand(Id);
+            var result = await _sender.Send(productByIdCommand);
+            return Ok(result);
+        }
+        #endregion DELETE
+
     }
 }
