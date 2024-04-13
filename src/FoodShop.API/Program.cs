@@ -29,6 +29,10 @@ builder.Services.AddSqlConfiguration();
 builder.Services.AddConfigureMediatR()
                 .AddConfigureAutoMapper()
                 .AddRepositoriesConfiguration();
+builder
+    .Services
+    .AddControllers()
+    .AddApplicationPart(FoodShop.Presentation.AssemblyReference.Assembly);
 #endregion AddServices
 
 #region VersionApiController
