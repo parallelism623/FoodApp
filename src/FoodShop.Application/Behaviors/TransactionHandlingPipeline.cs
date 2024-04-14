@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FoodShop.Domain.Abstraction.Repositories
+namespace FoodShop.Application.Behaviors
 {
-    public interface IUserRepository
+    public class TransactionHandlingPipeline
     {
     }
 }

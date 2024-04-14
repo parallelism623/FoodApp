@@ -11,7 +11,7 @@ namespace FoodShop.Contract.DataTransferObjects.Response.V1
         public string[] ImageList { get; set; }
         public string VideoLink { get; set; }
         public int Quantity { get; set; }
-        public string Code { get; set; }
+        public string Code { get; set;   }
     }
     public class ProductResponseList
     {

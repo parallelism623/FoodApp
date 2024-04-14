@@ -2,7 +2,6 @@
 using FoodShop.Domain.Abstraction.Repositories;
 using FoodShop.Domain.Entities.Identity;
 using FoodShop.Persistence.Repositories;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -30,12 +29,9 @@ namespace FoodShop.Persistence.DependencyInjection.Extensions
                             .UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery)
                        );
             });
-            services.AddIdentityCore<AppUser>()
-                    .AddRoles<AppRole>()
-                    .AddEntityFrameworkStores<ApplicationDbContext>();
-            services.AddIdentityCore<AppUser>()
-        .AddRoles<AppRole>()
-        .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.
+                    .
+                    
 
             services.Configure<IdentityOptions>(options =>
             {
@@ -50,12 +46,13 @@ namespace FoodShop.Persistence.DependencyInjection.Extensions
                 options.Password.RequiredLength = 6;
                 options.Password.RequiredUniqueChars = 1;
 
+                options.SignIn.RequireConfirmedEmail = true;
             });
         }
         public static void AddRepositoriesConfiguration(this IServiceCollection services)
         {
             services.AddScoped<IProductRepository, ProductRepository>();
-            services.AddScoped<IUserRepository, UserRepository>();
+          
         }
     }
 }

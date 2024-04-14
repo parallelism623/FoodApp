@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Google.Apis.Auth" Version="1.67.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="8.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.4" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
@@ -21,12 +23,14 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FoodShop.Application\FoodShop.Application.csproj" />
+    <ProjectReference Include="..\FoodShop.Contract\FoodShop.Contract.csproj" />
     <ProjectReference Include="..\FoodShop.Persistence\FoodShop.Persistence.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Caching\" />
     <Folder Include="Abstraction\" />
+    <Folder Include="SendMail\" />
   </ItemGroup>
 
 </Project>

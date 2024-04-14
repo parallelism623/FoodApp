@@ -14,8 +14,7 @@
 
   <ItemGroup>
     <Folder Include="Abstraction\" />
-    <Folder Include="Behaviors\" />
-    <Folder Include="UseCases\V1\DomainEvents\Product\" />
+    <Folder Include="UseCases\V1\DomainEvents\" />
   </ItemGroup>
 
   <ItemGroup>
