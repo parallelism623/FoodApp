@@ -18,7 +18,7 @@ namespace FoodShop.Presentation.Controllers.V1
     [ApiVersion(ApiVerions.Version1)]
     public class AuthenticationController : ApiController
     {
-        public AuthenticationController(ISender sender) : base(sender) { }
+        public AuthenticationController(IMediator sender) : base(sender) { }
       
         [HttpPost("login-google")]
         public async Task<IActionResult> LoginWithGoogle([FromBody] AuthExternalRequest model)
@@ -27,27 +27,32 @@ namespace FoodShop.Presentation.Controllers.V1
             var result = await _sender.Send(loginGGCommand);
             return Ok(result);
         }
-        [HttpPost("login-facebook")]
-        public Task<Result<UserAuthResponse>> LoginWithFaceBook([FromBody] AuthExternalRequest model)
-        {
+        //[HttpPost("login-facebook")]
+        //public Task<Result<UserAuthResponse>> LoginWithFaceBook([FromBody] AuthExternalRequest model)
+        //{
 
-        }
-        [HttpPost("login")]
-        public Task<Result<UserAuthResponse>> Login([FromBody] LoginRequest model)
-        {
+        //}
+        //[HttpPost("login")]
+        //public Task<Result<UserAuthResponse>> Login([FromBody] LoginRequest model)
+        //{
 
-        }
+        //}
         [HttpPost("register")]
-        public Task<Result<UserAuthResponse>> Register([FromBody] LoginRequest model)
+        public async Task<IActionResult> Register([FromBody] RegisterRequest model)
         {
             var registerCommand = new RegisterCommand(model);
             var result = await _sender.Send(registerCommand);
+            if (result.IsSuccess)
+            {
+                var emailSenderEvent = new EmailSenderEvent(model);
+                _sender.Publish(emailSenderEvent);
+            }
             return Ok(result);
         }
-        [HttpPost("logout")]
-        public Task<Result<UserAuthResponse>> Login([FromBody] AuthExternalRequest model)
-        {
+        //[HttpPost("logout")]
+        //public Task<Result<UserAuthResponse>> Login([FromBody] AuthExternalRequest model)
+        //{
 
-        }
+        //}
     }
 }

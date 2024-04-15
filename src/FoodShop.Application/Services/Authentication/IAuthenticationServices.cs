@@ -13,10 +13,12 @@ namespace FoodShop.Application.Services.Authentication
     {
         public Task<AppUser> LoginWithFacebook(AuthExternalRequest model);
         public Task<AppUser> LoginWithGoogle(AuthExternalRequest model);
-        public Task<bool> IsActiveAccountAfterRegister(string email);
+        public Task<string> GenerateTokenComfirmMail(string email);
         public string GenerateAccessToken(IEnumerable<Claim> claims);
         public string GenerateRefreshToken();
-        public Task<bool> Register(string email, string password, string name, string phone)
+        public Task<bool> IsActiveAccountAfterRegister(string tokenConfirm, Guid Id);
+        public Task<AppUser> Register(RegisterRequest model);
         public ClaimsPrincipal GetPrincipalFromExpiredToken(string token);
+       
     }
 }

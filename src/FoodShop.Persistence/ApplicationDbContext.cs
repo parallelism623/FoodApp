@@ -2,17 +2,13 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using FoodShop.Domain.Entities;
-using Microsoft.AspNetCore.Http;
+
 
 namespace FoodShop.Persistence
 {
     public class ApplicationDbContext : IdentityDbContext<Domain.Entities.Identity.AppUser, AppRole, Guid>
     {
-        private readonly IHttpContextAccessor _httpContextAccessor;
-        public ApplicationDbContext(IHttpContextAccessor httpContextAccessor)
-        {
-            _httpContextAccessor = httpContextAccessor;
-        }
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder builder)

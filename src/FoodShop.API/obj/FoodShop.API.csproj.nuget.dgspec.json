@@ -479,6 +479,10 @@
               "target": "Package",
               "version": "[1.67.0, )"
             },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.Google": {
               "target": "Package",
               "version": "[8.0.4, )"
@@ -498,6 +502,10 @@
             "Microsoft.Extensions.Options": {
               "target": "Package",
               "version": "[8.0.2, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[4.5.0, )"
             },
             "Serilog": {
               "target": "Package",
@@ -721,6 +729,10 @@
             "Asp.Versioning.Mvc.ApiExplorer": {
               "target": "Package",
               "version": "[8.1.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",

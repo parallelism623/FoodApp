@@ -359,6 +359,10 @@
               "target": "Package",
               "version": "[1.67.0, )"
             },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.Google": {
               "target": "Package",
               "version": "[8.0.4, )"
@@ -378,6 +382,10 @@
             "Microsoft.Extensions.Options": {
               "target": "Package",
               "version": "[8.0.2, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[4.5.0, )"
             },
             "Serilog": {
               "target": "Package",

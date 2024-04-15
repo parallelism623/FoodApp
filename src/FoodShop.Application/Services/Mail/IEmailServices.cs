@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FoodShop.Contract.Abstraction.Shared;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,6 @@ namespace FoodShop.Application.Services.Mail
 {
     public interface IEmailServices
     {
-        Task SendEmailAsync(string toEmail, string subjectEmail, string bodyEmail);
+        Task<bool> SendEmailAsync(HtmlMail htmlMailData);
     }
 }

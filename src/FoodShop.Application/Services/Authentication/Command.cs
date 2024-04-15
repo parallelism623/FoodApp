@@ -9,6 +9,6 @@ using System.Threading.Tasks;
 
 namespace FoodShop.Application.Services.Authentication
 {
-    public record LoginWithGoogleCommand(AuthExternalRequest Model) : ICommand<UserAuthResponse>;
-    public record RegisterCommand(RegisterRequest Model) : ICommand<UserAuthResponse>;
+    public record LoginWithGoogleCommand (AuthExternalRequest Model): ICommand<UserAuthResponse>;
+    public record RegisterCommand (RegisterRequest Model) : ICommand<UserAuthResponse>;
 }

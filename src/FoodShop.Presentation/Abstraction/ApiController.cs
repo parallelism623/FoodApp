@@ -7,8 +7,8 @@ namespace FoodShop.Presentation.Abstraction
     [Route("api/v{version:apiVersion}/[controller]")]
     public abstract class ApiController : ControllerBase
     {
-        protected readonly ISender _sender;
-        protected ApiController(ISender sender)
+        protected readonly IMediator _sender;
+        protected ApiController(IMediator sender)
         {
             _sender = sender;
         }

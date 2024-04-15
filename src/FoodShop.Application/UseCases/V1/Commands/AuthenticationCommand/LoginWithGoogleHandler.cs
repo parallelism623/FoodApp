@@ -16,7 +16,7 @@ using System.Windows.Input;
 
 namespace FoodShop.Application.UseCases.V1.Commands.AuthenticationCommand
 {
-    public record LoginWithGoogleHandler : ICommandHandler<LoginWithGoogleCommand, UserAuthResponse>
+    public class LoginWithGoogleHandler : ICommandHandler<LoginWithGoogleCommand, UserAuthResponse>
     {
         private readonly IAuthenticationServices _authenticationServices;
         private readonly IMapper _mapper;

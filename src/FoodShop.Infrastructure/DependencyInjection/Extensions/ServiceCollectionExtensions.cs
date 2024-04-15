@@ -1,6 +1,12 @@
 ﻿using Castle.Core.Configuration;
+using Castle.Core.Smtp;
+using FoodShop.Application.Services.Authentication;
+using FoodShop.Application.Services.Mail;
+using FoodShop.Infrastructure.Authentication;
 using FoodShop.Infrastructure.DependencyInjection.Options;
+using FoodShop.Infrastructure.EmailServices;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
@@ -38,6 +44,21 @@ namespace FoodShop.Infrastructure.DependencyInjection.Extensions
                         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(section["SecretKey"]))
                     };
                 });
+        }
+        public static void AddMailServiceConfiguration(this IServiceCollection services, IConfigurationSection mailSettings)
+        {
+            services.AddHttpClient("MailTrapApiClient", (services, client) =>
+            {
+                MailSettingOptions _mailSettings = new MailSettingOptions();
+                mailSettings.Bind(_mailSettings);
+                client.BaseAddress = new Uri(_mailSettings.ApiBaseUrl);
+                client.DefaultRequestHeaders.Add("Api-Token", _mailSettings.ApiToken);
+            });
+        }
+        public static void AddExternalServices(this IServiceCollection services)
+        {
+            services.AddScoped<IAuthenticationServices, AuthenticationServices>()
+                    .AddScoped<IEmailServices, EmailSender>();
         }
     }
 }

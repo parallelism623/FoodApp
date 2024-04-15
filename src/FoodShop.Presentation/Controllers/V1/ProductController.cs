@@ -18,7 +18,7 @@ namespace FoodShop.Presentation.Controllers.V1
     public class ProductController : ApiController
     {
 
-        public ProductController(ISender sender) : base(sender) { }
+        public ProductController(IMediator sender) : base(sender) { }
 
         #region GET
         [HttpGet]

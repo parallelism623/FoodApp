@@ -1,9 +1,7 @@
 ﻿using AutoMapper;
-using Castle.Core.Configuration;
 using FoodShop.Application.Services.Authentication;
 using FoodShop.Contract.DataTransferObjects.Request.V1;
 using FoodShop.Contract.DataTransferObjects.Respone.V1;
-using FoodShop.Domain.Abstraction.Repositories;
 using FoodShop.Domain.Entities.Identity;
 using FoodShop.Domain.Exceptions;
 using FoodShop.Infrastructure.DependencyInjection.Options;
@@ -12,22 +10,16 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using FoodShop.Contract.Abstraction.Constrant;
-using Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos;
-using System.Net.Http;
 using Newtonsoft.Json;
-using FoodShop.Contract.Abstraction.Shared;
+using System.Web;
 namespace FoodShop.Infrastructure.Authentication
 {
-    
+
     public class AuthenticationServices : IAuthenticationServices
     {
         private readonly HttpClient _httpClient;
@@ -107,22 +99,16 @@ namespace FoodShop.Infrastructure.Authentication
             return returnData;
 
         }
-        public async Task<bool> Register(string email, string password, string name, string phone)
+        public async Task<AppUser> Register(RegisterRequest model)
         {
-            var user = new AppUser()
-            {
-                Email = email,
-                UserName = email,
-                PhoneNumber = phone,
-                FirstName = name
-            };
-            var result = await _userManager.CreateAsync(user, password);
+            var user = _mapper.Map<AppUser>(model);
+            var result = await _userManager.CreateAsync(user, model.Password);
             if (result.Succeeded)
             {    
                 await _userManager.AddToRoleAsync(user, RoleDefine.User);
-                return true; 
+                return user; 
             }
-            return false;
+            return null;
         }
         public async Task<bool> Login(string email, string password)
         {
@@ -131,16 +117,18 @@ namespace FoodShop.Infrastructure.Authentication
             var result = await _userManager.CheckPasswordAsync(user, password);
             return result;
         }
-        public async Task<bool> IsActiveAccountAfterRegister(string email)
+        public async Task<bool> IsActiveAccountAfterRegister(string tokenConfirm, Guid Id)
         {
-          
-            var getData = await _userManager.FindByEmailAsync(email);
+
+            var getData = await _userManager.FindByIdAsync(Id.ToString())
+                          ?? throw new NotFoundException(MessengerResult.EmailNotExit);
             if (getData != null)
             {
-                getData.EmailConfirmed = true;
-                var result = await _userManager.UpdateAsync(getData);
+                var result = await _userManager.ConfirmEmailAsync(getData, tokenConfirm);
                 if (result.Succeeded)
                     return true;
+                else
+                    throw new BadRequestException("Token confirm email is not valid");
             }
             return false;
         }
@@ -172,7 +160,7 @@ namespace FoodShop.Infrastructure.Authentication
                 ValidateAudience = false, //you might want to validate the audience and issuer depending on your use case
                 ValidateIssuer = false,
                 ValidateIssuerSigningKey = true,
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("superSecretKey@345")),
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtTokenOptions.SecretKey)),
                 ValidateLifetime = false //here we are saying that we don't care about the token's expiration date
             };
             var tokenHandler = new JwtSecurityTokenHandler();
@@ -183,6 +171,18 @@ namespace FoodShop.Infrastructure.Authentication
                 throw new SecurityTokenException("Invalid token");
             return principal;
         }
-
+        public async Task<string> GenerateTokenComfirmMail(string email)
+        {
+            var user = await _userManager.FindByEmailAsync(email)
+                       ?? throw new NotFoundException(MessengerResult.EmailNotExit);
+            var tokenConfirmEmail = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+            var uriBuilder = new UriBuilder();
+            var query = HttpUtility.ParseQueryString(uriBuilder.Query);
+            query["token"] = tokenConfirmEmail;
+            query["userid"] = user.Id.ToString();
+            uriBuilder.Query = query.ToString();
+            var urlString = uriBuilder.ToString();
+            return urlString;
+        }
     }
 }

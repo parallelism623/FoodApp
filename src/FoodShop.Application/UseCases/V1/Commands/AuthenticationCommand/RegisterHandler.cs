@@ -27,12 +27,13 @@ namespace FoodShop.Application.UseCases.V1.Commands.AuthenticationCommand
         public async Task<Result<UserAuthResponse>> Handle(RegisterCommand request, CancellationToken cancellationToken)
         {
             var model = request.Model;
-            var result = await _authenticationServices.Register(model.Email, model.Password, model.FullName, model.PhoneNumber);
-            if (!result)
+            var result = await _authenticationServices.Register(model);
+            if (result == null)
             {
                 throw new BadRequestException(MessengerResult.EmailExit);
             }
-            return null;
+            var userReturn = _mapper.Map<UserAuthResponse>(result);
+            return userReturn;
         }
     }
 }

@@ -1,0 +1,42 @@
+2024-04-15 15:50:25.202 +07:00 [DBG] Registered model binder providers, in the following order: ["Asp.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-04-15 15:50:25.388 +07:00 [DBG] Hosting starting
+2024-04-15 15:50:25.640 +07:00 [INF] Now listening on: https://localhost:7286
+2024-04-15 15:50:25.640 +07:00 [INF] Now listening on: http://localhost:5010
+2024-04-15 15:50:25.641 +07:00 [DBG] Loaded hosting startup assembly FoodShop.API
+2024-04-15 15:50:25.641 +07:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-04-15 15:50:25.641 +07:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-04-15 15:50:25.641 +07:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-04-15 15:50:25.661 +07:00 [DBG] Connection id "0HN2T54BV61ET" accepted.
+2024-04-15 15:50:25.663 +07:00 [DBG] Connection id "0HN2T54BV61ET" started.
+2024-04-15 15:50:25.671 +07:00 [DBG] Connection id "0HN2T54BV61EU" accepted.
+2024-04-15 15:50:25.671 +07:00 [DBG] Connection id "0HN2T54BV61EU" started.
+2024-04-15 15:50:25.727 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-15 15:50:25.728 +07:00 [INF] Hosting environment: Development
+2024-04-15 15:50:25.728 +07:00 [INF] Content root path: C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API
+2024-04-15 15:50:25.728 +07:00 [DBG] Hosting started
+2024-04-15 15:50:29.578 +07:00 [DBG] Connection id "0HN2T54BV61EV" accepted.
+2024-04-15 15:50:29.581 +07:00 [DBG] Connection id "0HN2T54BV61EV" started.
+2024-04-15 15:50:29.653 +07:00 [DBG] Connection 0HN2T54BV61EV established using the following protocol: "Tls13"
+2024-04-15 15:50:29.784 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7286/swagger/index.html - null null
+2024-04-15 15:50:29.922 +07:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-04-15 15:50:29.954 +07:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-04-15 15:50:29.955 +07:00 [DBG] Request did not match any endpoints
+2024-04-15 15:50:30.003 +07:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-04-15 15:50:30.005 +07:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-04-15 15:50:30.027 +07:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-04-15 15:50:30.027 +07:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-04-15 15:50:30.030 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7286/swagger/index.html - 200 null text/html;charset=utf-8 254.8012ms
+2024-04-15 15:50:30.071 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7286/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 15:50:30.071 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7286/_vs/browserLink - null null
+2024-04-15 15:50:30.086 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7286/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 15.3409ms
+2024-04-15 15:50:30.197 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7286/_vs/browserLink - 200 null text/javascript; charset=UTF-8 126.2697ms
+2024-04-15 15:50:30.584 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7286/swagger/v1/swagger.json - null null
+2024-04-15 15:50:30.586 +07:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-04-15 15:50:30.586 +07:00 [DBG] Request did not match any endpoints
+2024-04-15 15:50:30.726 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7286/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 142.2922ms
+2024-04-15 15:50:35.698 +07:00 [DBG] Authentication of the HTTPS connection timed out.
+2024-04-15 15:50:35.698 +07:00 [DBG] Authentication of the HTTPS connection timed out.
+2024-04-15 15:50:35.703 +07:00 [DBG] Connection id "0HN2T54BV61ET" stopped.
+2024-04-15 15:50:35.703 +07:00 [DBG] Connection id "0HN2T54BV61EU" stopped.
+2024-04-15 15:50:35.707 +07:00 [DBG] Connection id "0HN2T54BV61EU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-04-15 15:50:35.707 +07:00 [DBG] Connection id "0HN2T54BV61ET" sending FIN because: "The Socket transport's send loop completed gracefully."

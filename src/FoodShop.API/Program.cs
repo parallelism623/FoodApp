@@ -1,8 +1,11 @@
 using Asp.Versioning;
 using FoodShop.API.Middleware;
 using FoodShop.Application.DependencyInjection.Extensions;
+using FoodShop.Domain.Entities.Identity;
 using FoodShop.Infrastructure.DependencyInjection.Extensions;
+using FoodShop.Persistence;
 using FoodShop.Persistence.DependencyInjection.Extensions;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using Serilog;
 
@@ -23,10 +26,12 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddIdentity<AppUser, AppRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
 builder.Services.AddTransient<ExceptionHandlingMiddleware>();
 #region AddServices
-builder
+builders
     .Services.AddSqlConfiguration();
 builder
     .Services.AddConfigureMediatR()
@@ -38,6 +43,10 @@ builder
     .AddApplicationPart(FoodShop.Presentation.AssemblyReference.Assembly);
 builder
     .Services.AddJwtTokenConfiguration(builder.Configuration.GetRequiredSection("JwtTokenOptions"));
+builder
+    .Services.AddExternalServices();
+builder
+    .Services.AddMailServiceConfiguration(builder.Configuration.GetRequiredSection("MailSettings"));
 #endregion AddServices
 
 #region VersionApiController

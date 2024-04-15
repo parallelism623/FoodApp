@@ -2,6 +2,7 @@
 using FoodShop.Domain.Abstraction.Repositories;
 using FoodShop.Domain.Entities.Identity;
 using FoodShop.Persistence.Repositories;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -28,11 +29,8 @@ namespace FoodShop.Persistence.DependencyInjection.Extensions
                             sqlServerOptionsAction: builder => builder.MigrationsAssembly(AssemblyReference.Assembly.GetName().Name)
                             .UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery)
                        );
-            });
-            services.
-                    .
-                    
-
+            }); 
+            
             services.Configure<IdentityOptions>(options =>
             {
                 options.Lockout.AllowedForNewUsers = true; //default true

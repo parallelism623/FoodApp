@@ -9,18 +9,18 @@ using System.Threading.Tasks;
 
 namespace FoodShop.Presentation.Controllers.V1
 {
-    public class UserController : ApiController
-    {
-        public UserController(ISender sender) : base(sender) { }
+    //public class UserController : ApiController
+    //{
+    //    //public UserController(ISender sender) : base(sender) { }
 
-        #region GET
-        [HttpGet]
-        #endregion GET
-        #region POST
-        #endregion POST
-        #region PUT
-        #endregion PUT
-        #region DELETE
-        #endregion DELETE
-    }
+    //    //#region GET
+    //    //[HttpGet]
+    //    //#endregion GET
+    //    //#region POST
+    //    //#endregion POST
+    //    //#region PUT
+    //    //#endregion PUT
+    //    //#region DELETE
+    //    //#endregion DELETE
+    //}
 }
