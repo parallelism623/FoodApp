@@ -16,3 +16,5 @@ C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Persistence\obj\Debug\net8
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Persistence\obj\Debug\net8.0\FoodShop.Persistence.pdb
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Persistence\obj\Debug\net8.0\FoodShop.Persistence.genruntimeconfig.cache
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Persistence\obj\Debug\net8.0\ref\FoodShop.Persistence.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Persistence\bin\Debug\net8.0\FoodShop.Contract.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Persistence\bin\Debug\net8.0\FoodShop.Contract.pdb

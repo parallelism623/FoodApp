@@ -1,9 +1,11 @@
 ﻿using Asp.Versioning;
 using FoodShop.Application.Services.Authentication;
+using FoodShop.Application.Services.Mail;
 using FoodShop.Contract.Abstraction.Constrant;
 using FoodShop.Contract.Abstraction.Shared;
 using FoodShop.Contract.DataTransferObjects.Request.V1;
 using FoodShop.Contract.DataTransferObjects.Respone.V1;
+using FoodShop.Infrastructure.Authentication;
 using FoodShop.Presentation.Abstraction;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -18,7 +20,11 @@ namespace FoodShop.Presentation.Controllers.V1
     [ApiVersion(ApiVerions.Version1)]
     public class AuthenticationController : ApiController
     {
-        public AuthenticationController(IMediator sender) : base(sender) { }
+        private readonly IAuthenticationServices _authenticationServices;
+        public AuthenticationController(IMediator sender, IAuthenticationServices authenticationServices) : base(sender) 
+        {
+            _authenticationServices = authenticationServices;   
+        }
       
         [HttpPost("login-google")]
         public async Task<IActionResult> LoginWithGoogle([FromBody] AuthExternalRequest model)
@@ -33,7 +39,7 @@ namespace FoodShop.Presentation.Controllers.V1
 
         //}
         //[HttpPost("login")]
-        //public Task<Result<UserAuthResponse>> Login([FromBody] LoginRequest model)
+        //public Task<Result<UserAuthResponse>> Login(string token, string userid, [FromBody] LoginRequest model)
         //{
 
         //}
@@ -44,8 +50,7 @@ namespace FoodShop.Presentation.Controllers.V1
             var result = await _sender.Send(registerCommand);
             if (result.IsSuccess)
             {
-                var emailSenderEvent = new EmailSenderEvent(model);
-                _sender.Publish(emailSenderEvent);
+                _sender.Publish(new EmailSenderEvent(model));
             }
             return Ok(result);
         }
@@ -54,5 +59,6 @@ namespace FoodShop.Presentation.Controllers.V1
         //{
 
         //}
+
     }
 }

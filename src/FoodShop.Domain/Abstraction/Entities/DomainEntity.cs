@@ -10,8 +10,8 @@ namespace FoodShop.Domain.Abstraction.Entities
     {
         public virtual T Id { get; set; }
         public DateTime CreateDate { get; set; }
-        public virtual Guid CreateBy { get; set; }
+        public virtual string CreateBy { get; set; }
         public DateTime UpdateDate { get; set; }
-        public virtual Guid UpdateBy { get; set; }
+        public virtual string UpdateBy { get; set; }
     }
 }

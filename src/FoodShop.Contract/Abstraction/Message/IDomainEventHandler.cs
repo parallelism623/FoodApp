@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FoodShop.Contract.Abstraction.Message
 {
-    public interface IDomainEventHandler<TEvent> : INotificationHandler<TEvent>
-    where TEvent : IDomainEvents
-    {}
+    public interface IDomainEventHandler<TEvent> : INotificationHandler<TEvent> where TEvent : IDomainEvents
+    {
+    }
 }

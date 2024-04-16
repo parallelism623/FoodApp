@@ -180,3 +180,14 @@ C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\obj\Release\net8.0\ref
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\obj\Release\net8.0\FoodShop.API.pdb
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\obj\Release\net8.0\FoodShop.API.genruntimeconfig.cache
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\obj\Release\net8.0\ref\FoodShop.API.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Release\net8.0\Microsoft.Graph.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Release\net8.0\Microsoft.Graph.Core.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Release\net8.0\Microsoft.Kiota.Abstractions.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Release\net8.0\Microsoft.Kiota.Authentication.Azure.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Release\net8.0\Microsoft.Kiota.Http.HttpClientLibrary.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Release\net8.0\Microsoft.Kiota.Serialization.Form.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Release\net8.0\Microsoft.Kiota.Serialization.Json.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Release\net8.0\Microsoft.Kiota.Serialization.Multipart.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Release\net8.0\Microsoft.Kiota.Serialization.Text.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Release\net8.0\Std.UriTemplate.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\obj\Release\net8.0\FoodShop.API.MvcApplicationPartsAssemblyInfo.cs

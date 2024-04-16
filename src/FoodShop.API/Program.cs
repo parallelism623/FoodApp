@@ -1,8 +1,10 @@
 using Asp.Versioning;
+using FoodShop.API;
 using FoodShop.API.Middleware;
 using FoodShop.Application.DependencyInjection.Extensions;
 using FoodShop.Domain.Entities.Identity;
 using FoodShop.Infrastructure.DependencyInjection.Extensions;
+using FoodShop.Infrastructure.DependencyInjection.Options;
 using FoodShop.Persistence;
 using FoodShop.Persistence.DependencyInjection.Extensions;
 using Microsoft.AspNetCore.Identity;
@@ -31,7 +33,7 @@ builder.Services.AddIdentity<AppUser, AppRole>()
                 .AddDefaultTokenProviders();
 builder.Services.AddTransient<ExceptionHandlingMiddleware>();
 #region AddServices
-builders
+builder
     .Services.AddSqlConfiguration();
 builder
     .Services.AddConfigureMediatR()
@@ -44,9 +46,9 @@ builder
 builder
     .Services.AddJwtTokenConfiguration(builder.Configuration.GetRequiredSection("JwtTokenOptions"));
 builder
-    .Services.AddExternalServices();
+    .Services.AddExternalServices(builder.Configuration);
 builder
-    .Services.AddMailServiceConfiguration(builder.Configuration.GetRequiredSection("MailSettings"));
+    .Services.AddConfigureAutoMapper();
 #endregion AddServices
 
 #region VersionApiController
@@ -78,7 +80,7 @@ app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
+app.MigrateDatabase();
 app.MapControllers();
 
 try

@@ -1,5 +1,7 @@
 ﻿using FluentValidation;
+using FoodShop.Application.Behaviors;
 using FoodShop.Application.Mapper;
+using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -13,6 +15,7 @@ namespace FoodShop.Application.DependencyInjection.Extensions
     {
         public static IServiceCollection AddConfigureMediatR(this IServiceCollection services)
             => services.AddMediatR(cgf => cgf.RegisterServicesFromAssembly(typeof(ServiceCollectionExtensions).Assembly))
+                       .AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>))
                        .AddValidatorsFromAssembly(typeof(ServiceCollectionExtensions).Assembly, includeInternalTypes: true);
         public static IServiceCollection AddConfigureAutoMapper(this IServiceCollection services)
             => services.AddAutoMapper(typeof(ServiceProfile));

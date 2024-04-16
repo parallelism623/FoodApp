@@ -11,4 +11,5 @@ namespace FoodShop.Application.Services.Authentication
 {
     public record LoginWithGoogleCommand (AuthExternalRequest Model): ICommand<UserAuthResponse>;
     public record RegisterCommand (RegisterRequest Model) : ICommand<UserAuthResponse>;
+    public record LoginCommand(LoginRequest Model) : ICommand<UserAuthResponse>;
 }

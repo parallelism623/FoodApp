@@ -1,19 +1,10 @@
-﻿using Castle.Core.Configuration;
-using Castle.Core.Smtp;
+﻿
 using FoodShop.Application.Services.Mail;
 using FoodShop.Contract.Abstraction.Shared;
 using FoodShop.Infrastructure.DependencyInjection.Options;
-using Microsoft.Extensions.Configuration;
+using MailKit.Net.Smtp;
 using Microsoft.Extensions.Options;
 using MimeKit;
-using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http.Json;
-using System.Net.Mail;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FoodShop.Infrastructure.EmailServices
 {
@@ -22,40 +13,54 @@ namespace FoodShop.Infrastructure.EmailServices
         private readonly MailSettingOptions _mailSettings;
         private readonly HttpClient _httpClient;
 
-        public EmailSender(IConfigurationSection mailSettings, IHttpClientFactory httpClientFactory)
+
+        public EmailSender(IOptionsMonitor<MailSettingOptions> mailSettings, IHttpClientFactory httpClientFactory)
         {
-            mailSettings.Bind(_mailSettings);
+            _mailSettings = mailSettings.CurrentValue;
             _httpClient = httpClientFactory.CreateClient("MailTrapApiClient");
         }
 
 
 
-        public async Task<bool> SendEmailAsync(HtmlMail htmlMailData)
+        public async Task<bool> SendEmailAsync(HtmlMail mailData)
         {
             //string filePath = Directory.GetCurrentDirectory() + "\\Templates\\Hello.html";
             //string emailTemplateText = File.ReadAllText(filePath);
 
             //var htmlBody = string.Format(emailTemplateText, htmlMailData.EmailToName, DateTime.Today.Date.ToShortDateString());
-
-            var apiEmail = new
+            try
             {
-                From = new { Email = _mailSettings.SenderEmail, Name = _mailSettings.SenderEmail },
-                To = new[] { new { Email = htmlMailData.EmailToId, Name = htmlMailData.EmailToName } },
-                Subject = "Hello",
-                Text = htmlMailData.Content
-            };
+                using (MimeMessage emailMessage = new MimeMessage())
+                {
+                    MailboxAddress emailFrom = new MailboxAddress(_mailSettings.SenderEmail, _mailSettings.SenderEmail);
+                    emailMessage.From.Add(emailFrom);
+                    MailboxAddress emailTo = new MailboxAddress(mailData.EmailToName, mailData.EmailToId);
+                    emailMessage.To.Add(emailTo);
 
-            var httpResponse = await _httpClient.PostAsJsonAsync("send", apiEmail);
+                    //emailMessage.Cc.Add(new MailboxAddress("Cc Receiver", "cc@example.com"));
+                    //emailMessage.Bcc.Add(new MailboxAddress("Bcc Receiver", "bcc@example.com"));
 
-            var responseJson = await httpResponse.Content.ReadAsStringAsync();
-            var response = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseJson);
+                    emailMessage.Subject = mailData.Title;
 
-            if (response != null && response.TryGetValue("success", out object? success) && success is bool boolSuccess && boolSuccess)
-            {
+                    BodyBuilder emailBodyBuilder = new BodyBuilder();
+                    emailBodyBuilder.TextBody = mailData.Content;
+
+                    emailMessage.Body = emailBodyBuilder.ToMessageBody();
+                    //this is the SmtpClient from the Mailkit.Net.Smtp namespace, not the System.Net.Mail one
+                    using (SmtpClient mailClient = new SmtpClient())
+                    {
+                        mailClient.Connect(_mailSettings.Host, int.Parse(_mailSettings.Port), MailKit.Security.SecureSocketOptions.StartTls);
+                        mailClient.Authenticate(_mailSettings.Username, _mailSettings.Password);
+                        await mailClient.SendAsync(emailMessage);
+                        mailClient.Disconnect(true);
+                    }
+                }
                 return true;
             }
-
-            return false;
+            catch
+            {
+                return false;
+            }
         }
     }
 }

@@ -17,6 +17,7 @@ using System.Text;
 using FoodShop.Contract.Abstraction.Constrant;
 using Newtonsoft.Json;
 using System.Web;
+using System;
 namespace FoodShop.Infrastructure.Authentication
 {
 
@@ -27,17 +28,20 @@ namespace FoodShop.Infrastructure.Authentication
         private readonly IConfigurationSection _goolgeSettings;
         private readonly UserManager<AppUser> _userManager;
         private readonly IMapper _mapper;
+        private readonly MailSettingOptions _mailSettings;
         public AuthenticationServices(IOptionsMonitor<JwtTokenOptions> jwtTokenOptions,
-                                      IConfigurationSection goolgeSettings,
+                                      IConfiguration goolgeSettings,
                                       UserManager<AppUser> userManager,
                                       IMapper mapper,
-                                      HttpClient httpClient)
+                                      HttpClient httpClient,
+                                      MailSettingOptions mailSettings)
         {
             _httpClient = httpClient;
             _mapper = mapper;
             _userManager = userManager;
             _jwtTokenOptions = jwtTokenOptions.CurrentValue;
-            _goolgeSettings = goolgeSettings;
+            _goolgeSettings = goolgeSettings.GetRequiredSection("GoogleAuthSettings");
+            _mailSettings = mailSettings;
         }
         public async Task<AppUser> LoginWithGoogle(AuthExternalRequest model)
         {
@@ -172,11 +176,11 @@ namespace FoodShop.Infrastructure.Authentication
             return principal;
         }
         public async Task<string> GenerateTokenComfirmMail(string email)
-        {
+            {
             var user = await _userManager.FindByEmailAsync(email)
                        ?? throw new NotFoundException(MessengerResult.EmailNotExit);
             var tokenConfirmEmail = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-            var uriBuilder = new UriBuilder();
+            UriBuilder uriBuilder = new UriBuilder(_mailSettings.ReturnPath);
             var query = HttpUtility.ParseQueryString(uriBuilder.Query);
             query["token"] = tokenConfirmEmail;
             query["userid"] = user.Id.ToString();

@@ -1,4 +1,5 @@
-﻿using FoodShop.Domain.Entities.Identity;
+﻿using FoodShop.Contract.Abstraction.Constrant;
+using FoodShop.Domain.Entities.Identity;
 using FoodShop.Persistence.Constrant;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;

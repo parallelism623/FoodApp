@@ -17,6 +17,6 @@ namespace FoodShop.Contract.DataTransferObjects.Request.V1
         public string? AuthToken { get; set; }
         public string? IdToken { get; set; }
         public string? AuthorizationCode { get; set; }
-        public dynamic? response { get; set; }
+        public dynamic? Response { get; set; }
     }
 }

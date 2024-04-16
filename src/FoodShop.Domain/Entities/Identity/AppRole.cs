@@ -4,12 +4,12 @@ namespace FoodShop.Domain.Entities.Identity
 {
     public class AppRole : IdentityRole<Guid>
     {
-        public string Description { get; set; }
-        public string RoleCode { get; set; }
-        public DateTime CreateDate { get; set; }
-        public Guid CreateBy { get; set; }
-        public DateTime UpdateDate { get; set; }
-        public Guid UpdateBy { get; set; }
+        public string? Description { get; set; } = null;
+        public string? RoleCode { get; set; } = null;
+        public DateTime? CreateDate { get; set; } = null;
+        public string? CreateBy { get; set; } = null;
+        public DateTime? UpdateDate { get; set; } = null;
+        public string? UpdateBy { get; set; } = null;
         public virtual ICollection<IdentityUserRole<Guid>> UserRoles { get; set; }
         public virtual ICollection<IdentityRoleClaim<Guid>> Claims { get; set; }
         public virtual ICollection<Permission> Permissions { get; set; }

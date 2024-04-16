@@ -1,22 +1,13 @@
-﻿using Castle.Core.Configuration;
-using Castle.Core.Smtp;
-using FoodShop.Application.Services.Authentication;
+﻿using FoodShop.Application.Services.Authentication;
 using FoodShop.Application.Services.Mail;
 using FoodShop.Infrastructure.Authentication;
 using FoodShop.Infrastructure.DependencyInjection.Options;
 using FoodShop.Infrastructure.EmailServices;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace FoodShop.Infrastructure.DependencyInjection.Extensions
 {
@@ -45,20 +36,13 @@ namespace FoodShop.Infrastructure.DependencyInjection.Extensions
                     };
                 });
         }
-        public static void AddMailServiceConfiguration(this IServiceCollection services, IConfigurationSection mailSettings)
+
+        public static void AddExternalServices(this IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config)
         {
-            services.AddHttpClient("MailTrapApiClient", (services, client) =>
-            {
-                MailSettingOptions _mailSettings = new MailSettingOptions();
-                mailSettings.Bind(_mailSettings);
-                client.BaseAddress = new Uri(_mailSettings.ApiBaseUrl);
-                client.DefaultRequestHeaders.Add("Api-Token", _mailSettings.ApiToken);
-            });
-        }
-        public static void AddExternalServices(this IServiceCollection services)
-        {
-            services.AddScoped<IAuthenticationServices, AuthenticationServices>()
-                    .AddScoped<IEmailServices, EmailSender>();
+            services.Configure<MailSettingOptions>(config.GetRequiredSection("MailSettings"));
+            services.AddTransient<IAuthenticationServices, AuthenticationServices>()
+                    .AddTransient<IEmailServices, EmailSender>()
+                    .AddHttpClient();
         }
     }
 }
