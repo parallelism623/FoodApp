@@ -1,42 +1,6 @@
 [
   {
     "ContainingType": "FoodShop.Presentation.Controllers.V1.AuthenticationController",
-    "Method": "Active",
-    "RelativePath": "api/v{version}/Authentication/active-account",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "token",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "userid",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "version",
-        "Type": "",
-        "IsRequired": true
-      },
-      {
-        "Name": "api-version",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "X-Version",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FoodShop.Presentation.Controllers.V1.AuthenticationController",
     "Method": "LoginWithGoogle",
     "RelativePath": "api/v{version}/Authentication/login-google",
     "HttpMethod": "POST",

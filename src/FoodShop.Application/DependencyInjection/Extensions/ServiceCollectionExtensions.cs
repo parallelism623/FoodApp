@@ -16,7 +16,7 @@ namespace FoodShop.Application.DependencyInjection.Extensions
         public static IServiceCollection AddConfigureMediatR(this IServiceCollection services)
             => services.AddMediatR(cgf => cgf.RegisterServicesFromAssembly(typeof(ServiceCollectionExtensions).Assembly))
                        .AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>))
-                       .AddValidatorsFromAssembly(typeof(ServiceCollectionExtensions).Assembly, includeInternalTypes: true);
+                       .AddValidatorsFromAssembly(AssemblyReference.Assembly, includeInternalTypes: true);
         public static IServiceCollection AddConfigureAutoMapper(this IServiceCollection services)
             => services.AddAutoMapper(typeof(ServiceProfile));
     }

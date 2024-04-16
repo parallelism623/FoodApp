@@ -6,7 +6,7 @@ using MediatR;
 namespace FoodShop.Application.Behaviors
 {
     public sealed class ValidationBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
-        where TRequest : class, IRequest<TResponse>
+        where TRequest : IRequest<TResponse>
         where TResponse : Result
     {
         private readonly IEnumerable<IValidator<TRequest>> _validators;

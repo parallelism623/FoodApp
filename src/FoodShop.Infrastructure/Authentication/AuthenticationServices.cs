@@ -34,14 +34,14 @@ namespace FoodShop.Infrastructure.Authentication
                                       UserManager<AppUser> userManager,
                                       IMapper mapper,
                                       HttpClient httpClient,
-                                      MailSettingOptions mailSettings)
+                                      IOptionsMonitor<MailSettingOptions> mailSettings)
         {
             _httpClient = httpClient;
             _mapper = mapper;
             _userManager = userManager;
             _jwtTokenOptions = jwtTokenOptions.CurrentValue;
             _goolgeSettings = goolgeSettings.GetRequiredSection("GoogleAuthSettings");
-            _mailSettings = mailSettings;
+            _mailSettings = mailSettings.CurrentValue;
         }
         public async Task<AppUser> LoginWithGoogle(AuthExternalRequest model)
         {
