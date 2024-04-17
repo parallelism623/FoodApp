@@ -33,16 +33,20 @@ namespace FoodShop.Presentation.Controllers.V1
             var result = await _sender.Send(loginGGCommand);
             return Ok(result);
         }
-        //[HttpPost("login-facebook")]
-        //public Task<Result<UserAuthResponse>> LoginWithFaceBook([FromBody] AuthExternalRequest model)
-        //{
-
-        //}
-        //[HttpPost("login")]
-        //public Task<Result<UserAuthResponse>> Login(string token, string userid, [FromBody] LoginRequest model)
-        //{
-
-        //}
+        [HttpPost("login-facebook")]
+        public async Task<IActionResult> LoginWithFaceBook([FromBody] AuthExternalRequest model)
+        {
+            var loginFacebookCommand = new LoginWithFacebookCommand(model);
+            var result = await _sender.Send(loginFacebookCommand);
+            return Ok(result);
+        }
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginRequest model)
+        {
+            var loginCommand = new LoginCommand(model);
+            var result = await _sender.Send(loginCommand);
+            return Ok(result);
+        }
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterRequest model)
         {
@@ -54,11 +58,11 @@ namespace FoodShop.Presentation.Controllers.V1
             }
             return Ok(result);
         }
-        //[HttpPost("logout")]
-        //public Task<Result<UserAuthResponse>> Login([FromBody] AuthExternalRequest model)
-        //{
+        ////[HttpPost("logout")]
+        ////public Task<Result<UserAuthResponse>> Login([FromBody] AuthExternalRequest model)
+        ////{
 
-        //}
+        ////}
 
     }
 }

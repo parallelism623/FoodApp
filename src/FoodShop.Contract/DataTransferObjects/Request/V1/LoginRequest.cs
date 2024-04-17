@@ -10,6 +10,6 @@ namespace FoodShop.Contract.DataTransferObjects.Request.V1
     {
         public string? Email { get; set; }
         public string? Password { get; set; }
- 
+        public string? TokenConfirm { get; set; }
     }
 }

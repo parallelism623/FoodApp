@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FoodShop.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b0ffab5333dea6f6f2657d17094a303f7995420f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66227e032995008c066fd246f80ecdb09e0140a7")]
 [assembly: System.Reflection.AssemblyProductAttribute("FoodShop.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FoodShop.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

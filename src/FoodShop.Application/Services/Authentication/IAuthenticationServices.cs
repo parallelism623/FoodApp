@@ -16,9 +16,10 @@ namespace FoodShop.Application.Services.Authentication
         public Task<string> GenerateTokenComfirmMail(string email);
         public string GenerateAccessToken(IEnumerable<Claim> claims);
         public string GenerateRefreshToken();
-        public Task<bool> IsActiveAccountAfterRegister(string tokenConfirm, Guid Id);
+        public Task<bool> IsActiveAccountAfterRegister(string tokenConfirm, string email);
         public Task<AppUser> Register(RegisterRequest model);
         public ClaimsPrincipal GetPrincipalFromExpiredToken(string token);
+
        
     }
 }

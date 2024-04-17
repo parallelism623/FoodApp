@@ -39,8 +39,9 @@ namespace FoodShop.Infrastructure.DependencyInjection.Extensions
 
         public static void AddExternalServices(this IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config)
         {
-            services.Configure<MailSettingOptions>(config.GetRequiredSection("MailSettings"));
-            services.AddTransient<IAuthenticationServices, AuthenticationServices>()
+            services.Configure<MailSettingOptions>(config.GetRequiredSection("MailSettings"))
+                    .Configure<JwtTokenOptions>(config.GetRequiredSection("JwtTokenOptions"))
+                    .AddTransient<IAuthenticationServices, AuthenticationServices>()
                     .AddTransient<IEmailServices, EmailSender>()
                     .AddHttpClient();
         }

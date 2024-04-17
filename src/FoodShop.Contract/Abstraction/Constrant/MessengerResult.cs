@@ -9,6 +9,8 @@ namespace FoodShop.Contract.Abstraction.Constrant
     public static class MessengerResult
 
     {
+        public const string InvalidTokenConfirm = "Token confirm by email is invalid";
+        public const string InvalidPassword = "Password is invalid for user";
         public const string NoExitData = "No exit data";
         public const string ExitData = "Exit data";
         public const string SuccessFull = "Action is sucess";

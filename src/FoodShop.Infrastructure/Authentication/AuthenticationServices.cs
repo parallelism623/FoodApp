@@ -121,10 +121,10 @@ namespace FoodShop.Infrastructure.Authentication
             var result = await _userManager.CheckPasswordAsync(user, password);
             return result;
         }
-        public async Task<bool> IsActiveAccountAfterRegister(string tokenConfirm, Guid Id)
+        public async Task<bool> IsActiveAccountAfterRegister(string tokenConfirm, string Email)
         {
 
-            var getData = await _userManager.FindByIdAsync(Id.ToString())
+            var getData = await _userManager.FindByEmailAsync(Email)
                           ?? throw new NotFoundException(MessengerResult.EmailNotExit);
             if (getData != null)
             {
@@ -183,10 +183,11 @@ namespace FoodShop.Infrastructure.Authentication
             UriBuilder uriBuilder = new UriBuilder(_mailSettings.ReturnPath);
             var query = HttpUtility.ParseQueryString(uriBuilder.Query);
             query["token"] = tokenConfirmEmail;
-            query["userid"] = user.Id.ToString();
             uriBuilder.Query = query.ToString();
             var urlString = uriBuilder.ToString();
             return urlString;
         }
+
+
     }
 }
