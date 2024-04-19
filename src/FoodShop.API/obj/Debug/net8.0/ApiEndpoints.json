@@ -32,6 +32,37 @@
   },
   {
     "ContainingType": "FoodShop.Presentation.Controllers.V1.AuthenticationController",
+    "Method": "LoginWithFaceBook",
+    "RelativePath": "api/v{version}/Authentication/login-facebook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "FoodShop.Contract.DataTransferObjects.Request.V1.AuthExternalRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "version",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "X-Version",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FoodShop.Presentation.Controllers.V1.AuthenticationController",
     "Method": "LoginWithGoogle",
     "RelativePath": "api/v{version}/Authentication/login-google",
     "HttpMethod": "POST",

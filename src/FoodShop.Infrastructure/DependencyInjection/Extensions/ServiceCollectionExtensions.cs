@@ -1,12 +1,15 @@
 ﻿using FoodShop.Application.Services.Authentication;
+using FoodShop.Application.Services.DistributedCache;
 using FoodShop.Application.Services.Mail;
 using FoodShop.Infrastructure.Authentication;
+using FoodShop.Infrastructure.Caching;
 using FoodShop.Infrastructure.DependencyInjection.Options;
 using FoodShop.Infrastructure.EmailServices;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using StackExchange.Redis;
 using System.Text;
 
 namespace FoodShop.Infrastructure.DependencyInjection.Extensions
@@ -41,9 +44,23 @@ namespace FoodShop.Infrastructure.DependencyInjection.Extensions
         {
             services.Configure<MailSettingOptions>(config.GetRequiredSection("MailSettings"))
                     .Configure<JwtTokenOptions>(config.GetRequiredSection("JwtTokenOptions"))
+                    .Configure<RedisSettings>(config.GetRequiredSection("RedisSettings"))
                     .AddTransient<IAuthenticationServices, AuthenticationServices>()
                     .AddTransient<IEmailServices, EmailSender>()
                     .AddHttpClient();
+        }
+        public static void AddDistributedCacheConfig(this IServiceCollection services, IConfigurationSection redisSettings)
+        {
+            services.AddSingleton<IConnectionMultiplexer>(_ => ConnectionMultiplexer.Connect(redisSettings["Host"]));
+            services.AddStackExchangeRedisCache(opt =>
+            {
+                opt.Configuration = redisSettings["Host"];
+                opt.ConfigurationOptions = new StackExchange.Redis.ConfigurationOptions()
+                {
+                    AbortOnConnectFail = true
+                };
+            });
+            services.AddScoped<ICacheServices, CacheServices>();
         }
     }
 }

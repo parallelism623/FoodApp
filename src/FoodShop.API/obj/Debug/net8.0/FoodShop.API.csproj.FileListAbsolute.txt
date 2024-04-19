@@ -191,3 +191,8 @@ C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\obj\Debug\net8.0\refin
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\obj\Debug\net8.0\FoodShop.API.pdb
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\obj\Debug\net8.0\FoodShop.API.genruntimeconfig.cache
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\obj\Debug\net8.0\ref\FoodShop.API.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Debug\net8.0\StackExchange.Redis.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Debug\net8.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll

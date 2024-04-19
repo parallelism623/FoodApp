@@ -1,0 +1,570 @@
+2024-04-19 17:12:30.920 +07:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-04-19 17:12:31.608 +07:00 [DBG] The index {'ProductId'} was not created on entity type 'CartProduct' as the properties are already covered by the index {'ProductId', 'CartId'}.
+2024-04-19 17:12:31.610 +07:00 [DBG] The index {'OrderId'} was not created on entity type 'OrderProduct' as the properties are already covered by the index {'OrderId', 'ProductId'}.
+2024-04-19 17:12:31.610 +07:00 [DBG] The index {'ProductId'} was not created on entity type 'ProductCategory' as the properties are already covered by the index {'ProductId', 'CategoryId'}.
+2024-04-19 17:12:31.611 +07:00 [DBG] The index {'RoleId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'RoleId', 'UserId'}.
+2024-04-19 17:12:31.739 +07:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-04-19 17:12:31.775 +07:00 [DBG] The property 'IdentityUserToken<Guid>.Discriminator' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-04-19 17:12:31.808 +07:00 [WRN] No store type was specified for the decimal property 'Amout' on entity type 'Cart'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-19 17:12:31.808 +07:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'CartProduct'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-19 17:12:31.809 +07:00 [WRN] No store type was specified for the decimal property 'Amout' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-19 17:12:31.809 +07:00 [WRN] No store type was specified for the decimal property 'AmoutTotal' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-19 17:12:31.809 +07:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-19 17:12:31.809 +07:00 [WRN] No store type was specified for the decimal property 'Shipping' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-19 17:12:31.810 +07:00 [WRN] No store type was specified for the decimal property 'Tax' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-19 17:12:31.810 +07:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'OrderProduct'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-19 17:12:31.810 +07:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-19 17:12:31.810 +07:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-19 17:12:32.052 +07:00 [DBG] Entity Framework Core 8.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.3' with options: SensitiveDataLoggingEnabled DetailedErrorsEnabled using lazy loading proxies QuerySplittingBehavior=SplitQuery MigrationsAssembly=FoodShop.Persistence 
+2024-04-19 17:12:32.060 +07:00 [DBG] Creating DbConnection.
+2024-04-19 17:12:32.110 +07:00 [DBG] Created DbConnection. (48ms).
+2024-04-19 17:12:32.112 +07:00 [DBG] Migrating using database 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.120 +07:00 [DBG] Opening connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.369 +07:00 [DBG] Opened connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.376 +07:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-04-19 17:12:32.382 +07:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (6ms).
+2024-04-19 17:12:32.384 +07:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (11ms).
+2024-04-19 17:12:32.391 +07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-19 17:12:32.418 +07:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-19 17:12:32.420 +07:00 [DBG] Closing connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.427 +07:00 [DBG] Closed connection to database 'FoodShop' on server 'localhost' (4ms).
+2024-04-19 17:12:32.430 +07:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-04-19 17:12:32.431 +07:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-04-19 17:12:32.431 +07:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-04-19 17:12:32.431 +07:00 [DBG] Opening connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.432 +07:00 [DBG] Opened connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.432 +07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-19 17:12:32.446 +07:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-19 17:12:32.446 +07:00 [DBG] Closing connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.447 +07:00 [DBG] Closed connection to database 'FoodShop' on server 'localhost' (0ms).
+2024-04-19 17:12:32.447 +07:00 [DBG] Opening connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.448 +07:00 [DBG] Opened connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.448 +07:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-04-19 17:12:32.448 +07:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-04-19 17:12:32.448 +07:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-04-19 17:12:32.448 +07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-19 17:12:32.450 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-19 17:12:32.450 +07:00 [DBG] Closing connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.450 +07:00 [DBG] Closed connection to database 'FoodShop' on server 'localhost' (0ms).
+2024-04-19 17:12:32.451 +07:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-04-19 17:12:32.451 +07:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-04-19 17:12:32.451 +07:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-04-19 17:12:32.451 +07:00 [DBG] Opening connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.451 +07:00 [DBG] Opened connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.452 +07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-19 17:12:32.452 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-19 17:12:32.453 +07:00 [DBG] Closing connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.453 +07:00 [DBG] Closed connection to database 'FoodShop' on server 'localhost' (0ms).
+2024-04-19 17:12:32.462 +07:00 [DBG] Opening connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.463 +07:00 [DBG] Opened connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.463 +07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-04-19 17:12:32.463 +07:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-04-19 17:12:32.463 +07:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-04-19 17:12:32.464 +07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-04-19 17:12:32.472 +07:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-04-19 17:12:32.474 +07:00 [DBG] Closing data reader to 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.475 +07:00 [DBG] A data reader for 'FoodShop' on server 'localhost' is being disposed after spending 1ms reading results.
+2024-04-19 17:12:32.476 +07:00 [DBG] Closing connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.476 +07:00 [DBG] Closed connection to database 'FoodShop' on server 'localhost' (0ms).
+2024-04-19 17:12:32.483 +07:00 [INF] No migrations were applied. The database is already up to date.
+2024-04-19 17:12:32.615 +07:00 [DBG] Compiling query expression: 
+'DbSet<AppUser>()
+    .Any()'
+2024-04-19 17:12:32.745 +07:00 [DBG] Generated query execution expression: 
+'queryContext => new SplitQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM AppUser AS a)), 
+    ReaderColumn[] { ReaderColumn<bool> }, 
+    Func<QueryContext, DbDataReader, ResultContext, SplitQueryResultCoordinator, bool>, 
+    null, 
+    null, 
+    FoodShop.Persistence.ApplicationDbContext, 
+    False, 
+    True, 
+    True
+)
+    .Single()'
+2024-04-19 17:12:32.766 +07:00 [DBG] Opening connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.766 +07:00 [DBG] Opened connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.767 +07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-04-19 17:12:32.767 +07:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-04-19 17:12:32.767 +07:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-04-19 17:12:32.767 +07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUser] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-04-19 17:12:32.772 +07:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUser] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-04-19 17:12:32.784 +07:00 [DBG] Closing data reader to 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.784 +07:00 [DBG] A data reader for 'FoodShop' on server 'localhost' is being disposed after spending 2ms reading results.
+2024-04-19 17:12:32.785 +07:00 [DBG] Closing connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.785 +07:00 [DBG] Closed connection to database 'FoodShop' on server 'localhost' (0ms).
+2024-04-19 17:12:32.788 +07:00 [DBG] Compiling query expression: 
+'DbSet<AppRole>()
+    .Any()'
+2024-04-19 17:12:32.791 +07:00 [DBG] Generated query execution expression: 
+'queryContext => new SplitQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM AppRole AS a)), 
+    ReaderColumn[] { ReaderColumn<bool> }, 
+    Func<QueryContext, DbDataReader, ResultContext, SplitQueryResultCoordinator, bool>, 
+    null, 
+    null, 
+    FoodShop.Persistence.ApplicationDbContext, 
+    False, 
+    True, 
+    True
+)
+    .Single()'
+2024-04-19 17:12:32.792 +07:00 [DBG] Opening connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.792 +07:00 [DBG] Opened connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.793 +07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-04-19 17:12:32.793 +07:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-04-19 17:12:32.793 +07:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-04-19 17:12:32.793 +07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRole] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-04-19 17:12:32.796 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRole] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-04-19 17:12:32.797 +07:00 [DBG] Closing data reader to 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.798 +07:00 [DBG] A data reader for 'FoodShop' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-04-19 17:12:32.798 +07:00 [DBG] Closing connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.798 +07:00 [DBG] Closed connection to database 'FoodShop' on server 'localhost' (0ms).
+2024-04-19 17:12:32.799 +07:00 [DBG] Compiling query expression: 
+'DbSet<IdentityUserRole<Guid>>()
+    .Any()'
+2024-04-19 17:12:32.801 +07:00 [DBG] Generated query execution expression: 
+'queryContext => new SplitQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM AppUserRole AS a)), 
+    ReaderColumn[] { ReaderColumn<bool> }, 
+    Func<QueryContext, DbDataReader, ResultContext, SplitQueryResultCoordinator, bool>, 
+    null, 
+    null, 
+    FoodShop.Persistence.ApplicationDbContext, 
+    False, 
+    True, 
+    True
+)
+    .Single()'
+2024-04-19 17:12:32.802 +07:00 [DBG] Opening connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.802 +07:00 [DBG] Opened connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.802 +07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-04-19 17:12:32.802 +07:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-04-19 17:12:32.803 +07:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-04-19 17:12:32.803 +07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUserRole] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-04-19 17:12:32.806 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUserRole] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-04-19 17:12:32.806 +07:00 [DBG] Closing data reader to 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.807 +07:00 [DBG] A data reader for 'FoodShop' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-04-19 17:12:32.807 +07:00 [DBG] Closing connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.807 +07:00 [DBG] Closed connection to database 'FoodShop' on server 'localhost' (0ms).
+2024-04-19 17:12:32.809 +07:00 [DBG] 'ApplicationDbContext' disposed.
+2024-04-19 17:12:32.812 +07:00 [DBG] Disposing connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:12:32.813 +07:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-04-19 17:12:32.908 +07:00 [DBG] Registered model binder providers, in the following order: ["Asp.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-04-19 17:12:32.976 +07:00 [DBG] Hosting starting
+2024-04-19 17:12:33.002 +07:00 [INF] User profile is available. Using 'C:\Users\hieud\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-19 17:12:33.009 +07:00 [DBG] Reading data from file 'C:\Users\hieud\AppData\Local\ASP.NET\DataProtection-Keys\key-5b2baa0a-904f-4101-af08-7ac673b8db2c.xml'.
+2024-04-19 17:12:33.032 +07:00 [DBG] Found key {5b2baa0a-904f-4101-af08-7ac673b8db2c}.
+2024-04-19 17:12:33.043 +07:00 [DBG] Considering key {5b2baa0a-904f-4101-af08-7ac673b8db2c} with expiration date 2024-05-20 17:09:10Z as default key.
+2024-04-19 17:12:33.047 +07:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-04-19 17:12:33.048 +07:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-04-19 17:12:33.050 +07:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-04-19 17:12:33.052 +07:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-04-19 17:12:33.056 +07:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-04-19 17:12:33.058 +07:00 [DBG] Using key {5b2baa0a-904f-4101-af08-7ac673b8db2c} as the default key.
+2024-04-19 17:12:33.059 +07:00 [DBG] Key ring with default key {5b2baa0a-904f-4101-af08-7ac673b8db2c} was loaded during application startup.
+2024-04-19 17:12:33.232 +07:00 [INF] Now listening on: https://localhost:7286
+2024-04-19 17:12:33.232 +07:00 [INF] Now listening on: http://localhost:5010
+2024-04-19 17:12:33.232 +07:00 [DBG] Loaded hosting startup assembly FoodShop.API
+2024-04-19 17:12:33.232 +07:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-04-19 17:12:33.232 +07:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-04-19 17:12:33.232 +07:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-04-19 17:12:33.290 +07:00 [DBG] Connection id "0HN30B4TB50FM" accepted.
+2024-04-19 17:12:33.291 +07:00 [DBG] Connection id "0HN30B4TB50FM" started.
+2024-04-19 17:12:33.295 +07:00 [DBG] Connection id "0HN30B4TB50FN" accepted.
+2024-04-19 17:12:33.296 +07:00 [DBG] Connection id "0HN30B4TB50FN" started.
+2024-04-19 17:12:33.309 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-19 17:12:33.309 +07:00 [INF] Hosting environment: Development
+2024-04-19 17:12:33.309 +07:00 [INF] Content root path: C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API
+2024-04-19 17:12:33.310 +07:00 [DBG] Hosting started
+2024-04-19 17:12:33.606 +07:00 [DBG] Connection id "0HN30B4TB50FO" accepted.
+2024-04-19 17:12:33.608 +07:00 [DBG] Connection id "0HN30B4TB50FO" started.
+2024-04-19 17:12:33.655 +07:00 [DBG] Connection 0HN30B4TB50FO established using the following protocol: "Tls13"
+2024-04-19 17:12:33.716 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7286/swagger - null null
+2024-04-19 17:12:33.836 +07:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-04-19 17:12:33.866 +07:00 [DBG] No candidates found for the request path '/swagger'
+2024-04-19 17:12:33.867 +07:00 [DBG] Request did not match any endpoints
+2024-04-19 17:12:33.927 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-04-19 17:12:33.942 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7286/swagger - 301 0 null 230.3408ms
+2024-04-19 17:12:33.951 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7286/swagger/index.html - null null
+2024-04-19 17:12:33.955 +07:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-04-19 17:12:33.955 +07:00 [DBG] Request did not match any endpoints
+2024-04-19 17:12:33.956 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-04-19 17:12:33.988 +07:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-04-19 17:12:33.990 +07:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-04-19 17:12:34.007 +07:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-04-19 17:12:34.007 +07:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-04-19 17:12:34.008 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7286/swagger/index.html - 200 null text/html;charset=utf-8 57.1392ms
+2024-04-19 17:12:34.035 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7286/swagger/swagger-ui.css - null null
+2024-04-19 17:12:34.039 +07:00 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2024-04-19 17:12:34.039 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7286/swagger/swagger-ui-standalone-preset.js - null null
+2024-04-19 17:12:34.036 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7286/swagger/swagger-ui-bundle.js - null null
+2024-04-19 17:12:34.040 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7286/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-19 17:12:34.041 +07:00 [DBG] Request did not match any endpoints
+2024-04-19 17:12:34.042 +07:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2024-04-19 17:12:34.042 +07:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2024-04-19 17:12:34.042 +07:00 [DBG] Request did not match any endpoints
+2024-04-19 17:12:34.042 +07:00 [DBG] Request did not match any endpoints
+2024-04-19 17:12:34.045 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-04-19 17:12:34.045 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-04-19 17:12:34.045 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-04-19 17:12:34.054 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7286/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 15.0179ms
+2024-04-19 17:12:34.088 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7286/_vs/browserLink - null null
+2024-04-19 17:12:34.092 +07:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-04-19 17:12:34.092 +07:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-04-19 17:12:34.095 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7286/swagger/swagger-ui.css - 200 143943 text/css 60.3754ms
+2024-04-19 17:12:34.095 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7286/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 55.7908ms
+2024-04-19 17:12:34.122 +07:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-04-19 17:12:34.123 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7286/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 86.9614ms
+2024-04-19 17:12:34.159 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7286/_vs/browserLink - 200 null text/javascript; charset=UTF-8 71.1563ms
+2024-04-19 17:12:34.797 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7286/swagger/v1/swagger.json - null null
+2024-04-19 17:12:34.798 +07:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-04-19 17:12:34.798 +07:00 [DBG] Request did not match any endpoints
+2024-04-19 17:12:34.798 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-04-19 17:12:34.928 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7286/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 131.3309ms
+2024-04-19 17:13:49.949 +07:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-04-19 17:13:50.514 +07:00 [DBG] The index {'ProductId'} was not created on entity type 'CartProduct' as the properties are already covered by the index {'ProductId', 'CartId'}.
+2024-04-19 17:13:50.515 +07:00 [DBG] The index {'OrderId'} was not created on entity type 'OrderProduct' as the properties are already covered by the index {'OrderId', 'ProductId'}.
+2024-04-19 17:13:50.516 +07:00 [DBG] The index {'ProductId'} was not created on entity type 'ProductCategory' as the properties are already covered by the index {'ProductId', 'CategoryId'}.
+2024-04-19 17:13:50.516 +07:00 [DBG] The index {'RoleId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'RoleId', 'UserId'}.
+2024-04-19 17:13:50.628 +07:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-04-19 17:13:50.661 +07:00 [DBG] The property 'IdentityUserToken<Guid>.Discriminator' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-04-19 17:13:50.689 +07:00 [WRN] No store type was specified for the decimal property 'Amout' on entity type 'Cart'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-19 17:13:50.690 +07:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'CartProduct'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-19 17:13:50.690 +07:00 [WRN] No store type was specified for the decimal property 'Amout' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-19 17:13:50.690 +07:00 [WRN] No store type was specified for the decimal property 'AmoutTotal' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-19 17:13:50.690 +07:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-19 17:13:50.691 +07:00 [WRN] No store type was specified for the decimal property 'Shipping' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-19 17:13:50.691 +07:00 [WRN] No store type was specified for the decimal property 'Tax' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-19 17:13:50.691 +07:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'OrderProduct'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-19 17:13:50.691 +07:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-19 17:13:50.692 +07:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-19 17:13:50.829 +07:00 [DBG] Entity Framework Core 8.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.3' with options: SensitiveDataLoggingEnabled DetailedErrorsEnabled using lazy loading proxies QuerySplittingBehavior=SplitQuery MigrationsAssembly=FoodShop.Persistence 
+2024-04-19 17:13:50.834 +07:00 [DBG] Creating DbConnection.
+2024-04-19 17:13:50.866 +07:00 [DBG] Created DbConnection. (29ms).
+2024-04-19 17:13:50.868 +07:00 [DBG] Migrating using database 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:50.872 +07:00 [DBG] Opening connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.091 +07:00 [DBG] Opened connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.097 +07:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-04-19 17:13:51.102 +07:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (5ms).
+2024-04-19 17:13:51.104 +07:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (9ms).
+2024-04-19 17:13:51.109 +07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-19 17:13:51.129 +07:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-19 17:13:51.130 +07:00 [DBG] Closing connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.136 +07:00 [DBG] Closed connection to database 'FoodShop' on server 'localhost' (3ms).
+2024-04-19 17:13:51.138 +07:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-04-19 17:13:51.138 +07:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-04-19 17:13:51.138 +07:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-04-19 17:13:51.138 +07:00 [DBG] Opening connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.139 +07:00 [DBG] Opened connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.139 +07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-19 17:13:51.151 +07:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-19 17:13:51.151 +07:00 [DBG] Closing connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.151 +07:00 [DBG] Closed connection to database 'FoodShop' on server 'localhost' (0ms).
+2024-04-19 17:13:51.152 +07:00 [DBG] Opening connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.152 +07:00 [DBG] Opened connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.152 +07:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-04-19 17:13:51.152 +07:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-04-19 17:13:51.152 +07:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-04-19 17:13:51.152 +07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-19 17:13:51.153 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-19 17:13:51.153 +07:00 [DBG] Closing connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.154 +07:00 [DBG] Closed connection to database 'FoodShop' on server 'localhost' (0ms).
+2024-04-19 17:13:51.154 +07:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-04-19 17:13:51.154 +07:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-04-19 17:13:51.154 +07:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-04-19 17:13:51.154 +07:00 [DBG] Opening connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.154 +07:00 [DBG] Opened connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.154 +07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-19 17:13:51.155 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-19 17:13:51.155 +07:00 [DBG] Closing connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.155 +07:00 [DBG] Closed connection to database 'FoodShop' on server 'localhost' (0ms).
+2024-04-19 17:13:51.162 +07:00 [DBG] Opening connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.163 +07:00 [DBG] Opened connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.163 +07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-04-19 17:13:51.163 +07:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-04-19 17:13:51.163 +07:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-04-19 17:13:51.163 +07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-04-19 17:13:51.167 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-04-19 17:13:51.169 +07:00 [DBG] Closing data reader to 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.169 +07:00 [DBG] A data reader for 'FoodShop' on server 'localhost' is being disposed after spending 1ms reading results.
+2024-04-19 17:13:51.170 +07:00 [DBG] Closing connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.170 +07:00 [DBG] Closed connection to database 'FoodShop' on server 'localhost' (0ms).
+2024-04-19 17:13:51.176 +07:00 [INF] No migrations were applied. The database is already up to date.
+2024-04-19 17:13:51.277 +07:00 [DBG] Compiling query expression: 
+'DbSet<AppUser>()
+    .Any()'
+2024-04-19 17:13:51.371 +07:00 [DBG] Generated query execution expression: 
+'queryContext => new SplitQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM AppUser AS a)), 
+    ReaderColumn[] { ReaderColumn<bool> }, 
+    Func<QueryContext, DbDataReader, ResultContext, SplitQueryResultCoordinator, bool>, 
+    null, 
+    null, 
+    FoodShop.Persistence.ApplicationDbContext, 
+    False, 
+    True, 
+    True
+)
+    .Single()'
+2024-04-19 17:13:51.386 +07:00 [DBG] Opening connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.387 +07:00 [DBG] Opened connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.387 +07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-04-19 17:13:51.387 +07:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-04-19 17:13:51.387 +07:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-04-19 17:13:51.388 +07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUser] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-04-19 17:13:51.391 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUser] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-04-19 17:13:51.399 +07:00 [DBG] Closing data reader to 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.399 +07:00 [DBG] A data reader for 'FoodShop' on server 'localhost' is being disposed after spending 1ms reading results.
+2024-04-19 17:13:51.400 +07:00 [DBG] Closing connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.400 +07:00 [DBG] Closed connection to database 'FoodShop' on server 'localhost' (0ms).
+2024-04-19 17:13:51.403 +07:00 [DBG] Compiling query expression: 
+'DbSet<AppRole>()
+    .Any()'
+2024-04-19 17:13:51.405 +07:00 [DBG] Generated query execution expression: 
+'queryContext => new SplitQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM AppRole AS a)), 
+    ReaderColumn[] { ReaderColumn<bool> }, 
+    Func<QueryContext, DbDataReader, ResultContext, SplitQueryResultCoordinator, bool>, 
+    null, 
+    null, 
+    FoodShop.Persistence.ApplicationDbContext, 
+    False, 
+    True, 
+    True
+)
+    .Single()'
+2024-04-19 17:13:51.406 +07:00 [DBG] Opening connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.407 +07:00 [DBG] Opened connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.407 +07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-04-19 17:13:51.407 +07:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-04-19 17:13:51.407 +07:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-04-19 17:13:51.407 +07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRole] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-04-19 17:13:51.410 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRole] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-04-19 17:13:51.410 +07:00 [DBG] Closing data reader to 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.411 +07:00 [DBG] A data reader for 'FoodShop' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-04-19 17:13:51.411 +07:00 [DBG] Closing connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.411 +07:00 [DBG] Closed connection to database 'FoodShop' on server 'localhost' (0ms).
+2024-04-19 17:13:51.412 +07:00 [DBG] Compiling query expression: 
+'DbSet<IdentityUserRole<Guid>>()
+    .Any()'
+2024-04-19 17:13:51.413 +07:00 [DBG] Generated query execution expression: 
+'queryContext => new SplitQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM AppUserRole AS a)), 
+    ReaderColumn[] { ReaderColumn<bool> }, 
+    Func<QueryContext, DbDataReader, ResultContext, SplitQueryResultCoordinator, bool>, 
+    null, 
+    null, 
+    FoodShop.Persistence.ApplicationDbContext, 
+    False, 
+    True, 
+    True
+)
+    .Single()'
+2024-04-19 17:13:51.414 +07:00 [DBG] Opening connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.414 +07:00 [DBG] Opened connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.414 +07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-04-19 17:13:51.414 +07:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-04-19 17:13:51.415 +07:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-04-19 17:13:51.415 +07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUserRole] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-04-19 17:13:51.417 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUserRole] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-04-19 17:13:51.417 +07:00 [DBG] Closing data reader to 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.417 +07:00 [DBG] A data reader for 'FoodShop' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-04-19 17:13:51.417 +07:00 [DBG] Closing connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.418 +07:00 [DBG] Closed connection to database 'FoodShop' on server 'localhost' (0ms).
+2024-04-19 17:13:51.419 +07:00 [DBG] 'ApplicationDbContext' disposed.
+2024-04-19 17:13:51.420 +07:00 [DBG] Disposing connection to database 'FoodShop' on server 'localhost'.
+2024-04-19 17:13:51.421 +07:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-04-19 17:13:51.475 +07:00 [DBG] Registered model binder providers, in the following order: ["Asp.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-04-19 17:13:51.536 +07:00 [DBG] Hosting starting
+2024-04-19 17:13:51.554 +07:00 [INF] User profile is available. Using 'C:\Users\hieud\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-19 17:13:51.560 +07:00 [DBG] Reading data from file 'C:\Users\hieud\AppData\Local\ASP.NET\DataProtection-Keys\key-5b2baa0a-904f-4101-af08-7ac673b8db2c.xml'.
+2024-04-19 17:13:51.565 +07:00 [DBG] Found key {5b2baa0a-904f-4101-af08-7ac673b8db2c}.
+2024-04-19 17:13:51.573 +07:00 [DBG] Considering key {5b2baa0a-904f-4101-af08-7ac673b8db2c} with expiration date 2024-05-20 17:09:10Z as default key.
+2024-04-19 17:13:51.576 +07:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-04-19 17:13:51.577 +07:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-04-19 17:13:51.578 +07:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-04-19 17:13:51.579 +07:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-04-19 17:13:51.582 +07:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-04-19 17:13:51.584 +07:00 [DBG] Using key {5b2baa0a-904f-4101-af08-7ac673b8db2c} as the default key.
+2024-04-19 17:13:51.585 +07:00 [DBG] Key ring with default key {5b2baa0a-904f-4101-af08-7ac673b8db2c} was loaded during application startup.
+2024-04-19 17:13:51.722 +07:00 [INF] Now listening on: https://localhost:7286
+2024-04-19 17:13:51.722 +07:00 [INF] Now listening on: http://localhost:5010
+2024-04-19 17:13:51.722 +07:00 [DBG] Loaded hosting startup assembly FoodShop.API
+2024-04-19 17:13:51.723 +07:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-04-19 17:13:51.723 +07:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-04-19 17:13:51.723 +07:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-04-19 17:13:51.797 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-19 17:13:51.798 +07:00 [INF] Hosting environment: Development
+2024-04-19 17:13:51.798 +07:00 [INF] Content root path: C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API
+2024-04-19 17:13:51.799 +07:00 [DBG] Hosting started
+2024-04-19 17:13:51.915 +07:00 [DBG] Connection id "0HN30B5KOVIV8" received FIN.
+2024-04-19 17:13:51.926 +07:00 [DBG] Connection id "0HN30B5KOVIV8" accepted.
+2024-04-19 17:13:51.928 +07:00 [DBG] Connection id "0HN30B5KOVIV8" started.
+2024-04-19 17:13:51.948 +07:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-04-19 17:13:51.963 +07:00 [DBG] Connection id "0HN30B5KOVIV8" stopped.
+2024-04-19 17:13:51.976 +07:00 [DBG] Connection id "0HN30B5KOVIV8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-04-19 17:13:52.266 +07:00 [DBG] Connection id "0HN30B5KOVIV9" accepted.
+2024-04-19 17:13:52.267 +07:00 [DBG] Connection id "0HN30B5KOVIV9" started.
+2024-04-19 17:13:52.304 +07:00 [DBG] Connection 0HN30B5KOVIV9 established using the following protocol: "Tls13"
+2024-04-19 17:13:52.353 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7286/swagger/index.html - null null
+2024-04-19 17:13:52.440 +07:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-04-19 17:13:52.472 +07:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-04-19 17:13:52.473 +07:00 [DBG] Request did not match any endpoints
+2024-04-19 17:13:52.521 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-04-19 17:13:52.563 +07:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-04-19 17:13:52.564 +07:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-04-19 17:13:52.581 +07:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-04-19 17:13:52.583 +07:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-04-19 17:13:52.586 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7286/swagger/index.html - 200 null text/html;charset=utf-8 236.4688ms
+2024-04-19 17:13:52.654 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7286/_vs/browserLink - null null
+2024-04-19 17:13:52.654 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7286/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-19 17:13:52.676 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7286/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 21.9825ms
+2024-04-19 17:13:52.712 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7286/_vs/browserLink - 200 null text/javascript; charset=UTF-8 58.0758ms
+2024-04-19 17:13:53.567 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7286/swagger/v1/swagger.json - null null
+2024-04-19 17:13:53.568 +07:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-04-19 17:13:53.569 +07:00 [DBG] Request did not match any endpoints
+2024-04-19 17:13:53.571 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-04-19 17:13:53.722 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7286/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 156.1342ms

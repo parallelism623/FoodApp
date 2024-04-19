@@ -34,6 +34,8 @@ builder.Services.AddIdentity<AppUser, AppRole>()
 builder.Services.AddTransient<ExceptionHandlingMiddleware>();
 #region AddServices
 builder
+    .Services.AddDistributedCacheConfig(builder.Configuration.GetRequiredSection("RedisSettings"));
+builder
     .Services.AddSqlConfiguration();
 builder
     .Services.AddConfigureMediatR()

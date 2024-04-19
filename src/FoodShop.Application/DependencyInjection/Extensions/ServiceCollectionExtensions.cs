@@ -11,12 +11,15 @@ using System.Threading.Tasks;
 
 namespace FoodShop.Application.DependencyInjection.Extensions
 {
-    public static class ServiceCollectionExtensions 
+    public static class ServiceCollectionExtensions
     {
         public static IServiceCollection AddConfigureMediatR(this IServiceCollection services)
-            => services.AddMediatR(cgf => cgf.RegisterServicesFromAssembly(typeof(ServiceCollectionExtensions).Assembly))
-                       .AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>))
-                       .AddValidatorsFromAssembly(AssemblyReference.Assembly, includeInternalTypes: true);
+            => services.AddMediatR(cgf =>
+                        {
+                            cgf.RegisterServicesFromAssembly(typeof(ServiceCollectionExtensions).Assembly);
+                            cgf.AddOpenBehavior(typeof(ValidationBehavior<,>));
+                        })
+                        .AddValidatorsFromAssembly(AssemblyReference.Assembly, includeInternalTypes: true);
         public static IServiceCollection AddConfigureAutoMapper(this IServiceCollection services)
             => services.AddAutoMapper(typeof(ServiceProfile));
     }
