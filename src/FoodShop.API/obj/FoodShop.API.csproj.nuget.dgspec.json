@@ -357,7 +357,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\FoodShop.Contract.csproj": {
+                "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\FoodShop.Contract.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

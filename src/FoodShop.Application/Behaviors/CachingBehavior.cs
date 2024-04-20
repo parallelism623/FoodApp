@@ -1,4 +1,4 @@
-﻿using FoodShop.Application.Services.DistributedCache;
+﻿using FoodShop.Application.Abstraction.Messaging;
 using FoodShop.Contract.Abstraction.Message;
 using MediatR;
 using Microsoft.AspNetCore.Http;

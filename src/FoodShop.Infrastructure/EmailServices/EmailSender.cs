@@ -1,5 +1,5 @@
 ﻿
-using FoodShop.Application.Services.Mail;
+using FoodShop.Application.Abstraction.Messaging;
 using FoodShop.Contract.Abstraction.Shared;
 using FoodShop.Infrastructure.DependencyInjection.Options;
 using MailKit.Net.Smtp;

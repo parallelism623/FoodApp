@@ -1,4 +1,4 @@
-﻿using FoodShop.Application.Services.DistributedCache;
+﻿using FoodShop.Application.Abstraction.Messaging;
 using FoodShop.Domain.Exceptions;
 using Google.Apis;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;

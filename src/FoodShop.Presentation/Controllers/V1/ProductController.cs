@@ -1,5 +1,5 @@
 ﻿using Asp.Versioning;
-using FoodShop.Application.Services.Product;
+using FoodShop.Application.Products.ProductQuery;
 using FoodShop.Contract.Abstraction.Constrant;
 using FoodShop.Contract.Abstraction.Shared;
 using FoodShop.Contract.DataTransferObjects.Request.V1;

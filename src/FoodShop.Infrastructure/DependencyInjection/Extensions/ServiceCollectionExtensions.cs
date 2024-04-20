@@ -1,6 +1,4 @@
-﻿using FoodShop.Application.Services.Authentication;
-using FoodShop.Application.Services.DistributedCache;
-using FoodShop.Application.Services.Mail;
+﻿using FoodShop.Application.Abstraction.Messaging;
 using FoodShop.Infrastructure.Authentication;
 using FoodShop.Infrastructure.Caching;
 using FoodShop.Infrastructure.DependencyInjection.Options;

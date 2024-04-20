@@ -1,4 +1,5 @@
 ﻿using Asp.Versioning;
+using FoodShop.Application.Abstraction.Messaging;
 using FoodShop.Application.Services.Authentication;
 using FoodShop.Application.Services.Mail;
 using FoodShop.Contract.Abstraction.Constrant;

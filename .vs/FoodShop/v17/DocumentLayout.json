@@ -3,6 +3,42 @@
   "WorkspaceRootPath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\users\\authentication\\loginhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\users\\authentication\\loginhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\users\\events\\domainevents\\domainevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\users\\events\\domainevents\\domainevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\products\\productquery\\query.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\products\\productquery\\query.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\products\\productquery\\getproductbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\products\\productquery\\getproductbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\products\\productcommand\\command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\products\\productcommand\\command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\users\\authentication\\loginwithgooglehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\users\\authentication\\loginwithgooglehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\abstraction\\messaging\\icacheservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\abstraction\\messaging\\icacheservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\abstraction\\messaging\\iemailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\abstraction\\messaging\\iemailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\foodshop.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\foodshop.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\behaviors\\cachingbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\behaviors\\cachingbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D7F73768-BF6B-4999-BDDD-F9358E902E01}|src\\FoodShop.API\\FoodShop.API.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.api\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7F73768-BF6B-4999-BDDD-F9358E902E01}|src\\FoodShop.API\\FoodShop.API.csproj|solutionrelative:src\\foodshop.api\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\usecases\\v1\\commands\\authenticationcommand\\loginhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\usecases\\v1\\commands\\authenticationcommand\\loginhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{58162130-02EC-4C0A-973B-3267F8902359}|src\\FoodShop.Persistence\\FoodShop.Persistence.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.persistence\\dependencyinjection\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,18 +87,6 @@
       "RelativeMoniker": "D:0:0:{58162130-02EC-4C0A-973B-3267F8902359}|src\\FoodShop.Persistence\\FoodShop.Persistence.csproj|solutionrelative:src\\foodshop.persistence\\foodshop.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\services\\product\\query.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\services\\product\\query.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\services\\product\\command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\services\\product\\command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\usecases\\v1\\queries\\productquery\\getproductbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\usecases\\v1\\queries\\productquery\\getproductbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{347EEC4A-43C2-424B-9752-5F7E820A1ADE}|src\\FoodShop.Contract\\FoodShop.Contract.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.contract\\abstraction\\message\\iqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{347EEC4A-43C2-424B-9752-5F7E820A1ADE}|src\\FoodShop.Contract\\FoodShop.Contract.csproj|solutionrelative:src\\foodshop.contract\\abstraction\\message\\iqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -79,12 +99,8 @@
       "RelativeMoniker": "D:0:0:{347EEC4A-43C2-424B-9752-5F7E820A1ADE}|src\\FoodShop.Contract\\FoodShop.Contract.csproj|solutionrelative:src\\foodshop.contract\\abstraction\\message\\icachedquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\services\\distributedcache\\icacheservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\services\\distributedcache\\icacheservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\usecases\\v1\\commands\\productcommand\\createproducthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\usecases\\v1\\commands\\productcommand\\createproducthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\products\\productcommand\\createproducthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\products\\productcommand\\createproducthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9D6562CD-534D-4CD5-817E-64DFC54ACE54}|src\\FoodShop.Infrastructure\\FoodShop.Infrastructure.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.infrastructure\\authentication\\authenticationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -115,12 +131,12 @@
       "RelativeMoniker": "D:0:0:{D7F73768-BF6B-4999-BDDD-F9358E902E01}|src\\FoodShop.API\\FoodShop.API.csproj|solutionrelative:src\\foodshop.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\services\\authentication\\validation\\loginrequestvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\services\\authentication\\validation\\loginrequestvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\users\\authentication\\validation\\loginrequestvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\users\\authentication\\validation\\loginrequestvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\services\\authentication\\validation\\registerrequestvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\services\\authentication\\validation\\registerrequestvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\users\\authentication\\validation\\registerrequestvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\users\\authentication\\validation\\registerrequestvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{347EEC4A-43C2-424B-9752-5F7E820A1ADE}|src\\FoodShop.Contract\\FoodShop.Contract.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.contract\\datatransferobjects\\respone\\v1\\userauthresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -139,24 +155,20 @@
       "RelativeMoniker": "D:0:0:{3A75F267-4467-46C1-8612-B931BF026660}|src\\FoodShop.Presentation\\FoodShop.Presentation.csproj|solutionrelative:src\\foodshop.presentation\\controllers\\v1\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\usecases\\v1\\commands\\authenticationcommand\\loginwithfacebookhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\usecases\\v1\\commands\\authenticationcommand\\loginwithfacebookhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\usecases\\v1\\commands\\authenticationcommand\\loginwithgooglehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\usecases\\v1\\commands\\authenticationcommand\\loginwithgooglehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\users\\authentication\\loginwithfacebookhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\users\\authentication\\loginwithfacebookhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{347EEC4A-43C2-424B-9752-5F7E820A1ADE}|src\\FoodShop.Contract\\FoodShop.Contract.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.contract\\datatransferobjects\\respone\\v1\\facebookuserinforesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{347EEC4A-43C2-424B-9752-5F7E820A1ADE}|src\\FoodShop.Contract\\FoodShop.Contract.csproj|solutionrelative:src\\foodshop.contract\\datatransferobjects\\respone\\v1\\facebookuserinforesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\services\\authentication\\command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\services\\authentication\\command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\users\\authentication\\command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\users\\authentication\\command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\usecases\\v1\\commands\\authenticationcommand\\registerhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\usecases\\v1\\commands\\authenticationcommand\\registerhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\users\\authentication\\registerhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\users\\authentication\\registerhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{347EEC4A-43C2-424B-9752-5F7E820A1ADE}|src\\FoodShop.Contract\\FoodShop.Contract.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.contract\\abstraction\\shared\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -167,20 +179,20 @@
       "RelativeMoniker": "D:0:0:{347EEC4A-43C2-424B-9752-5F7E820A1ADE}|src\\FoodShop.Contract\\FoodShop.Contract.csproj|solutionrelative:src\\foodshop.contract\\abstraction\\shared\\error.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\services\\authentication\\iauthenticationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\services\\authentication\\iauthenticationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\abstraction\\messaging\\iauthenticationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\abstraction\\messaging\\iauthenticationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{347EEC4A-43C2-424B-9752-5F7E820A1ADE}|src\\FoodShop.Contract\\FoodShop.Contract.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.contract\\datatransferobjects\\request\\v1\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{347EEC4A-43C2-424B-9752-5F7E820A1ADE}|src\\FoodShop.Contract\\FoodShop.Contract.csproj|solutionrelative:src\\foodshop.contract\\datatransferobjects\\request\\v1\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\usecases\\v1\\commands\\productcommand\\updateproducthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\usecases\\v1\\commands\\productcommand\\updateproducthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\products\\productcommand\\updateproducthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\products\\productcommand\\updateproducthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\usecases\\v1\\commands\\productcommand\\deleteproducthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\usecases\\v1\\commands\\productcommand\\deleteproducthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\products\\productcommand\\deleteproducthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\products\\productcommand\\deleteproducthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{347EEC4A-43C2-424B-9752-5F7E820A1ADE}|src\\FoodShop.Contract\\FoodShop.Contract.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.contract\\abstraction\\constrant\\messengerresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -195,8 +207,8 @@
       "RelativeMoniker": "D:0:0:{58162130-02EC-4C0A-973B-3267F8902359}|src\\FoodShop.Persistence\\FoodShop.Persistence.csproj|solutionrelative:src\\foodshop.persistence\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\usecases\\v1\\domainevents\\sendmailhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\usecases\\v1\\domainevents\\sendmailhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\users\\events\\domainevents\\sendmailhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\users\\events\\domainevents\\sendmailhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D7F73768-BF6B-4999-BDDD-F9358E902E01}|src\\FoodShop.API\\FoodShop.API.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.api\\foodshop.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
@@ -323,28 +335,16 @@
       "RelativeMoniker": "D:0:0:{58162130-02EC-4C0A-973B-3267F8902359}|src\\FoodShop.Persistence\\FoodShop.Persistence.csproj|solutionrelative:src\\foodshop.persistence\\configuration\\identityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\services\\mail\\domainevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\services\\mail\\domainevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\products\\validation\\updateproductvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\products\\validation\\updateproductvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\services\\mail\\iemailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\services\\mail\\iemailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\products\\productquery\\getproductshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\products\\productquery\\getproductshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\services\\product\\validation\\updateproductvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\services\\product\\validation\\updateproductvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\services\\product\\domainevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\services\\product\\domainevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\usecases\\v1\\queries\\productquery\\getproductshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\usecases\\v1\\queries\\productquery\\getproductshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\services\\product\\validation\\createproductvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\services\\product\\validation\\createproductvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.application\\products\\validation\\createproductvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB1B524-8502-474B-B78E-B77476B520C8}|src\\FoodShop.Application\\FoodShop.Application.csproj|solutionrelative:src\\foodshop.application\\products\\validation\\createproductvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{58162130-02EC-4C0A-973B-3267F8902359}|src\\FoodShop.Persistence\\FoodShop.Persistence.csproj|c:\\users\\hieud\\code\\c#\\foodshop\\foodshop\\src\\foodshop.persistence\\dependencyinjection\\options\\sqlserverretryoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -448,7 +448,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -456,20 +456,173 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ValidationBehavior.cs",
-              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Behaviors\\ValidationBehavior.cs",
-              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Behaviors\\ValidationBehavior.cs",
-              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Behaviors\\ValidationBehavior.cs",
-              "RelativeToolTip": "src\\FoodShop.Application\\Behaviors\\ValidationBehavior.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAYwCQAAAAIAAAA",
+              "DocumentIndex": 0,
+              "Title": "LoginHandler.cs",
+              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Users\\Authentication\\LoginHandler.cs",
+              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Users\\Authentication\\LoginHandler.cs",
+              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Users\\Authentication\\LoginHandler.cs",
+              "RelativeToolTip": "src\\FoodShop.Application\\Users\\Authentication\\LoginHandler.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAvwB4AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T09:33:10.025Z",
+              "WhenOpened": "2024-04-16T04:47:04.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DomainEvent.cs",
+              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Users\\Events\\DomainEvents\\DomainEvent.cs",
+              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Users\\Events\\DomainEvents\\DomainEvent.cs",
+              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Users\\Events\\DomainEvents\\DomainEvent.cs",
+              "RelativeToolTip": "src\\FoodShop.Application\\Users\\Events\\DomainEvents\\DomainEvent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T09:33:35.546Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "IEmailServices.cs",
+              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Abstraction\\Messaging\\IEmailServices.cs",
+              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Abstraction\\Messaging\\IEmailServices.cs",
+              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Abstraction\\Messaging\\IEmailServices.cs",
+              "RelativeToolTip": "src\\FoodShop.Application\\Abstraction\\Messaging\\IEmailServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T09:33:40.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ICacheServices.cs",
+              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Abstraction\\Messaging\\ICacheServices.cs",
+              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Abstraction\\Messaging\\ICacheServices.cs",
+              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Abstraction\\Messaging\\ICacheServices.cs",
+              "RelativeToolTip": "src\\FoodShop.Application\\Abstraction\\Messaging\\ICacheServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T09:49:36.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Command.cs",
+              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Products\\ProductCommand\\Command.cs",
+              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Products\\ProductCommand\\Command.cs",
+              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Products\\ProductCommand\\Command.cs",
+              "RelativeToolTip": "src\\FoodShop.Application\\Products\\ProductCommand\\Command.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T09:33:47.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginWithGoogleHandler.cs",
+              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Users\\Authentication\\LoginWithGoogleHandler.cs",
+              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Users\\Authentication\\LoginWithGoogleHandler.cs",
+              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Users\\Authentication\\LoginWithGoogleHandler.cs",
+              "RelativeToolTip": "src\\FoodShop.Application\\Users\\Authentication\\LoginWithGoogleHandler.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAwBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T09:33:54.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Query.cs",
+              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Products\\ProductQuery\\Query.cs",
+              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Products\\ProductQuery\\Query.cs",
+              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Products\\ProductQuery\\Query.cs",
+              "RelativeToolTip": "src\\FoodShop.Application\\Products\\ProductQuery\\Query.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T09:33:49.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GetProductByIdHandler.cs",
+              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Products\\ProductQuery\\GetProductByIdHandler.cs",
+              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Products\\ProductQuery\\GetProductByIdHandler.cs",
+              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Products\\ProductQuery\\GetProductByIdHandler.cs",
+              "RelativeToolTip": "src\\FoodShop.Application\\Products\\ProductQuery\\GetProductByIdHandler.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T19:31:33.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FoodShop.Application",
+              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\FoodShop.Application.csproj",
+              "RelativeDocumentMoniker": "src\\FoodShop.Application\\FoodShop.Application.csproj",
+              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\FoodShop.Application.csproj",
+              "RelativeToolTip": "src\\FoodShop.Application\\FoodShop.Application.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-20T17:09:46.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CachingBehavior.cs",
+              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Behaviors\\CachingBehavior.cs",
+              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Behaviors\\CachingBehavior.cs",
+              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Behaviors\\CachingBehavior.cs",
+              "RelativeToolTip": "src\\FoodShop.Application\\Behaviors\\CachingBehavior.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T21:57:20.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TransactionBehavior.cs",
+              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Behaviors\\TransactionBehavior.cs",
+              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Behaviors\\TransactionBehavior.cs",
+              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Behaviors\\TransactionBehavior.cs",
+              "RelativeToolTip": "src\\FoodShop.Application\\Behaviors\\TransactionBehavior.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAgwBMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T21:57:13.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ExceptionHandlingMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.API\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "RelativeDocumentMoniker": "src\\FoodShop.API\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.API\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "RelativeToolTip": "src\\FoodShop.API\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwBwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T04:52:51.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Persistence\\DependencyInjection\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "src\\FoodShop.Persistence\\DependencyInjection\\Extensions\\ServiceCollectionExtensions.cs",
+              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Persistence\\DependencyInjection\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "src\\FoodShop.Persistence\\DependencyInjection\\Extensions\\ServiceCollectionExtensions.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAQwDUAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T09:48:05.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.API\\Program.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.API\\Program.cs",
@@ -481,72 +634,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ServiceCollectionExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Persistence\\DependencyInjection\\Extensions\\ServiceCollectionExtensions.cs",
-              "RelativeDocumentMoniker": "src\\FoodShop.Persistence\\DependencyInjection\\Extensions\\ServiceCollectionExtensions.cs",
-              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Persistence\\DependencyInjection\\Extensions\\ServiceCollectionExtensions.cs",
-              "RelativeToolTip": "src\\FoodShop.Persistence\\DependencyInjection\\Extensions\\ServiceCollectionExtensions.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAQwDUAAAA6AAAA",
+              "DocumentIndex": 11,
+              "Title": "ValidationBehavior.cs",
+              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Behaviors\\ValidationBehavior.cs",
+              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Behaviors\\ValidationBehavior.cs",
+              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Behaviors\\ValidationBehavior.cs",
+              "RelativeToolTip": "src\\FoodShop.Application\\Behaviors\\ValidationBehavior.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwCQAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T09:48:05.911Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T09:33:10.025Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginHandler.cs",
-              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\UseCases\\V1\\Commands\\AuthenticationCommand\\LoginHandler.cs",
-              "RelativeDocumentMoniker": "src\\FoodShop.Application\\UseCases\\V1\\Commands\\AuthenticationCommand\\LoginHandler.cs",
-              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\UseCases\\V1\\Commands\\AuthenticationCommand\\LoginHandler.cs",
-              "RelativeToolTip": "src\\FoodShop.Application\\UseCases\\V1\\Commands\\AuthenticationCommand\\LoginHandler.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAvwB4AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T04:47:04.138Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ExceptionHandlingMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.API\\Middleware\\ExceptionHandlingMiddleware.cs",
-              "RelativeDocumentMoniker": "src\\FoodShop.API\\Middleware\\ExceptionHandlingMiddleware.cs",
-              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.API\\Middleware\\ExceptionHandlingMiddleware.cs",
-              "RelativeToolTip": "src\\FoodShop.API\\Middleware\\ExceptionHandlingMiddleware.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAYwBwAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T04:52:51.073Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TransactionBehavior.cs",
-              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Behaviors\\TransactionBehavior.cs",
-              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Behaviors\\TransactionBehavior.cs",
-              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Behaviors\\TransactionBehavior.cs",
-              "RelativeToolTip": "src\\FoodShop.Application\\Behaviors\\TransactionBehavior.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAgwBMAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T21:57:13.1Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CachingBehavior.cs",
-              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Behaviors\\CachingBehavior.cs",
-              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Behaviors\\CachingBehavior.cs",
-              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Behaviors\\CachingBehavior.cs",
-              "RelativeToolTip": "src\\FoodShop.Application\\Behaviors\\CachingBehavior.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAA8AAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T21:57:20.476Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "MigrationManager.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.API\\MigrationManager.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.API\\MigrationManager.cs",
@@ -558,7 +658,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.API\\appsettings.json",
               "RelativeDocumentMoniker": "src\\FoodShop.API\\appsettings.json",
@@ -570,7 +670,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Domain\\Abstraction\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Domain\\Abstraction\\IUnitOfWork.cs",
@@ -582,7 +682,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "ServiceCollectionExtensions.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\DependencyInjection\\Extensions\\ServiceCollectionExtensions.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Application\\DependencyInjection\\Extensions\\ServiceCollectionExtensions.cs",
@@ -594,7 +694,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Persistence\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Persistence\\UnitOfWork.cs",
@@ -606,43 +706,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Query.cs",
-              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Services\\Product\\Query.cs",
-              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Services\\Product\\Query.cs",
-              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Services\\Product\\Query.cs",
-              "RelativeToolTip": "src\\FoodShop.Application\\Services\\Product\\Query.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T09:33:49.534Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Command.cs",
-              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Services\\Product\\Command.cs",
-              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Services\\Product\\Command.cs",
-              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Services\\Product\\Command.cs",
-              "RelativeToolTip": "src\\FoodShop.Application\\Services\\Product\\Command.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T09:33:47.961Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "GetProductByIdHandler.cs",
-              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\UseCases\\V1\\Queries\\ProductQuery\\GetProductByIdHandler.cs",
-              "RelativeDocumentMoniker": "src\\FoodShop.Application\\UseCases\\V1\\Queries\\ProductQuery\\GetProductByIdHandler.cs",
-              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\UseCases\\V1\\Queries\\ProductQuery\\GetProductByIdHandler.cs",
-              "RelativeToolTip": "src\\FoodShop.Application\\UseCases\\V1\\Queries\\ProductQuery\\GetProductByIdHandler.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T19:31:33.374Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "IQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\Abstraction\\Message\\IQueryHandler.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Contract\\Abstraction\\Message\\IQueryHandler.cs",
@@ -654,7 +718,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "IQuery.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\Abstraction\\Message\\IQuery.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Contract\\Abstraction\\Message\\IQuery.cs",
@@ -666,7 +730,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "ICachedQuery.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\Abstraction\\Message\\ICachedQuery.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Contract\\Abstraction\\Message\\ICachedQuery.cs",
@@ -678,7 +742,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 20,
               "Title": "FoodShop.Persistence.csproj",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Persistence\\FoodShop.Persistence.csproj",
               "RelativeDocumentMoniker": "src\\FoodShop.Persistence\\FoodShop.Persistence.csproj",
@@ -686,11 +750,12 @@
               "RelativeToolTip": "src\\FoodShop.Persistence\\FoodShop.Persistence.csproj",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-16T05:16:17.847Z"
+              "WhenOpened": "2024-04-16T05:16:17.847Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "JwtTokenOptions.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Infrastructure\\DependencyInjection\\Options\\JwtTokenOptions.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Infrastructure\\DependencyInjection\\Options\\JwtTokenOptions.cs",
@@ -702,7 +767,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "ServiceCollectionExtensions.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Infrastructure\\DependencyInjection\\Extensions\\ServiceCollectionExtensions.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Infrastructure\\DependencyInjection\\Extensions\\ServiceCollectionExtensions.cs",
@@ -710,36 +775,25 @@
               "RelativeToolTip": "src\\FoodShop.Infrastructure\\DependencyInjection\\Extensions\\ServiceCollectionExtensions.cs",
               "ViewState": "AQIAACcAAAAAAAAAAAAQwDoAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T09:44:04.582Z"
+              "WhenOpened": "2024-04-15T09:44:04.582Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ICacheServices.cs",
-              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Services\\DistributedCache\\ICacheServices.cs",
-              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Services\\DistributedCache\\ICacheServices.cs",
-              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Services\\DistributedCache\\ICacheServices.cs",
-              "RelativeToolTip": "src\\FoodShop.Application\\Services\\DistributedCache\\ICacheServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T09:49:36.385Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "CreateProductHandler.cs",
-              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\UseCases\\V1\\Commands\\ProductCommand\\CreateProductHandler.cs",
-              "RelativeDocumentMoniker": "src\\FoodShop.Application\\UseCases\\V1\\Commands\\ProductCommand\\CreateProductHandler.cs",
-              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\UseCases\\V1\\Commands\\ProductCommand\\CreateProductHandler.cs",
-              "RelativeToolTip": "src\\FoodShop.Application\\UseCases\\V1\\Commands\\ProductCommand\\CreateProductHandler.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAYwBAAAAA3AAAA",
+              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Products\\ProductCommand\\CreateProductHandler.cs",
+              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Products\\ProductCommand\\CreateProductHandler.cs",
+              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Products\\ProductCommand\\CreateProductHandler.cs",
+              "RelativeToolTip": "src\\FoodShop.Application\\Products\\ProductCommand\\CreateProductHandler.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAYwBAAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-15T18:14:05.17Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "MailSettingOptions.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Infrastructure\\DependencyInjection\\Options\\MailSettingOptions.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Infrastructure\\DependencyInjection\\Options\\MailSettingOptions.cs",
@@ -751,7 +805,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "CacheServices.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Infrastructure\\Caching\\CacheServices.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Infrastructure\\Caching\\CacheServices.cs",
@@ -759,11 +813,12 @@
               "RelativeToolTip": "src\\FoodShop.Infrastructure\\Caching\\CacheServices.cs",
               "ViewState": "AQIAACoAAAAAAAAAAAAowEEAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T10:24:25.723Z"
+              "WhenOpened": "2024-04-18T10:24:25.723Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "RedisSettings.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Infrastructure\\DependencyInjection\\Options\\RedisSettings.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Infrastructure\\DependencyInjection\\Options\\RedisSettings.cs",
@@ -775,7 +830,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "AuthenticationServices.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Infrastructure\\Authentication\\AuthenticationServices.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Infrastructure\\Authentication\\AuthenticationServices.cs",
@@ -783,11 +838,12 @@
               "RelativeToolTip": "src\\FoodShop.Infrastructure\\Authentication\\AuthenticationServices.cs",
               "ViewState": "AQIAAKIAAAAAAAAAAAApwLAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T09:44:21.033Z"
+              "WhenOpened": "2024-04-15T09:44:21.033Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.API\\appsettings.Development.json",
               "RelativeDocumentMoniker": "src\\FoodShop.API\\appsettings.Development.json",
@@ -799,43 +855,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 38,
               "Title": "LoginWithFacebookHandler.cs",
-              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\UseCases\\V1\\Commands\\AuthenticationCommand\\LoginWithFacebookHandler.cs",
-              "RelativeDocumentMoniker": "src\\FoodShop.Application\\UseCases\\V1\\Commands\\AuthenticationCommand\\LoginWithFacebookHandler.cs",
-              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\UseCases\\V1\\Commands\\AuthenticationCommand\\LoginWithFacebookHandler.cs",
-              "RelativeToolTip": "src\\FoodShop.Application\\UseCases\\V1\\Commands\\AuthenticationCommand\\LoginWithFacebookHandler.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAACBjwCkAAAAYAAAA",
+              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Users\\Authentication\\LoginWithFacebookHandler.cs",
+              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Users\\Authentication\\LoginWithFacebookHandler.cs",
+              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Users\\Authentication\\LoginWithFacebookHandler.cs",
+              "RelativeToolTip": "src\\FoodShop.Application\\Users\\Authentication\\LoginWithFacebookHandler.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBpwCkAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T08:00:34.167Z"
+              "WhenOpened": "2024-04-16T08:00:34.167Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "LoginRequestValidation.cs",
-              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Services\\Authentication\\Validation\\LoginRequestValidation.cs",
-              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Services\\Authentication\\Validation\\LoginRequestValidation.cs",
-              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Services\\Authentication\\Validation\\LoginRequestValidation.cs",
-              "RelativeToolTip": "src\\FoodShop.Application\\Services\\Authentication\\Validation\\LoginRequestValidation.cs",
+              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Users\\Authentication\\Validation\\LoginRequestValidation.cs",
+              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Users\\Authentication\\Validation\\LoginRequestValidation.cs",
+              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Users\\Authentication\\Validation\\LoginRequestValidation.cs",
+              "RelativeToolTip": "src\\FoodShop.Application\\Users\\Authentication\\Validation\\LoginRequestValidation.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T09:33:32.653Z"
+              "WhenOpened": "2024-04-15T09:33:32.653Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "RegisterRequestValidation.cs",
-              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Services\\Authentication\\Validation\\RegisterRequestValidation.cs",
-              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Services\\Authentication\\Validation\\RegisterRequestValidation.cs",
-              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Services\\Authentication\\Validation\\RegisterRequestValidation.cs",
-              "RelativeToolTip": "src\\FoodShop.Application\\Services\\Authentication\\Validation\\RegisterRequestValidation.cs",
+              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Users\\Authentication\\Validation\\RegisterRequestValidation.cs",
+              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Users\\Authentication\\Validation\\RegisterRequestValidation.cs",
+              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Users\\Authentication\\Validation\\RegisterRequestValidation.cs",
+              "RelativeToolTip": "src\\FoodShop.Application\\Users\\Authentication\\Validation\\RegisterRequestValidation.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAIBZwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T09:33:33.901Z"
+              "WhenOpened": "2024-04-15T09:33:33.901Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "UserAuthResponse.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\DataTransferObjects\\Respone\\V1\\UserAuthResponse.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Contract\\DataTransferObjects\\Respone\\V1\\UserAuthResponse.cs",
@@ -847,7 +906,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "AuthenticationController.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Presentation\\Controllers\\V1\\AuthenticationController.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Presentation\\Controllers\\V1\\AuthenticationController.cs",
@@ -855,11 +914,12 @@
               "RelativeToolTip": "src\\FoodShop.Presentation\\Controllers\\V1\\AuthenticationController.cs",
               "ViewState": "AQIAACYAAAAAAAAAAAAEwDwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T09:34:34.395Z"
+              "WhenOpened": "2024-04-15T09:34:34.395Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Presentation\\Controllers\\V1\\UserController.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Presentation\\Controllers\\V1\\UserController.cs",
@@ -872,18 +932,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 35,
-              "Title": "LoginWithGoogleHandler.cs",
-              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\UseCases\\V1\\Commands\\AuthenticationCommand\\LoginWithGoogleHandler.cs",
-              "RelativeDocumentMoniker": "src\\FoodShop.Application\\UseCases\\V1\\Commands\\AuthenticationCommand\\LoginWithGoogleHandler.cs",
-              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\UseCases\\V1\\Commands\\AuthenticationCommand\\LoginWithGoogleHandler.cs",
-              "RelativeToolTip": "src\\FoodShop.Application\\UseCases\\V1\\Commands\\AuthenticationCommand\\LoginWithGoogleHandler.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T09:33:54.091Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
               "Title": "FoodShop.Presentation.csproj",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Presentation\\FoodShop.Presentation.csproj",
               "RelativeDocumentMoniker": "src\\FoodShop.Presentation\\FoodShop.Presentation.csproj",
@@ -891,11 +939,12 @@
               "RelativeToolTip": "src\\FoodShop.Presentation\\FoodShop.Presentation.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-15T14:26:19.691Z"
+              "WhenOpened": "2024-04-15T14:26:19.691Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 39,
               "Title": "FacebookUserInfoResponse.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\DataTransferObjects\\Respone\\V1\\FacebookUserInfoResponse.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Contract\\DataTransferObjects\\Respone\\V1\\FacebookUserInfoResponse.cs",
@@ -907,31 +956,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 40,
               "Title": "Command.cs",
-              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Services\\Authentication\\Command.cs",
-              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Services\\Authentication\\Command.cs",
-              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Services\\Authentication\\Command.cs",
-              "RelativeToolTip": "src\\FoodShop.Application\\Services\\Authentication\\Command.cs",
+              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Users\\Authentication\\Command.cs",
+              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Users\\Authentication\\Command.cs",
+              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Users\\Authentication\\Command.cs",
+              "RelativeToolTip": "src\\FoodShop.Application\\Users\\Authentication\\Command.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwA4AAABiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T09:37:46.181Z"
+              "WhenOpened": "2024-04-15T09:37:46.181Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 41,
               "Title": "RegisterHandler.cs",
-              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\UseCases\\V1\\Commands\\AuthenticationCommand\\RegisterHandler.cs",
-              "RelativeDocumentMoniker": "src\\FoodShop.Application\\UseCases\\V1\\Commands\\AuthenticationCommand\\RegisterHandler.cs",
-              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\UseCases\\V1\\Commands\\AuthenticationCommand\\RegisterHandler.cs",
-              "RelativeToolTip": "src\\FoodShop.Application\\UseCases\\V1\\Commands\\AuthenticationCommand\\RegisterHandler.cs",
+              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Users\\Authentication\\RegisterHandler.cs",
+              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Users\\Authentication\\RegisterHandler.cs",
+              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Users\\Authentication\\RegisterHandler.cs",
+              "RelativeToolTip": "src\\FoodShop.Application\\Users\\Authentication\\RegisterHandler.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAIwB8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T09:34:22.903Z"
+              "WhenOpened": "2024-04-15T09:34:22.903Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 43,
               "Title": "Error.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\Abstraction\\Shared\\Error.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Contract\\Abstraction\\Shared\\Error.cs",
@@ -943,7 +994,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 42,
               "Title": "Result.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\Abstraction\\Shared\\Result.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Contract\\Abstraction\\Shared\\Result.cs",
@@ -955,19 +1006,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 44,
               "Title": "IAuthenticationServices.cs",
-              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Services\\Authentication\\IAuthenticationServices.cs",
-              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Services\\Authentication\\IAuthenticationServices.cs",
-              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Services\\Authentication\\IAuthenticationServices.cs",
-              "RelativeToolTip": "src\\FoodShop.Application\\Services\\Authentication\\IAuthenticationServices.cs",
+              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Abstraction\\Messaging\\IAuthenticationServices.cs",
+              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Abstraction\\Messaging\\IAuthenticationServices.cs",
+              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Abstraction\\Messaging\\IAuthenticationServices.cs",
+              "RelativeToolTip": "src\\FoodShop.Application\\Abstraction\\Messaging\\IAuthenticationServices.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAlwBAAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T09:33:37.178Z"
+              "WhenOpened": "2024-04-15T09:33:37.178Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 45,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\DataTransferObjects\\Request\\V1\\LoginRequest.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Contract\\DataTransferObjects\\Request\\V1\\LoginRequest.cs",
@@ -979,31 +1031,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 46,
               "Title": "UpdateProductHandler.cs",
-              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\UseCases\\V1\\Commands\\ProductCommand\\UpdateProductHandler.cs",
-              "RelativeDocumentMoniker": "src\\FoodShop.Application\\UseCases\\V1\\Commands\\ProductCommand\\UpdateProductHandler.cs",
-              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\UseCases\\V1\\Commands\\ProductCommand\\UpdateProductHandler.cs",
-              "RelativeToolTip": "src\\FoodShop.Application\\UseCases\\V1\\Commands\\ProductCommand\\UpdateProductHandler.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAgwA8AAAA3AAAA",
+              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Products\\ProductCommand\\UpdateProductHandler.cs",
+              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Products\\ProductCommand\\UpdateProductHandler.cs",
+              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Products\\ProductCommand\\UpdateProductHandler.cs",
+              "RelativeToolTip": "src\\FoodShop.Application\\Products\\ProductCommand\\UpdateProductHandler.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAgwA8AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T19:32:40.239Z"
+              "WhenOpened": "2024-04-15T19:32:40.239Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 47,
               "Title": "DeleteProductHandler.cs",
-              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\UseCases\\V1\\Commands\\ProductCommand\\DeleteProductHandler.cs",
-              "RelativeDocumentMoniker": "src\\FoodShop.Application\\UseCases\\V1\\Commands\\ProductCommand\\DeleteProductHandler.cs",
-              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\UseCases\\V1\\Commands\\ProductCommand\\DeleteProductHandler.cs",
-              "RelativeToolTip": "src\\FoodShop.Application\\UseCases\\V1\\Commands\\ProductCommand\\DeleteProductHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAgwA8AAAAwAAAA",
+              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Products\\ProductCommand\\DeleteProductHandler.cs",
+              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Products\\ProductCommand\\DeleteProductHandler.cs",
+              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Products\\ProductCommand\\DeleteProductHandler.cs",
+              "RelativeToolTip": "src\\FoodShop.Application\\Products\\ProductCommand\\DeleteProductHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAgwA8AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T19:32:31.753Z"
+              "WhenOpened": "2024-04-15T19:32:31.753Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 48,
               "Title": "MessengerResult.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\Abstraction\\Constrant\\MessengerResult.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Contract\\Abstraction\\Constrant\\MessengerResult.cs",
@@ -1015,7 +1069,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 49,
               "Title": "ProductResponse.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\DataTransferObjects\\Respone\\V1\\ProductResponse.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Contract\\DataTransferObjects\\Respone\\V1\\ProductResponse.cs",
@@ -1027,7 +1081,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 50,
               "Title": "DataSeeder.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Persistence\\DataSeeder.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Persistence\\DataSeeder.cs",
@@ -1039,19 +1093,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 51,
               "Title": "SendMailHandler.cs",
-              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\UseCases\\V1\\DomainEvents\\SendMailHandler.cs",
-              "RelativeDocumentMoniker": "src\\FoodShop.Application\\UseCases\\V1\\DomainEvents\\SendMailHandler.cs",
-              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\UseCases\\V1\\DomainEvents\\SendMailHandler.cs",
-              "RelativeToolTip": "src\\FoodShop.Application\\UseCases\\V1\\DomainEvents\\SendMailHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAIAAAA",
+              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Users\\Events\\DomainEvents\\SendMailHandler.cs",
+              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Users\\Events\\DomainEvents\\SendMailHandler.cs",
+              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Users\\Events\\DomainEvents\\SendMailHandler.cs",
+              "RelativeToolTip": "src\\FoodShop.Application\\Users\\Events\\DomainEvents\\SendMailHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T19:33:12.047Z"
+              "WhenOpened": "2024-04-15T19:33:12.047Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 52,
               "Title": "FoodShop.API.http",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.API\\FoodShop.API.http",
               "RelativeDocumentMoniker": "src\\FoodShop.API\\FoodShop.API.http",
@@ -1063,7 +1118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 53,
               "Title": "EmailSender.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Infrastructure\\EmailServices\\EmailSender.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Infrastructure\\EmailServices\\EmailSender.cs",
@@ -1071,11 +1126,12 @@
               "RelativeToolTip": "src\\FoodShop.Infrastructure\\EmailServices\\EmailSender.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAQwCcAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T12:53:16.574Z"
+              "WhenOpened": "2024-04-15T12:53:16.574Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 54,
               "Title": "ServiceProfile.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Mapper\\ServiceProfile.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Application\\Mapper\\ServiceProfile.cs",
@@ -1087,7 +1143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 55,
               "Title": "AssemblyReference.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\AssemblyReference.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Application\\AssemblyReference.cs",
@@ -1099,7 +1155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 56,
               "Title": "AppRole.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Domain\\Entities\\Identity\\AppRole.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Domain\\Entities\\Identity\\AppRole.cs",
@@ -1111,7 +1167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 60,
               "Title": "FoodShop.Domain.csproj",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Domain\\FoodShop.Domain.csproj",
               "RelativeDocumentMoniker": "src\\FoodShop.Domain\\FoodShop.Domain.csproj",
@@ -1119,11 +1175,12 @@
               "RelativeToolTip": "src\\FoodShop.Domain\\FoodShop.Domain.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-16T06:02:13.727Z"
+              "WhenOpened": "2024-04-16T06:02:13.727Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 58,
               "Title": "IProductRepository.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Domain\\Abstraction\\Repositories\\IProductRepository.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Domain\\Abstraction\\Repositories\\IProductRepository.cs",
@@ -1135,7 +1192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 57,
               "Title": "IRepositoryBase.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Domain\\Abstraction\\Repositories\\IRepositoryBase.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Domain\\Abstraction\\Repositories\\IRepositoryBase.cs",
@@ -1147,7 +1204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 61,
               "Title": "UpdateProductRequest.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\DataTransferObjects\\Request\\V1\\UpdateProductRequest.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Contract\\DataTransferObjects\\Request\\V1\\UpdateProductRequest.cs",
@@ -1159,7 +1216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 62,
               "Title": "RegisterRequest.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\DataTransferObjects\\Request\\V1\\RegisterRequest.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Contract\\DataTransferObjects\\Request\\V1\\RegisterRequest.cs",
@@ -1171,7 +1228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 59,
               "Title": "DomainEntity.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Domain\\Abstraction\\Entities\\DomainEntity.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Domain\\Abstraction\\Entities\\DomainEntity.cs",
@@ -1183,7 +1240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 63,
               "Title": "CreateProductRequest.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\DataTransferObjects\\Request\\V1\\CreateProductRequest.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Contract\\DataTransferObjects\\Request\\V1\\CreateProductRequest.cs",
@@ -1195,7 +1252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 65,
               "Title": "PagedResult.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\Abstraction\\Shared\\PagedResult.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Contract\\Abstraction\\Shared\\PagedResult.cs",
@@ -1207,7 +1264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 71,
               "Title": "SortOrder.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\Abstraction\\Constrant\\SortOrder.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Contract\\Abstraction\\Constrant\\SortOrder.cs",
@@ -1219,7 +1276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 72,
               "Title": "RoleDefine.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\Abstraction\\Constrant\\RoleDefine.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Contract\\Abstraction\\Constrant\\RoleDefine.cs",
@@ -1231,7 +1288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 70,
               "Title": "ICommand.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\Abstraction\\Message\\ICommand.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Contract\\Abstraction\\Message\\ICommand.cs",
@@ -1243,7 +1300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 64,
               "Title": "AuthExternalRequest.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\DataTransferObjects\\Request\\V1\\AuthExternalRequest.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Contract\\DataTransferObjects\\Request\\V1\\AuthExternalRequest.cs",
@@ -1255,7 +1312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 73,
               "Title": "PermissionDefine.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\Abstraction\\Constrant\\PermissionDefine.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Contract\\Abstraction\\Constrant\\PermissionDefine.cs",
@@ -1267,7 +1324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 69,
               "Title": "ICommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\Abstraction\\Message\\ICommandHandler.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Contract\\Abstraction\\Message\\ICommandHandler.cs",
@@ -1279,7 +1336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 66,
               "Title": "HtmlMail.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\Abstraction\\Shared\\HtmlMail.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Contract\\Abstraction\\Shared\\HtmlMail.cs",
@@ -1291,7 +1348,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 68,
               "Title": "IDomainEventHandler.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\Abstraction\\Message\\IDomainEventHandler.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Contract\\Abstraction\\Message\\IDomainEventHandler.cs",
@@ -1303,7 +1360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 67,
               "Title": "IDomainEvents.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\Abstraction\\Message\\IDomainEvents.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Contract\\Abstraction\\Message\\IDomainEvents.cs",
@@ -1315,7 +1372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 74,
               "Title": "ApiVerions.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\Abstraction\\Constrant\\ApiVerions.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Contract\\Abstraction\\Constrant\\ApiVerions.cs",
@@ -1327,19 +1384,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 75,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Presentation\\Controllers\\V1\\ProductController.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Presentation\\Controllers\\V1\\ProductController.cs",
               "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Presentation\\Controllers\\V1\\ProductController.cs",
               "RelativeToolTip": "src\\FoodShop.Presentation\\Controllers\\V1\\ProductController.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAqwBEAAAAEAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAAAqwBEAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T09:43:53.485Z"
+              "WhenOpened": "2024-04-15T09:43:53.485Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 76,
               "Title": "ApiController.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Presentation\\Abstraction\\ApiController.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Presentation\\Abstraction\\ApiController.cs",
@@ -1351,7 +1409,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 77,
               "Title": "log-20240416.txt",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.API\\logs\\log-20240416.txt",
               "RelativeDocumentMoniker": "src\\FoodShop.API\\logs\\log-20240416.txt",
@@ -1363,7 +1421,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 78,
               "Title": "RepositoryBase.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Persistence\\Repositories\\RepositoryBase.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Persistence\\Repositories\\RepositoryBase.cs",
@@ -1375,7 +1433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 79,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "src\\FoodShop.API\\Properties\\launchSettings.json",
@@ -1387,7 +1445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 82,
               "Title": "IdentityConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Persistence\\Configuration\\IdentityConfiguration.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Persistence\\Configuration\\IdentityConfiguration.cs",
@@ -1399,7 +1457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 80,
               "Title": "AppUser.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Domain\\Entities\\Identity\\AppUser.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Domain\\Entities\\Identity\\AppUser.cs",
@@ -1411,7 +1469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 81,
               "Title": "AppRoleConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Persistence\\Configuration\\AppRoleConfiguration.cs",
               "RelativeDocumentMoniker": "src\\FoodShop.Persistence\\Configuration\\AppRoleConfiguration.cs",
@@ -1423,75 +1481,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
-              "Title": "DomainEvent.cs",
-              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Services\\Mail\\DomainEvent.cs",
-              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Services\\Mail\\DomainEvent.cs",
-              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Services\\Mail\\DomainEvent.cs",
-              "RelativeToolTip": "src\\FoodShop.Application\\Services\\Mail\\DomainEvent.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T09:33:35.546Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 81,
-              "Title": "IEmailServices.cs",
-              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Services\\Mail\\IEmailServices.cs",
-              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Services\\Mail\\IEmailServices.cs",
-              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Services\\Mail\\IEmailServices.cs",
-              "RelativeToolTip": "src\\FoodShop.Application\\Services\\Mail\\IEmailServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T09:33:40.797Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 82,
-              "Title": "UpdateProductValidation.cs",
-              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Services\\Product\\Validation\\UpdateProductValidation.cs",
-              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Services\\Product\\Validation\\UpdateProductValidation.cs",
-              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Services\\Product\\Validation\\UpdateProductValidation.cs",
-              "RelativeToolTip": "src\\FoodShop.Application\\Services\\Product\\Validation\\UpdateProductValidation.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T09:33:46.8Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 83,
-              "Title": "DomainEvent.cs",
-              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Services\\Product\\DomainEvent.cs",
-              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Services\\Product\\DomainEvent.cs",
-              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Services\\Product\\DomainEvent.cs",
-              "RelativeToolTip": "src\\FoodShop.Application\\Services\\Product\\DomainEvent.cs",
+              "Title": "UpdateProductValidation.cs",
+              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Products\\Validation\\UpdateProductValidation.cs",
+              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Products\\Validation\\UpdateProductValidation.cs",
+              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Products\\Validation\\UpdateProductValidation.cs",
+              "RelativeToolTip": "src\\FoodShop.Application\\Products\\Validation\\UpdateProductValidation.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T09:33:48.757Z"
+              "WhenOpened": "2024-04-15T09:33:46.8Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 84,
               "Title": "GetProductsHandler.cs",
-              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\UseCases\\V1\\Queries\\ProductQuery\\GetProductsHandler.cs",
-              "RelativeDocumentMoniker": "src\\FoodShop.Application\\UseCases\\V1\\Queries\\ProductQuery\\GetProductsHandler.cs",
-              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\UseCases\\V1\\Queries\\ProductQuery\\GetProductsHandler.cs",
-              "RelativeToolTip": "src\\FoodShop.Application\\UseCases\\V1\\Queries\\ProductQuery\\GetProductsHandler.cs",
+              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Products\\ProductQuery\\GetProductsHandler.cs",
+              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Products\\ProductQuery\\GetProductsHandler.cs",
+              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Products\\ProductQuery\\GetProductsHandler.cs",
+              "RelativeToolTip": "src\\FoodShop.Application\\Products\\ProductQuery\\GetProductsHandler.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T19:31:34.561Z"
+              "WhenOpened": "2024-04-15T19:31:34.561Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 85,
               "Title": "CreateProductValidation.cs",
-              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Services\\Product\\Validation\\CreateProductValidation.cs",
-              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Services\\Product\\Validation\\CreateProductValidation.cs",
-              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Services\\Product\\Validation\\CreateProductValidation.cs",
-              "RelativeToolTip": "src\\FoodShop.Application\\Services\\Product\\Validation\\CreateProductValidation.cs",
+              "DocumentMoniker": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Products\\Validation\\CreateProductValidation.cs",
+              "RelativeDocumentMoniker": "src\\FoodShop.Application\\Products\\Validation\\CreateProductValidation.cs",
+              "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\Products\\Validation\\CreateProductValidation.cs",
+              "RelativeToolTip": "src\\FoodShop.Application\\Products\\Validation\\CreateProductValidation.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T09:33:45.392Z"
+              "WhenOpened": "2024-04-15T09:33:45.392Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1550,7 +1575,8 @@
               "ToolTip": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.API\\FoodShop.API.csproj",
               "RelativeToolTip": "src\\FoodShop.API\\FoodShop.API.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-15T15:37:02.695Z"
+              "WhenOpened": "2024-04-15T15:37:02.695Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
