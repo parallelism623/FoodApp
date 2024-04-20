@@ -18,6 +18,8 @@ namespace FoodShop.Application.DependencyInjection.Extensions
                         {
                             cgf.RegisterServicesFromAssembly(typeof(ServiceCollectionExtensions).Assembly);
                             cgf.AddOpenBehavior(typeof(ValidationBehavior<,>));
+                            cgf.AddOpenBehavior(typeof(TransactionBehavior<,>));
+                            cgf.AddOpenBehavior(typeof(CachingBehavior<,>));
                         })
                         .AddValidatorsFromAssembly(AssemblyReference.Assembly, includeInternalTypes: true);
         public static IServiceCollection AddConfigureAutoMapper(this IServiceCollection services)

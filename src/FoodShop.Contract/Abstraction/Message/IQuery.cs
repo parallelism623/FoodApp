@@ -8,5 +8,5 @@ using System.Threading.Tasks;
 
 namespace FoodShop.Contract.Abstraction.Message
 {
-    public interface IQuery<TRespone> : IRequest<Result<TRespone>> { }
+    public interface IQuery<TRespone> : IRequest<Result<TRespone>>, ICachedQuery { }
 }

@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using FoodShop.Domain.Abstraction;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +10,27 @@ namespace FoodShop.Application.Behaviors
 {
     public class TransactionBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
     {
-        public Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
+        private readonly IUnitOfWork _unitOfWork;
+        public TransactionBehavior(IUnitOfWork unitOfWork)
         {
-            throw new NotImplementedException();
+            _unitOfWork = unitOfWork;
+        }
+
+        public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
+        {
+            if (!IsCommand(request))
+            {
+                return await next();
+            }
+            using var transaction = await _unitOfWork.BeginTransaction();
+            var respone = await next();
+            await _unitOfWork.SaveChangesAsync();
+            transaction.Commit();
+            return respone;
+        }
+        private bool IsCommand(TRequest request)
+        {
+            return nameof(request).EndsWith("Command");
         }
     }
 }

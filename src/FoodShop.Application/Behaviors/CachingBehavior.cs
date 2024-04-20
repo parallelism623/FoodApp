@@ -1,4 +1,5 @@
 ﻿using FoodShop.Application.Services.DistributedCache;
+using FoodShop.Contract.Abstraction.Message;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using System;
@@ -10,9 +11,9 @@ using System.Threading.Tasks;
 namespace FoodShop.Application.Behaviors
 {
     public class CachingBehavior<TRequest, TRespone> : IPipelineBehavior<TRequest, TRespone>
-    where TRequest : IRequest<TRespone>
+    where TRequest : IRequest<TRespone>, ICachedQuery
     {
-        private readonly ICacheServices _cacheServices;
+        private readonly ICacheServices _cacheServices; 
         public CachingBehavior(ICacheServices cacheServices)
         {
             _cacheServices = cacheServices;
@@ -24,13 +25,13 @@ namespace FoodShop.Application.Behaviors
                 return await next();
             }
             
-            var respone = await _cacheServices.GetCacheAsync<TRespone>("", cancellationToken);
+            var respone = await _cacheServices.GetCacheAsync<TRespone>(request.cacheKey, cancellationToken);
             if (respone is null)
             {
                 respone = await next();
             }
             var slidingTime = TimeSpan.FromMinutes(10);
-            await _cacheServices.SetCacheAsync<TRespone>("", respone, slidingTime, cancellationToken);
+            await _cacheServices.SetCacheAsync<TRespone>(request.cacheKey, respone, slidingTime, cancellationToken);
             return respone;
         }
         private bool IsQuery(TRequest request)

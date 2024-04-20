@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FoodShop.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3aba6a1912d226fd52c90c7d43852a0a133ea088")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb04f5ffa0040319154e9da814ab82fc1a3f1c56")]
 [assembly: System.Reflection.AssemblyProductAttribute("FoodShop.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FoodShop.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

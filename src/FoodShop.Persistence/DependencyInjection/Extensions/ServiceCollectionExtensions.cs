@@ -1,4 +1,5 @@
 ﻿
+using FoodShop.Domain.Abstraction;
 using FoodShop.Domain.Abstraction.Repositories;
 using FoodShop.Domain.Entities.Identity;
 using FoodShop.Persistence.Repositories;
@@ -50,7 +51,7 @@ namespace FoodShop.Persistence.DependencyInjection.Extensions
         public static void AddRepositoriesConfiguration(this IServiceCollection services)
         {
             services.AddScoped<IProductRepository, ProductRepository>();
-          
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
         }
     }
 }
