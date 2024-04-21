@@ -3,6 +3,7 @@ using FoodShop.API;
 using FoodShop.API.Middleware;
 using FoodShop.Application.DependencyInjection.Extensions;
 using FoodShop.Domain.Entities.Identity;
+using FoodShop.Infrastructure.Dapper.DependencyInjection.Extensions;
 using FoodShop.Infrastructure.DependencyInjection.Extensions;
 using FoodShop.Infrastructure.DependencyInjection.Options;
 using FoodShop.Persistence;
@@ -33,6 +34,8 @@ builder.Services.AddIdentity<AppUser, AppRole>()
                 .AddDefaultTokenProviders();
 builder.Services.AddTransient<ExceptionHandlingMiddleware>();
 #region AddServices
+builder
+    .Services.AddServicesInfrastructureDapper();
 builder
     .Services.AddDistributedCacheConfig(builder.Configuration.GetRequiredSection("RedisSettings"));
 builder

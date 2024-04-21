@@ -1,25 +1,27 @@
 ﻿using AutoMapper;
+using FoodShop.Application.Common.DataTransferObjects.Respone.V1;
+using FoodShop.Application.Common.Repositories.Base;
 using FoodShop.Contract.Abstraction.Message;
 using FoodShop.Contract.Abstraction.Shared;
-using FoodShop.Contract.DataTransferObjects.Response.V1;
-using FoodShop.Domain.Abstraction.Repositories;
+using FoodShop.Domain.Entities;
 using FoodShop.Domain.Exceptions;
 
 namespace FoodShop.Application.Products.ProductQuery
 {
-    public class GetProductByIdHandler : IQueryHandler<Query.GetProductByIdQuery, ProductResponse>
+    public class GetProductByIdHandler : IQueryHandler<GetProductByIdQuery, ProductResponse>
     {
-        private readonly IProductRepository _productRepository;
+        private readonly IQueryRepository _queryRepository;
         private readonly IMapper _mapper;
-        public GetProductByIdHandler(IProductRepository productRepository, IMapper mapper)
+        public GetProductByIdHandler(IQueryRepository queryRepository, IMapper mapper)
         {
             _mapper = mapper;
-            _productRepository = productRepository;
+            _queryRepository = queryRepository;
         }
 
-        public async Task<Result<ProductResponse>> Handle(Query.GetProductByIdQuery request, CancellationToken cancellationToken)
+        public async Task<Result<ProductResponse>> Handle(GetProductByIdQuery request, CancellationToken cancellationToken = default)
         {
-            var product = await _productRepository.FindByIdAsync(request.Id)
+            var findByIdQuery = $"SELECT * FROM Product WHERE Id = {request.Id}";
+            var product = await _queryRepository.QuerySingleAsync<Product>(findByIdQuery)
                           ?? throw new NotFoundException($"Product not found by Id: {request.Id}");
             var result = _mapper.Map<ProductResponse>(product);
             return result;

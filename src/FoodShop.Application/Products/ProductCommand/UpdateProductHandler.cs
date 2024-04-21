@@ -1,33 +1,33 @@
 ﻿using AutoMapper;
+using FoodShop.Application.Common.Repositories.Base;
 using FoodShop.Contract.Abstraction.Message;
 using FoodShop.Contract.Abstraction.Shared;
-using FoodShop.Domain.Abstraction.Repositories;
 using FoodShop.Domain.Entities;
 using FoodShop.Domain.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FoodShop.Application.Products.ProductCommand
 {
     public class UpdateProductHandler : ICommandHandler<UpdateProductCommand>
     {
-        private readonly IProductRepository _productRepository;
+        private readonly ICommandRepository _commandRepository;
+        private readonly IQueryRepository _queryRepository;
         private readonly IMapper _mapper;
-        public UpdateProductHandler(IProductRepository productRepository, IMapper mapper)
+        public UpdateProductHandler(
+            ICommandRepository commandRepository,
+            IQueryRepository queryRepository, IMapper mapper)
         {
-            _productRepository = productRepository;
+            _commandRepository = commandRepository;
+            _queryRepository = queryRepository;
             _mapper = mapper;
         }
 
         public async Task<Result> Handle(UpdateProductCommand request, CancellationToken cancellationToken)
         {
-            var product = await _productRepository.FindByIdAsync(request.Id) ??
-                          throw new NotFoundException($"Product not found by id: {request.Id}");
+            var findIdSql = $"SELECT * FROM Product WHERE Id = {request.Id}";
+            var product = await _queryRepository.QuerySingleAsync<Product>(findIdSql) ??
+            throw new NotFoundException($"Product not found by id: {request.Id}");
             var newProduct = _mapper.Map<Product>(request.UpdateProductRequest);
-            _productRepository.Update(newProduct);
+            _commandRepository.Update(newProduct);
             return Result.Success();
         }
     }

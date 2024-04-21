@@ -8,7 +8,7 @@ namespace FoodShop.Contract.Abstraction.Shared
 {
     public class HtmlMail
     {
-        public HtmlMail() { }
+    
         public string EmailToId { get; set; }
         public string EmailToName { get; set; }
         public string Content { get; set; }

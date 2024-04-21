@@ -196,3 +196,14 @@ C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Debug\net8.0\Stack
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Debug\net8.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Debug\net8.0\Dapper.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Debug\net8.0\Microsoft.Data.Sqlite.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Debug\net8.0\SQLitePCLRaw.core.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Debug\net8.0\FoodShop.Infrastructure.Dapper.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.API\bin\Debug\net8.0\FoodShop.Infrastructure.Dapper.pdb

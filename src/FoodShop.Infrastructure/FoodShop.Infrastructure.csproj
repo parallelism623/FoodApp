@@ -28,6 +28,7 @@
   <ItemGroup>
     <ProjectReference Include="..\FoodShop.Application\FoodShop.Application.csproj" />
     <ProjectReference Include="..\FoodShop.Contract\FoodShop.Contract.csproj" />
+    <ProjectReference Include="..\FoodShop.Infrastructure.Dapper\FoodShop.Infrastructure.Dapper.csproj" />
     <ProjectReference Include="..\FoodShop.Persistence\FoodShop.Persistence.csproj" />
   </ItemGroup>
 

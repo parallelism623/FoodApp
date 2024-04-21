@@ -7,12 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FoodShop.Application\FoodShop.Application.csproj" />
     <ProjectReference Include="..\FoodShop.Contract\FoodShop.Contract.csproj" />
     <ProjectReference Include="..\FoodShop.Domain\FoodShop.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Abstraction\" />
+    <Folder Include="Repositories\Command\" />
   </ItemGroup>
 
   <ItemGroup>

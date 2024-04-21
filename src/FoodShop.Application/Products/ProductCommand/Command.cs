@@ -1,5 +1,5 @@
-﻿using FoodShop.Contract.Abstraction.Message;
-using FoodShop.Contract.DataTransferObjects.Request.V1;
+﻿using FoodShop.Application.Common.DataTransferObjects.Request.V1;
+using FoodShop.Contract.Abstraction.Message;
 
 namespace FoodShop.Application.Products.ProductCommand
 {

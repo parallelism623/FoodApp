@@ -1,6 +1,6 @@
-﻿using FoodShop.Contract.Abstraction.Message;
+﻿using FoodShop.Application.Common.DataTransferObjects.Request.V1;
+using FoodShop.Contract.Abstraction.Message;
 using FoodShop.Contract.Abstraction.Shared;
-using FoodShop.Contract.DataTransferObjects.Request.V1;
 
 
 namespace FoodShop.Application.Users.Events.DomainEvents

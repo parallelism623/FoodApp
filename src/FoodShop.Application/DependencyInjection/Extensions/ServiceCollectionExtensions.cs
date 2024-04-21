@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
-using FoodShop.Application.Behaviors;
-using FoodShop.Application.Mapper;
+using FoodShop.Application.Common.Behaviors;
+using FoodShop.Application.Common.Mapper;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using System;

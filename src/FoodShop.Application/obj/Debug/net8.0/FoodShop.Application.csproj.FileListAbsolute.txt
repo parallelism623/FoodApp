@@ -9,10 +9,8 @@ C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Application\bin\Debug\net8
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Application\bin\Debug\net8.0\FoodShop.Application.pdb
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Application\bin\Debug\net8.0\FoodShop.Contract.dll
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Application\bin\Debug\net8.0\FoodShop.Domain.dll
-C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Application\bin\Debug\net8.0\FoodShop.Persistence.dll
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Application\bin\Debug\net8.0\FoodShop.Contract.pdb
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Application\bin\Debug\net8.0\FoodShop.Domain.pdb
-C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Application\bin\Debug\net8.0\FoodShop.Persistence.pdb
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Application\obj\Debug\net8.0\FoodShop.F53FD514.Up2Date
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Application\obj\Debug\net8.0\FoodShop.Application.dll
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Application\obj\Debug\net8.0\refint\FoodShop.Application.dll

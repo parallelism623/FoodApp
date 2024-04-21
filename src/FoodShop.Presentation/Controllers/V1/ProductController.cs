@@ -1,9 +1,10 @@
 ﻿using Asp.Versioning;
+using FoodShop.Application.Common.DataTransferObjects.Request.V1;
+using FoodShop.Application.Common.DataTransferObjects.Respone.V1;
+using FoodShop.Application.Products.ProductCommand;
 using FoodShop.Application.Products.ProductQuery;
 using FoodShop.Contract.Abstraction.Constrant;
 using FoodShop.Contract.Abstraction.Shared;
-using FoodShop.Contract.DataTransferObjects.Request.V1;
-using FoodShop.Contract.DataTransferObjects.Response.V1;
 
 using FoodShop.Contract.Extensions;
 using FoodShop.Presentation.Abstraction;
@@ -29,7 +30,7 @@ namespace FoodShop.Presentation.Controllers.V1
                                                string? sortOrderandColumn, int pageIndex = 1, int pageSize = 10) 
         {
        
-            var productsQuery = new Query.GetProductsQuery(searchTerm, sortColumn,
+            var productsQuery = new GetProductsQuery(searchTerm, sortColumn,
                                                            SortOrderExtensions.ConvertStringToSortOrder(sortOrder),
                                                            SortOrderExtensions.ConvertStringToDictSortOrder(sortOrderandColumn),
                                                            pageIndex, pageSize);
@@ -41,7 +42,7 @@ namespace FoodShop.Presentation.Controllers.V1
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetProductById(Guid id)
         {
-            var productByIdQuery = new Query.GetProductByIdQuery(id);
+            var productByIdQuery = new GetProductByIdQuery(id);
             var result = await _sender.Send(productByIdQuery);
             return Ok(result);
         }

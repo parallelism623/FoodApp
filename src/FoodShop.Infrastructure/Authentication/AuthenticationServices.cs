@@ -1,6 +1,4 @@
 ﻿using AutoMapper;
-using FoodShop.Contract.DataTransferObjects.Request.V1;
-using FoodShop.Contract.DataTransferObjects.Respone.V1;
 using FoodShop.Domain.Entities.Identity;
 using FoodShop.Domain.Exceptions;
 using FoodShop.Infrastructure.DependencyInjection.Options;
@@ -18,6 +16,8 @@ using Newtonsoft.Json;
 using System.Web;
 using System;
 using FoodShop.Application.Abstraction.Messaging;
+using FoodShop.Application.Common.DataTransferObjects.Request.V1;
+using FoodShop.Application.Common.DataTransferObjects.Respone.V1;
 namespace FoodShop.Infrastructure.Authentication
 {
 

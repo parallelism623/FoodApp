@@ -1,6 +1,6 @@
-﻿using FoodShop.Contract.Abstraction.Message;
-using FoodShop.Contract.DataTransferObjects.Request.V1;
-using FoodShop.Contract.DataTransferObjects.Respone.V1;
+﻿using FoodShop.Application.Common.DataTransferObjects.Request.V1;
+using FoodShop.Application.Common.DataTransferObjects.Respone.V1;
+using FoodShop.Contract.Abstraction.Message;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,20 +1,12 @@
 ﻿using Asp.Versioning;
 using FoodShop.Application.Abstraction.Messaging;
-using FoodShop.Application.Services.Authentication;
-using FoodShop.Application.Services.Mail;
+using FoodShop.Application.Common.DataTransferObjects.Request.V1;
+using FoodShop.Application.Users.Authentication;
+using FoodShop.Application.Users.Events.DomainEvents;
 using FoodShop.Contract.Abstraction.Constrant;
-using FoodShop.Contract.Abstraction.Shared;
-using FoodShop.Contract.DataTransferObjects.Request.V1;
-using FoodShop.Contract.DataTransferObjects.Respone.V1;
-using FoodShop.Infrastructure.Authentication;
 using FoodShop.Presentation.Abstraction;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FoodShop.Presentation.Controllers.V1
 {

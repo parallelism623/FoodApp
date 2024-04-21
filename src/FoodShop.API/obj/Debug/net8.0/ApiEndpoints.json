@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "FoodShop.Contract.DataTransferObjects.Request.V1.LoginRequest",
+        "Type": "FoodShop.Application.Common.DataTransferObjects.Request.V1.LoginRequest",
         "IsRequired": true
       },
       {
@@ -40,7 +40,7 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "FoodShop.Contract.DataTransferObjects.Request.V1.AuthExternalRequest",
+        "Type": "FoodShop.Application.Common.DataTransferObjects.Request.V1.AuthExternalRequest",
         "IsRequired": true
       },
       {
@@ -71,7 +71,7 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "FoodShop.Contract.DataTransferObjects.Request.V1.AuthExternalRequest",
+        "Type": "FoodShop.Application.Common.DataTransferObjects.Request.V1.AuthExternalRequest",
         "IsRequired": true
       },
       {
@@ -102,7 +102,7 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "FoodShop.Contract.DataTransferObjects.Request.V1.RegisterRequest",
+        "Type": "FoodShop.Application.Common.DataTransferObjects.Request.V1.RegisterRequest",
         "IsRequired": true
       },
       {
@@ -179,7 +179,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "FoodShop.Contract.Abstraction.Shared.Result\u00601[[FoodShop.Contract.Abstraction.Shared.PagedResult\u00601[[FoodShop.Contract.DataTransferObjects.Response.V1.ProductResponseList, FoodShop.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], FoodShop.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "FoodShop.Contract.Abstraction.Shared.Result\u00601[[FoodShop.Contract.Abstraction.Shared.PagedResult\u00601[[FoodShop.Application.Common.DataTransferObjects.Respone.V1.ProductResponseList, FoodShop.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], FoodShop.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain; ver=1.0",
           "application/json; ver=1.0",
@@ -229,7 +229,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "FoodShop.Contract.Abstraction.Shared.Result\u00601[[FoodShop.Contract.DataTransferObjects.Response.V1.ProductResponse, FoodShop.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "FoodShop.Contract.Abstraction.Shared.Result\u00601[[FoodShop.Application.Common.DataTransferObjects.Respone.V1.ProductResponse, FoodShop.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain; ver=1.0",
           "application/json; ver=1.0",
@@ -263,7 +263,7 @@
       },
       {
         "Name": "request",
-        "Type": "FoodShop.Contract.DataTransferObjects.Request.V1.CreateProductRequest",
+        "Type": "FoodShop.Application.Common.DataTransferObjects.Request.V1.CreateProductRequest",
         "IsRequired": true
       },
       {
@@ -318,7 +318,7 @@
       },
       {
         "Name": "request",
-        "Type": "FoodShop.Contract.DataTransferObjects.Request.V1.UpdateProductRequest",
+        "Type": "FoodShop.Application.Common.DataTransferObjects.Request.V1.UpdateProductRequest",
         "IsRequired": true
       },
       {

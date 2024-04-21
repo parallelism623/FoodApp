@@ -1,17 +1,11 @@
 ﻿
+using FoodShop.Application.Common.Repositories.Base;
 using FoodShop.Domain.Abstraction;
-using FoodShop.Domain.Abstraction.Repositories;
-using FoodShop.Domain.Entities.Identity;
-using FoodShop.Persistence.Repositories;
+using FoodShop.Persistence.Repositories.Base;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FoodShop.Persistence.DependencyInjection.Extensions
 {
@@ -50,7 +44,7 @@ namespace FoodShop.Persistence.DependencyInjection.Extensions
         }
         public static void AddRepositoriesConfiguration(this IServiceCollection services)
         {
-            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<ICommandRepository, CommandRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
         }
     }

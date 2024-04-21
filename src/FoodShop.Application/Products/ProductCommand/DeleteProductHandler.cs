@@ -1,32 +1,33 @@
 ﻿using AutoMapper;
+using FoodShop.Application.Common.Repositories.Base;
 using FoodShop.Contract.Abstraction.Message;
 using FoodShop.Contract.Abstraction.Shared;
-using FoodShop.Domain.Abstraction.Repositories;
 using FoodShop.Domain.Entities;
 using FoodShop.Domain.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FoodShop.Application.Products.ProductCommand
 {
     public class DeleteProductHandler : ICommandHandler<DeleteProductCommand>
     {
-        private readonly IProductRepository _productRepository;
+        private readonly ICommandRepository _commandRepository;
+        private readonly IQueryRepository _queryRepository;
         private readonly IMapper _mapper;
-        public DeleteProductHandler(IProductRepository productRepository, IMapper mapper)
+        public DeleteProductHandler(
+            ICommandRepository commandRepository,
+            IMapper mapper,
+            IQueryRepository queryRepository)
         {
-            _productRepository = productRepository;
+            _commandRepository = commandRepository;
             _mapper = mapper;
+            _queryRepository = queryRepository;
         }
         public async Task<Result> Handle(DeleteProductCommand request, CancellationToken cancellationToken)
         {
-            var product = await _productRepository.FindByIdAsync(request.Id) ??
-                          throw new NotFoundException($"Product not found by id: {request.Id}");
-
-            _productRepository.Remove(product);
+            var findIdSql = $"SELECT * FROM Product WHERE Id = {request.Id}";
+            var product = await _queryRepository.QuerySingleAsync<Product>(findIdSql);
+            if (product != null)
+                throw new NotFoundException($"Product not found by id: {request.Id}");
+            await _commandRepository.AddAsync(product);
             return Result.Success();
         }
     }

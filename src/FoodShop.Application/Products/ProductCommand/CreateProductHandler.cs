@@ -1,34 +1,34 @@
 ﻿using AutoMapper;
+using FoodShop.Application.Common.Repositories.Base;
 using FoodShop.Contract.Abstraction.Message;
 using FoodShop.Contract.Abstraction.Shared;
-using FoodShop.Domain.Abstraction.Repositories;
 using FoodShop.Domain.Entities;
 using FoodShop.Domain.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
 
 namespace FoodShop.Application.Products.ProductCommand
 {
     public class CreateProductHandler : ICommandHandler<CreateProductCommand>
     {
-        private readonly IProductRepository _productRepository;
+        private readonly ICommandRepository _commandRepository;
+        private readonly IQueryRepository _queryRepository;
         private readonly IMapper _mapper;
-        public CreateProductHandler(IProductRepository productRepository, IMapper mapper)
+        public CreateProductHandler(
+            ICommandRepository commandRepository, 
+            IMapper mapper,
+            IQueryRepository queryRepository)
         {
-            _productRepository = productRepository;
+            _commandRepository = commandRepository;
             _mapper = mapper;
+            _queryRepository = queryRepository;
         }
         public async Task<Result> Handle(CreateProductCommand request, CancellationToken cancellationToken)
         {
-            var product = await _productRepository.FindByIdAsync(request.Id);
+            var findIdSql = $"SELECT * FROM Product WHERE Id = {request.Id}";
+            var product = await _queryRepository.QuerySingleAsync<Product>(findIdSql);
             if (product != null)
                 throw new BadRequestException($"Product found by id: {request.Id}");
             var newProduct = _mapper.Map<Product>(request.CreateProductRequest);
-            _productRepository.Add(newProduct);
+            await _commandRepository.AddAsync(newProduct);
             return Result.Success();
         }
     }

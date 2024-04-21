@@ -20,3 +20,5 @@ C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Infrastructure\obj\Debug\n
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Infrastructure\obj\Debug\net8.0\refint\FoodShop.Infrastructure.dll
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Infrastructure\obj\Debug\net8.0\FoodShop.Infrastructure.pdb
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Infrastructure\obj\Debug\net8.0\ref\FoodShop.Infrastructure.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Infrastructure\bin\Debug\net8.0\FoodShop.Infrastructure.Dapper.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Infrastructure\bin\Debug\net8.0\FoodShop.Infrastructure.Dapper.pdb

@@ -1,6 +1,7 @@
 ﻿
 using FluentValidation;
-using FoodShop.Contract.DataTransferObjects.Request.V1;
+using FoodShop.Application.Common.DataTransferObjects.Request.V1;
+
 namespace FoodShop.Application.Products.Validation
 {
     public class CreateProductValidation : AbstractValidator<CreateProductRequest>

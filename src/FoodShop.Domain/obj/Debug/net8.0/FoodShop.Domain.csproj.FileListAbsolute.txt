@@ -11,3 +11,6 @@ C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Domain\obj\Debug\net8.0\Fo
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Domain\obj\Debug\net8.0\refint\FoodShop.Domain.dll
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Domain\obj\Debug\net8.0\FoodShop.Domain.pdb
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Domain\obj\Debug\net8.0\ref\FoodShop.Domain.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Domain\bin\Debug\net8.0\FoodShop.Contract.dll
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Domain\bin\Debug\net8.0\FoodShop.Contract.pdb
+C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Domain\obj\Debug\net8.0\FoodShop.83CDE5EB.Up2Date
