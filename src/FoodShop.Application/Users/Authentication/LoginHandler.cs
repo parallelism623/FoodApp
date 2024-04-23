@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using FoodShop.Application.Abstraction.Messaging;
 using FoodShop.Application.Common.DataTransferObjects.Respone.V1;
+using FoodShop.Application.Common.Messaging;
 using FoodShop.Contract.Abstraction.Constrant;
 using FoodShop.Contract.Abstraction.Message;
 using FoodShop.Contract.Abstraction.Shared;

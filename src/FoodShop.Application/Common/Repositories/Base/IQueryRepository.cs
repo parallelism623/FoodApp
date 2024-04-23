@@ -12,10 +12,10 @@ namespace FoodShop.Application.Common.Repositories.Base
     public interface IQueryRepository
     {
         Task<IReadOnlyList<T>> QueryAsync<T>(string sql, object? param = null, IDbTransaction? transaction = null, CancellationToken token = default)
-            where T : DomainEntity<Guid>;
+            where T : class;
         Task<T> QueryFirstOrDefaultAsync<T>(string sql, object? param = null, IDbTransaction? transaction = null, CancellationToken token = default)
-            where T : DomainEntity<Guid>;
+            where T : class;
         Task<T> QuerySingleAsync<T>(string sql, object? param = null, IDbTransaction? transaction = null, CancellationToken token = default)
-            where T : DomainEntity<Guid>;
+            where T : class;
     }
 }

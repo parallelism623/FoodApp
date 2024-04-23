@@ -13,7 +13,7 @@ namespace FoodShop.Application.Common.Behaviors
         public ValidationBehavior(IEnumerable<IValidator<TRequest>> validators) => _validators = validators;
         public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
         {
-            if (!_validators.Any())
+            if (_validators.Any())
             {
                 return await next();
             }
@@ -29,7 +29,7 @@ namespace FoodShop.Application.Common.Behaviors
                  ))
                 .Distinct()
                 .ToList();
-            if (errors.Any())
+            if (errors.Count() != 0)
             {
                 throw new ValidationException(errors);
             }

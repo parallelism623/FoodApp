@@ -23,7 +23,8 @@ namespace FoodShop.Application.Common.Mapper
             CreateMap<AppUser, LoginRequest>().ReverseMap();
             CreateMap<AppUser, UserAuthResponse>().ReverseMap();
             CreateMap<AppUser, RegisterRequest>().ReverseMap();
-
+            CreateMap<AppUser, UserResponse>().ReverseMap();
+            CreateMap<AppUser, UserResponseList>().ReverseMap();    
         }
     }
 }

@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodShop.Infrastructure.Dap
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmark", "benchmark", "{9F7DAC45-0427-4114-A955-8EDA0EA699D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodShop.Application.UnitTests", "test\FoodShop.Application.UnitTests\FoodShop.Application.UnitTests.csproj", "{F3339E2F-5564-42AB-8F61-1004D11B29E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +67,10 @@ Global
 		{99938D70-D700-4F47-B0F6-19C502ECE0FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99938D70-D700-4F47-B0F6-19C502ECE0FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99938D70-D700-4F47-B0F6-19C502ECE0FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3339E2F-5564-42AB-8F61-1004D11B29E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3339E2F-5564-42AB-8F61-1004D11B29E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3339E2F-5564-42AB-8F61-1004D11B29E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3339E2F-5564-42AB-8F61-1004D11B29E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +84,7 @@ Global
 		{3A75F267-4467-46C1-8612-B931BF026660} = {A9F5D692-A6BB-476C-8D79-26F8C030A8D5}
 		{347EEC4A-43C2-424B-9752-5F7E820A1ADE} = {A9F5D692-A6BB-476C-8D79-26F8C030A8D5}
 		{99938D70-D700-4F47-B0F6-19C502ECE0FE} = {A9F5D692-A6BB-476C-8D79-26F8C030A8D5}
+		{F3339E2F-5564-42AB-8F61-1004D11B29E5} = {647F5015-0D9B-4D84-8FB5-77EF4F8803AB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3CA25B95-B9DD-44E9-80A2-7431CD4CE067}

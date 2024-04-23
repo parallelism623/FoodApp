@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FoodShop.Application.Abstraction.Messaging
+namespace FoodShop.Application.Common.Messaging
 {
     public interface ICacheServices
     {
