@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4j9RC3Ze/Urd4ySl5UWDFbZGRXF7TeE4HOEQ1Fw4c7CC1PdrBtXhXLDDKEpLT3OI8Iclziu9srr4z3s799SGzw==",
+  "dgSpecHash": "ouIKnrs6aKNQP41MlS0FeBQTSRsKi6R8dkSOnoithBnO855UX6RztWIIk31IAL0Tvx9vew+chlOoo7MK1Vlp9g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Persistence\\FoodShop.Persistence.csproj",
+  "projectFilePath": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Persistence\\FoodShop.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hieud\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\hieud\\.nuget\\packages\\azure.core\\1.37.0\\azure.core.1.37.0.nupkg.sha512",

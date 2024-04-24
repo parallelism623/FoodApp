@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7CJ1YXFCwqbEyxN/ioVkEJvw0E5fgNz+0CO0Kdp1+a2ufmxj06kost0twkO5voQVkOQYEOlM1qy0q/q+TAAAXA==",
+  "dgSpecHash": "L1eT5QO+PjTG4JgfaYYNkkJGfJqOqZvnlVgX9ge92Pq4Vk6w2TbxK1Pdo0gy9UlzAamkx/tYQwWXD3H3mzhJbQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Infrastructure.Dapper\\FoodShop.Infrastructure.Dapper.csproj",
+  "projectFilePath": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Infrastructure.Dapper\\FoodShop.Infrastructure.Dapper.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hieud\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\hieud\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",

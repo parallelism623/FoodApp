@@ -1,8 +1,11 @@
-﻿using FoodShop.Application.Abstraction.Messaging;
-using FoodShop.Infrastructure.Authentication;
+﻿using FoodShop.Application.Common.Auth;
+using FoodShop.Application.Common.Caching;
+using FoodShop.Application.Common.Mail;
+using FoodShop.Infrastructure.Auth;
 using FoodShop.Infrastructure.Caching;
 using FoodShop.Infrastructure.DependencyInjection.Options;
 using FoodShop.Infrastructure.EmailServices;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -43,9 +46,12 @@ namespace FoodShop.Infrastructure.DependencyInjection.Extensions
             services.Configure<MailSettingOptions>(config.GetRequiredSection("MailSettings"))
                     .Configure<JwtTokenOptions>(config.GetRequiredSection("JwtTokenOptions"))
                     .Configure<RedisSettings>(config.GetRequiredSection("RedisSettings"))
-                    .AddTransient<IAuthenticationServices, AuthenticationServices>()
+                    .AddTransient<IAuthenticationServices, AuthenticationService>()
                     .AddTransient<IEmailServices, EmailSender>()
-                    .AddHttpClient();
+                    .AddHttpClient()
+                    .AddScoped<ICurrentUser, CurrentUser>()
+                    .AddScoped<ICurrentUserInitialize, CurrentUser>()
+                    .AddScoped<CurrentUserMiddleware>();
         }
         public static void AddDistributedCacheConfig(this IServiceCollection services, IConfigurationSection redisSettings)
         {

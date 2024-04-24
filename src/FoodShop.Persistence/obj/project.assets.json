@@ -5671,11 +5671,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Persistence\\FoodShop.Persistence.csproj",
+      "projectUniqueName": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Persistence\\FoodShop.Persistence.csproj",
       "projectName": "FoodShop.Persistence",
-      "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Persistence\\FoodShop.Persistence.csproj",
+      "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Persistence\\FoodShop.Persistence.csproj",
       "packagesPath": "C:\\Users\\hieud\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Persistence\\obj\\",
+      "outputPath": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hieud\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5692,14 +5692,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\FoodShop.Application.csproj": {
-              "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Application\\FoodShop.Application.csproj"
+            "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Application\\FoodShop.Application.csproj": {
+              "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Application\\FoodShop.Application.csproj"
             },
-            "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\FoodShop.Contract.csproj": {
-              "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\FoodShop.Contract.csproj"
+            "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Contract\\FoodShop.Contract.csproj": {
+              "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Contract\\FoodShop.Contract.csproj"
             },
-            "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Domain\\FoodShop.Domain.csproj": {
-              "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Domain\\FoodShop.Domain.csproj"
+            "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Domain\\FoodShop.Domain.csproj": {
+              "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Domain\\FoodShop.Domain.csproj"
             }
           }
         }

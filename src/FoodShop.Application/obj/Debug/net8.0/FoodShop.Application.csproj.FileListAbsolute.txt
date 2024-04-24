@@ -16,3 +16,12 @@ C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Application\obj\Debug\net8
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Application\obj\Debug\net8.0\refint\FoodShop.Application.dll
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Application\obj\Debug\net8.0\FoodShop.Application.pdb
 C:\Users\hieud\Code\C#\FoodShop\FoodShop\src\FoodShop.Application\obj\Debug\net8.0\ref\FoodShop.Application.dll
+C:\Users\hieud\Code\C#\FoodApp-API\src\FoodShop.Application\obj\Debug\net8.0\FoodShop.Application.csproj.AssemblyReference.cache
+C:\Users\hieud\Code\C#\FoodApp-API\src\FoodShop.Application\obj\Debug\net8.0\FoodShop.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hieud\Code\C#\FoodApp-API\src\FoodShop.Application\obj\Debug\net8.0\FoodShop.Application.AssemblyInfoInputs.cache
+C:\Users\hieud\Code\C#\FoodApp-API\src\FoodShop.Application\obj\Debug\net8.0\FoodShop.Application.AssemblyInfo.cs
+C:\Users\hieud\Code\C#\FoodApp-API\src\FoodShop.Application\obj\Debug\net8.0\FoodShop.Application.csproj.CoreCompileInputs.cache
+C:\Users\hieud\Code\C#\FoodApp-API\src\FoodShop.Application\obj\Debug\net8.0\FoodShop.Application.sourcelink.json
+C:\Users\hieud\Code\C#\FoodApp-API\src\FoodShop.Application\obj\Debug\net8.0\FoodShop.Application.dll
+C:\Users\hieud\Code\C#\FoodApp-API\src\FoodShop.Application\obj\Debug\net8.0\refint\FoodShop.Application.dll
+C:\Users\hieud\Code\C#\FoodApp-API\src\FoodShop.Application\obj\Debug\net8.0\FoodShop.Application.pdb

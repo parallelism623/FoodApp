@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UK7L6RtYNcKvTlJHXkpx3XulRwq1Swyngkxwu/4RTo2S8G1m+PfNfpqBIklV/lyRJSgraiWHRWbX8lfKgBI5KA==",
+  "dgSpecHash": "B1yv272RSZjTNK2Qgvs+Jr837rnfRLINquPZHnCvsYzxNrxMnXeH+p6rDgHOn0AMfr8/KNpsBiiKyDtGRjPKtQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Presentation\\FoodShop.Presentation.csproj",
+  "projectFilePath": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Presentation\\FoodShop.Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hieud\\.nuget\\packages\\asp.versioning.abstractions\\8.1.0\\asp.versioning.abstractions.8.1.0.nupkg.sha512",
     "C:\\Users\\hieud\\.nuget\\packages\\asp.versioning.http\\8.1.0\\asp.versioning.http.8.1.0.nupkg.sha512",

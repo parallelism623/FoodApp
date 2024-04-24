@@ -5513,11 +5513,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\test\\FoodShop.Application.UnitTests\\FoodShop.Application.UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\test\\FoodShop.Application.UnitTests\\FoodShop.Application.UnitTests.csproj",
       "projectName": "FoodShop.Application.UnitTests",
-      "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\test\\FoodShop.Application.UnitTests\\FoodShop.Application.UnitTests.csproj",
+      "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\test\\FoodShop.Application.UnitTests\\FoodShop.Application.UnitTests.csproj",
       "packagesPath": "C:\\Users\\hieud\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\test\\FoodShop.Application.UnitTests\\obj\\",
+      "outputPath": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\test\\FoodShop.Application.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hieud\\AppData\\Roaming\\NuGet\\NuGet.Config",

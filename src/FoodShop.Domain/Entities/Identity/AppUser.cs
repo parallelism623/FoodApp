@@ -17,11 +17,14 @@ namespace FoodShop.Domain.Entities.Identity
         public string? LastName { get; set; }
         public string? FullName => FirstName + LastName;
         public string? Facebook { get; set; }
+        public string? AccessToken { get; set; }
+        public string? RefreshToken { get; set; }
+        public DateTime RefreshTokenExpiryTime { get; set; }
         public virtual ICollection<Order> Orders { get; set; }
         public virtual ICollection<Cart> Carts { get; set; }
         public virtual ICollection<IdentityUserClaim<Guid>> Claims { get; set; }
         public virtual ICollection<IdentityUserLogin<Guid>> Logins { get; set; }
-        public virtual ICollection<UserToken> Tokens { get; set; }
+        public virtual ICollection<IdentityUserToken<Guid>> Tokens { get; set; }
         public virtual ICollection<IdentityUserRole<Guid>> UserRoles { get; set; }
     }
 }

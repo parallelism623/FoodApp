@@ -1,4 +1,4 @@
-﻿using FoodShop.Application.Common.Messaging;
+﻿using FoodShop.Application.Common.Caching;
 using FoodShop.Contract.Abstraction.Message;
 using MediatR;
 

@@ -3,6 +3,7 @@ using FoodShop.API;
 using FoodShop.API.Middleware;
 using FoodShop.Application.DependencyInjection.Extensions;
 using FoodShop.Domain.Entities.Identity;
+using FoodShop.Infrastructure.Auth;
 using FoodShop.Infrastructure.Dapper.DependencyInjection.Extensions;
 using FoodShop.Infrastructure.DependencyInjection.Extensions;
 using FoodShop.Infrastructure.DependencyInjection.Options;
@@ -84,6 +85,8 @@ app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
+app.UseMiddleware<CurrentUserMiddleware>();
 app.UseAuthorization();
 app.MigrateDatabase();
 app.MapControllers();

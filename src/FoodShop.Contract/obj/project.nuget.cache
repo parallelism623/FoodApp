@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aSSJGj9iuYnznNZKGOODeNxDw8exn/sq50aSQhrhv7w+NTht1j+kXg6Isx48QElBBlcC+Tv8EGZoLeQFlvXGNQ==",
+  "dgSpecHash": "ANmJICxnXUUR9SZeJCth2W9jsi4mjat4a76flTdQXFlssG2JDQXDUTMoX9Vx9d6OcX+lOdXp5ECkdqlvlLR9og==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hieud\\Code\\C#\\FoodShop\\FoodShop\\src\\FoodShop.Contract\\FoodShop.Contract.csproj",
+  "projectFilePath": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Contract\\FoodShop.Contract.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hieud\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\hieud\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",

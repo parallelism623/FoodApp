@@ -24,6 +24,6 @@ namespace FoodShop.Application.Common.DataTransferObjects.Respone.V1
 
         public string? AccessToken { get; set; }
         public string? RefreshToken { get; set; }
-        public DateTime ExpireTime { get; set; }
+        public DateTime RefreshTokenExpiryTime { get; set; }
     }
 }

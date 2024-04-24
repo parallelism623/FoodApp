@@ -1,17 +1,9 @@
-﻿using FoodShop.Application.Abstraction.Messaging;
-using FoodShop.Domain.Exceptions;
-using Google.Apis;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
+﻿using FoodShop.Application.Common.Caching;
 using Microsoft.Extensions.Caching.Distributed;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
 using StackExchange.Redis;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace FoodShop.Infrastructure.Caching
 {
