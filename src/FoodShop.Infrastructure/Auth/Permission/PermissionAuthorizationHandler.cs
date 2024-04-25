@@ -29,23 +29,23 @@ namespace FoodShop.Infrastructure.Auth.Permission
         protected override async Task HandleRequirementAsync(AuthorizationHandlerContext context, PermissionRequirement requirement)
         {
             var user = await _userManager.FindByEmailAsync(context.User.GetMail());
-            List<FSPermission> permissions = await _cacheServices.GetCacheAsync<List<FSPermission>>($"{user.Id}:permissions");
+            List<string> permissions = await _cacheServices.GetCacheAsync<List<string>>($"{user.Id}:permissions");
             if (permissions == null) 
             {
                 var roles = await _userManager.GetRolesAsync(user);
-                var listPermission = new List<FSPermission>();
+                var listPermission = new List<string>();
                 foreach(var r in await _roleManager.Roles.AsNoTracking()
                     .Where(x => roles.Contains(x.Name)).
                     ToListAsync())
                 {
                     listPermission.AddRange(r.Claims.Where(x => x.ClaimType == FSClaims.Permission)
-                        .Select(x => new FSPermission(x.ClaimValue, r.Name)).ToList());
+                        .Select(x => x.ClaimType + x.ClaimValue).ToList());
                 }
                 permissions = listPermission;
-                _cacheServices.SetCacheAsync<List<FSPermission>>($"{user.Id}:permissions", permissions, TimeSpan.FromMinutes(2));
+                _cacheServices.SetCacheAsync<List<string>>($"{user.Id}:permissions", permissions, TimeSpan.FromMinutes(2));
             }
 
-            if (permissions.Select(x => x.Name).Contains(requirement.Permission))
+            if (permissions.Contains(requirement.Permission))
             {
                 context.Succeed(requirement);
             }

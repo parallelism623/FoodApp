@@ -25,3 +25,12 @@ C:\Users\hieud\Code\C#\FoodApp-API\src\FoodShop.Application\obj\Debug\net8.0\Foo
 C:\Users\hieud\Code\C#\FoodApp-API\src\FoodShop.Application\obj\Debug\net8.0\FoodShop.Application.dll
 C:\Users\hieud\Code\C#\FoodApp-API\src\FoodShop.Application\obj\Debug\net8.0\refint\FoodShop.Application.dll
 C:\Users\hieud\Code\C#\FoodApp-API\src\FoodShop.Application\obj\Debug\net8.0\FoodShop.Application.pdb
+C:\Users\hieud\Code\C#\FoodApp-API\src\FoodShop.Application\bin\Debug\net8.0\FoodShop.Application.deps.json
+C:\Users\hieud\Code\C#\FoodApp-API\src\FoodShop.Application\bin\Debug\net8.0\FoodShop.Application.dll
+C:\Users\hieud\Code\C#\FoodApp-API\src\FoodShop.Application\bin\Debug\net8.0\FoodShop.Application.pdb
+C:\Users\hieud\Code\C#\FoodApp-API\src\FoodShop.Application\bin\Debug\net8.0\FoodShop.Contract.dll
+C:\Users\hieud\Code\C#\FoodApp-API\src\FoodShop.Application\bin\Debug\net8.0\FoodShop.Domain.dll
+C:\Users\hieud\Code\C#\FoodApp-API\src\FoodShop.Application\bin\Debug\net8.0\FoodShop.Contract.pdb
+C:\Users\hieud\Code\C#\FoodApp-API\src\FoodShop.Application\bin\Debug\net8.0\FoodShop.Domain.pdb
+C:\Users\hieud\Code\C#\FoodApp-API\src\FoodShop.Application\obj\Debug\net8.0\FoodShop.F53FD514.Up2Date
+C:\Users\hieud\Code\C#\FoodApp-API\src\FoodShop.Application\obj\Debug\net8.0\ref\FoodShop.Application.dll

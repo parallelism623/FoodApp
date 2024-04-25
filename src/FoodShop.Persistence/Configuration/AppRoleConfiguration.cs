@@ -23,10 +23,8 @@ namespace FoodShop.Persistence.Configuration
                    .HasMaxLength(250).IsRequired(true);
             builder.Property(x => x.RoleCode).HasMaxLength(50).IsRequired(true);
 
-            builder.HasMany(r => r.Permissions)
-                   .WithOne()
-                   .HasForeignKey(p => p.RoleId)
-                   .IsRequired();
+
+
             builder.HasMany(r => r.UserRoles)
                    .WithOne()
                    .HasForeignKey(p => p.RoleId)

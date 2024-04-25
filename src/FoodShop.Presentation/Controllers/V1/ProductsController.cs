@@ -17,7 +17,7 @@ namespace FoodShop.Presentation.Controllers.V1
 {
     [ApiVersion(ApiVerions.Version1)]
     
-    public class ProductController : ApiController
+    public class ProductsController : ApiController
     {
 
         public ProductController(IMediator sender) : base(sender) { }

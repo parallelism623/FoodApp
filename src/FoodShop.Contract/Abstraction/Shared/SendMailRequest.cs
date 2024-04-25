@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FoodShop.Contract.Abstraction.Shared
 {
-    public class HtmlMail
+    public class SendMailRequest
     {
     
         public string EmailToId { get; set; }

@@ -30,6 +30,7 @@ namespace FoodShop.Contract.Abstraction.Authorization
     }
     public record FSPermission(string Action, string Resource)
     {
+        public static string Permission = nameof(Permission);
         public string Name => NameFor(Action, Resource);
         public static string NameFor(string action, string resource) => $"Permissions.{resource}.{action}";
     }

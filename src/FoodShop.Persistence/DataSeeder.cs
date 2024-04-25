@@ -1,4 +1,5 @@
-﻿using FoodShop.Contract.Abstraction.Constrant;
+﻿using FoodShop.Contract.Abstraction.Authorization;
+using FoodShop.Contract.Abstraction.Constrant;
 using FoodShop.Domain.Entities.Identity;
 using Microsoft.AspNetCore.Identity;
 
@@ -27,16 +28,16 @@ namespace FoodShop.Persistence
                 new AppRole
                 {
                     Id = Guid.NewGuid(),
-                    Name = RoleDefine.Admin,
-                    NormalizedName = RoleDefine.Admin.ToLower(),
+                    Name = FSRoles.Admin,
+                    NormalizedName = FSRoles.Admin.ToLower(),
                     Description = "Role Admin",
                     RoleCode = "admin"
                 },
                 new AppRole
                 {
                     Id = Guid.NewGuid(),
-                    Name = RoleDefine.User,
-                    NormalizedName = RoleDefine.User.ToLower(),
+                    Name = FSRoles.Basic,
+                    NormalizedName = FSRoles.Basic.ToLower(),
                     Description = "Role User",
                     RoleCode = "user"
                 }

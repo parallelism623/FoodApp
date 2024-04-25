@@ -21,7 +21,7 @@ namespace FoodShop.Infrastructure.EmailServices
 
 
 
-        public async Task<bool> SendEmailAsync(HtmlMail mailData)
+        public async Task<bool> SendEmailAsync(SendMailRequest mailData)
         {
             //string filePath = Directory.GetCurrentDirectory() + "\\Templates\\Hello.html";
             //string emailTemplateText = File.ReadAllText(filePath);

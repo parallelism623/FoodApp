@@ -38,8 +38,4 @@
     <ProjectReference Include="..\FoodShop.Persistence\FoodShop.Persistence.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Identity\" />
-  </ItemGroup>
-
 </Project>

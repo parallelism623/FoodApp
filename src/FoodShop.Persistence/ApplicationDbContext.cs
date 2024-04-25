@@ -21,7 +21,7 @@ namespace FoodShop.Persistence
 
         public DbSet<Domain.Entities.Identity.AppUser> Users { get; set; }
         public DbSet<AppRole> Roles { get; set; }
-        public DbSet<Permission> Permissions { get; set; }
+
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Order> Orders { get; set; }

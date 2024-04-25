@@ -179,6 +179,9 @@ namespace FoodShop.Persistence.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
+                    b.Property<string>("AccessToken")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Address")
                         .HasColumnType("nvarchar(max)");
 
@@ -227,6 +230,12 @@ namespace FoodShop.Persistence.Migrations
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
 
+                    b.Property<string>("RefreshToken")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("RefreshTokenExpiryTime")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
@@ -242,44 +251,6 @@ namespace FoodShop.Persistence.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("AppUser", (string)null);
-                });
-
-            modelBuilder.Entity("FoodShop.Domain.Entities.Identity.Permission", b =>
-                {
-                    b.Property<Guid>("RoleId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("CreateBy")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("CreateDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PermissionCode")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PermissionFunction")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid>("UpdateBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("UpdateDate")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("RoleId");
-
-                    b.ToTable("Permission", (string)null);
                 });
 
             modelBuilder.Entity("FoodShop.Domain.Entities.Order", b =>
@@ -521,11 +492,6 @@ namespace FoodShop.Persistence.Migrations
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasMaxLength(34)
-                        .HasColumnType("nvarchar(34)");
-
                     b.Property<string>("LoginProvider")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -540,24 +506,6 @@ namespace FoodShop.Persistence.Migrations
                     b.HasKey("UserId");
 
                     b.ToTable("AppUserToken", (string)null);
-
-                    b.HasDiscriminator<string>("Discriminator").HasValue("IdentityUserToken<Guid>");
-
-                    b.UseTphMappingStrategy();
-                });
-
-            modelBuilder.Entity("FoodShop.Domain.Entities.Identity.UserToken", b =>
-                {
-                    b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUserToken<System.Guid>");
-
-                    b.Property<string>("RefreshToken")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("RefreshTokenExpiryTime")
-                        .HasColumnType("datetime2");
-
-                    b.HasDiscriminator().HasValue("UserToken");
                 });
 
             modelBuilder.Entity("FoodShop.Domain.Entities.Cart", b =>
@@ -580,15 +528,6 @@ namespace FoodShop.Persistence.Migrations
                     b.HasOne("FoodShop.Domain.Entities.Product", null)
                         .WithMany("CartProducts")
                         .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("FoodShop.Domain.Entities.Identity.Permission", b =>
-                {
-                    b.HasOne("FoodShop.Domain.Entities.Identity.AppRole", null)
-                        .WithMany("Permissions")
-                        .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
@@ -674,7 +613,7 @@ namespace FoodShop.Persistence.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("FoodShop.Domain.Entities.Identity.UserToken", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<System.Guid>", b =>
                 {
                     b.HasOne("FoodShop.Domain.Entities.Identity.AppUser", null)
                         .WithMany("Tokens")
@@ -696,8 +635,6 @@ namespace FoodShop.Persistence.Migrations
             modelBuilder.Entity("FoodShop.Domain.Entities.Identity.AppRole", b =>
                 {
                     b.Navigation("Claims");
-
-                    b.Navigation("Permissions");
 
                     b.Navigation("UserRoles");
                 });

@@ -9,6 +9,6 @@ namespace FoodShop.Application.Common.Mail
 {
     public interface IEmailServices
     {
-        Task<bool> SendEmailAsync(HtmlMail htmlMailData);
+        Task<bool> SendEmailAsync(SendMailRequest htmlMailData);
     }
 }

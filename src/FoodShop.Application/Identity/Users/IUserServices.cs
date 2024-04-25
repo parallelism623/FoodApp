@@ -11,14 +11,16 @@ namespace FoodShop.Application.Identity.Users
 {
     public interface IUserServices
     {
+        Task<Result<UserAuthResponse>> LoginAsync(LoginRequest loginRequest, CancellationToken token = default);
+        Task<Result> LogoutAsync();
         Task<Result<PagedResult<UserResponseList>>> GetUsersAsync(ListRequest request, CancellationToken token = default);
         Task<Result<UserResponse>> GetUserByIdAsync(Guid id, CancellationToken token = default);
         Task<Result<string>> AssignRolesAsync(Guid id, CancellationToken token = default);
-        Task<Result<UserAuthResponse>> RegisterAsync(RegisterRequest request, CancellationToken token = default);
+        Task<Result<UserAuthResponse>> RegisterAsync(RegisterRequest request, string origin, CancellationToken token = default);
         Task UpdateAsync(UpdateUserRequest request, CancellationToken token = default);
         Task<Result<string>> ConfirmEmailAsync(Guid id, string code, CancellationToken token = default);
-        Task<Result<string>> ForgotPasswordAsync(string email, CancellationToken token = default);
+        Task<Result<string>> ForgotPasswordAsync(string email, string origin);
         Task<Result<string>> ResetPasswordAsync(ResetPasswordRequest request, CancellationToken token = default );
-        Task ChangePasswordAsync(ChangePasswordRequest request, Guid id);
+        Task<Result<string>> ChangePasswordAsync(ChangePasswordRequest request, Guid id);
     }
 }
