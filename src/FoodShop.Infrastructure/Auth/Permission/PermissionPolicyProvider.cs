@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace FoodShop.Infrastructure.Auth.Permission
 {
-    public class PermissionPolicyProvider
+    public class PermissionPolicyProvider : IAuthorizationPolicyProvider
     {
         public DefaultAuthorizationPolicyProvider FallbackPolicyProvider { get; }
         public PermissionPolicyProvider(IOptions<AuthorizationOptions> options)

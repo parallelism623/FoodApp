@@ -1,8 +1,10 @@
 ﻿using FoodShop.Application.Common.DataTransferObjects.Request.V1;
 using FoodShop.Application.Common.DataTransferObjects.Respone.V1;
 using FoodShop.Application.Identity.Users;
+using FoodShop.Contract.Abstraction.Authorization;
 using FoodShop.Contract.Abstraction.Shared;
 using FoodShop.Contract.Extensions;
+using FoodShop.Infrastructure.Auth.Permission;
 using FoodShop.Presentation.Abstraction;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -19,11 +21,13 @@ namespace FoodShop.Presentation.Controllers.V1
         }
 
         [HttpPost("confirm-email")]
+        
         public async Task<IActionResult> ConfirmEmailAsync(string Token, Guid Id)
         {
             var result = await _userServices.ConfirmEmailAsync(Id, Token);
             return Ok(result);
         }
+        [MustHavePermission(FSResource.Users, FSAction.Update)]
         [HttpPost("change-password")]
         public async Task<IActionResult> ChangePasswordAsync([FromBody] ChangePasswordRequest request, Guid id)
         {
@@ -43,6 +47,7 @@ namespace FoodShop.Presentation.Controllers.V1
             var result = await _userServices.LoginAsync(loginRequest);
             return Ok(result);
         }
+        [MustHavePermission(FSResource.Users, FSAction.Clean)]
         [HttpPost("logout")]
         public async Task<IActionResult> LogoutAsync()
         {
@@ -62,6 +67,7 @@ namespace FoodShop.Presentation.Controllers.V1
             return Ok(result);
         }
         [HttpGet]
+        [MustHavePermission(FSResource.Users, FSAction.View)]
         public async Task<IActionResult> GetUserByIdAsync(Guid Id)
         {
             var result = await _userServices.GetUserByIdAsync(Id);

@@ -1,17 +1,22 @@
 ﻿using FoodShop.Application.Common.Auth;
 using FoodShop.Application.Common.Caching;
+using FoodShop.Application.Common.Exceptions;
 using FoodShop.Application.Common.Mail;
 using FoodShop.Application.Identity.Tokens;
 using FoodShop.Application.Identity.Users;
+using FoodShop.Domain.Exceptions;
 using FoodShop.Infrastructure.Auth;
+using FoodShop.Infrastructure.Auth.Permission;
 using FoodShop.Infrastructure.Caching;
 using FoodShop.Infrastructure.DependencyInjection.Options;
 using FoodShop.Infrastructure.EmailServices;
 using FoodShop.Infrastructure.Identity;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using StackExchange.Redis;
 using System.Text;
@@ -29,7 +34,7 @@ namespace FoodShop.Infrastructure.DependencyInjection.Extensions
                     opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                     opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
                 })
-                .AddJwtBearer(opt =>
+                .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme,opt =>
                 {
                     opt.RequireHttpsMetadata = false;
                     opt.SaveToken = true;
@@ -39,9 +44,12 @@ namespace FoodShop.Infrastructure.DependencyInjection.Extensions
                         ValidateAudience = false,
                         ValidateLifetime = true,
                         ValidateIssuerSigningKey = true,
+                        
                         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(section["SecretKey"]))
                     };
                 });
+                
+            
         }
 
         public static void AddExternalServices(this IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config)
@@ -52,6 +60,9 @@ namespace FoodShop.Infrastructure.DependencyInjection.Extensions
                     .AddTransient<ITokenServices, TokenServices>()
                     .AddTransient<IUserServices, UserServices>()
                     .AddTransient<IEmailServices, EmailSender>()
+                    .AddSingleton<IAuthorizationPolicyProvider, PermissionPolicyProvider>()
+                    .AddScoped<IAuthorizationHandler, PermissionAuthorizationHandler>()
+                    
                     .AddHttpClient()
                     .AddScoped<ICurrentUser, CurrentUser>()
                     .AddScoped<ICurrentUserInitialize, CurrentUser>()

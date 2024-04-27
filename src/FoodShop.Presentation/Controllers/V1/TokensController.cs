@@ -1,6 +1,8 @@
 ﻿
 using FoodShop.Application.Common.DataTransferObjects.Request.V1;
 using FoodShop.Application.Identity.Tokens;
+using FoodShop.Contract.Abstraction.Authorization;
+using FoodShop.Infrastructure.Auth.Permission;
 using FoodShop.Presentation.Abstraction;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -18,7 +20,9 @@ namespace FoodShop.Presentation.Controllers.V1
         {
             _tokenServices = tokenServices;
         }
+        
         [HttpPost("refesh-token")]
+        [MustHavePermission(FSResource.Users, FSAction.Update)]
         public async Task<IActionResult> RefreshToken([FromBody] RefreshTokenRequest request)
         {
             var result = await _tokenServices.GetRefreshToken(request);

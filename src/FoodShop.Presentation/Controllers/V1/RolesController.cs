@@ -15,7 +15,7 @@ namespace FoodShop.Presentation.Controllers.V1
     public class RolesController : NatureApiController
     {
         private readonly IRoleServices _roleServices;
-        public RoleController(IRoleServices roleServices)
+        public RolesController(IRoleServices roleServices)
         {
             _roleServices = roleServices;
         }

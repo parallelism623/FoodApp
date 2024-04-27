@@ -1,132 +1,8 @@
 [
   {
-    "ContainingType": "FoodShop.Presentation.Controllers.V1.AuthenticationController",
-    "Method": "Login",
-    "RelativePath": "api/v{version}/Authentication/login",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "model",
-        "Type": "FoodShop.Application.Common.DataTransferObjects.Request.V1.LoginRequest",
-        "IsRequired": true
-      },
-      {
-        "Name": "version",
-        "Type": "",
-        "IsRequired": true
-      },
-      {
-        "Name": "api-version",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "X-Version",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FoodShop.Presentation.Controllers.V1.AuthenticationController",
-    "Method": "LoginWithFaceBook",
-    "RelativePath": "api/v{version}/Authentication/login-facebook",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "model",
-        "Type": "FoodShop.Application.Common.DataTransferObjects.Request.V1.AuthExternalRequest",
-        "IsRequired": true
-      },
-      {
-        "Name": "version",
-        "Type": "",
-        "IsRequired": true
-      },
-      {
-        "Name": "api-version",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "X-Version",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FoodShop.Presentation.Controllers.V1.AuthenticationController",
-    "Method": "LoginWithGoogle",
-    "RelativePath": "api/v{version}/Authentication/login-google",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "model",
-        "Type": "FoodShop.Application.Common.DataTransferObjects.Request.V1.AuthExternalRequest",
-        "IsRequired": true
-      },
-      {
-        "Name": "version",
-        "Type": "",
-        "IsRequired": true
-      },
-      {
-        "Name": "api-version",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "X-Version",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FoodShop.Presentation.Controllers.V1.AuthenticationController",
-    "Method": "Register",
-    "RelativePath": "api/v{version}/Authentication/register",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "model",
-        "Type": "FoodShop.Application.Common.DataTransferObjects.Request.V1.RegisterRequest",
-        "IsRequired": true
-      },
-      {
-        "Name": "version",
-        "Type": "",
-        "IsRequired": true
-      },
-      {
-        "Name": "api-version",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "X-Version",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FoodShop.Presentation.Controllers.V1.ProductController",
+    "ContainingType": "FoodShop.Presentation.Controllers.V1.ProductsController",
     "Method": "GetProducts",
-    "RelativePath": "api/v{version}/Product",
+    "RelativePath": "api/v{version}/Products",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -199,9 +75,9 @@
     ]
   },
   {
-    "ContainingType": "FoodShop.Presentation.Controllers.V1.ProductController",
+    "ContainingType": "FoodShop.Presentation.Controllers.V1.ProductsController",
     "Method": "GetProductById",
-    "RelativePath": "api/v{version}/Product/{id}",
+    "RelativePath": "api/v{version}/Products/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -249,9 +125,9 @@
     ]
   },
   {
-    "ContainingType": "FoodShop.Presentation.Controllers.V1.ProductController",
+    "ContainingType": "FoodShop.Presentation.Controllers.V1.ProductsController",
     "Method": "CreateProductById",
-    "RelativePath": "api/v{version}/Product/{Id}",
+    "RelativePath": "api/v{version}/Products/{Id}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -304,9 +180,9 @@
     ]
   },
   {
-    "ContainingType": "FoodShop.Presentation.Controllers.V1.ProductController",
+    "ContainingType": "FoodShop.Presentation.Controllers.V1.ProductsController",
     "Method": "UpdateProductById",
-    "RelativePath": "api/v{version}/Product/{Id}",
+    "RelativePath": "api/v{version}/Products/{Id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -359,9 +235,9 @@
     ]
   },
   {
-    "ContainingType": "FoodShop.Presentation.Controllers.V1.ProductController",
+    "ContainingType": "FoodShop.Presentation.Controllers.V1.ProductsController",
     "Method": "UpdateProductById",
-    "RelativePath": "api/v{version}/Product/{Id}",
+    "RelativePath": "api/v{version}/Products/{Id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -409,141 +285,47 @@
     ]
   },
   {
-    "ContainingType": "FoodShop.Presentation.Controllers.V1.UserController",
-    "Method": "GetUsers",
-    "RelativePath": "api/v{version}/User",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "searchTerm",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "sortColumn",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "sortOrder",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "sortOrderandColumn",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "pageIndex",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "pageSize",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "version",
-        "Type": "",
-        "IsRequired": true
-      },
-      {
-        "Name": "api-version",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "X-Version",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "FoodShop.Contract.Abstraction.Shared.Result\u00601[[FoodShop.Contract.Abstraction.Shared.PagedResult\u00601[[FoodShop.Application.Common.DataTransferObjects.Respone.V1.UserResponseList, FoodShop.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], FoodShop.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain; ver=1.0",
-          "application/json; ver=1.0",
-          "text/json; ver=1.0"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain; ver=1.0",
-          "application/json; ver=1.0",
-          "text/json; ver=1.0"
-        ],
-        "StatusCode": 404
-      }
-    ]
-  },
-  {
-    "ContainingType": "FoodShop.Presentation.Controllers.V1.UserController",
-    "Method": "GetUserById",
-    "RelativePath": "api/v{version}/User/{Id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      },
-      {
-        "Name": "version",
-        "Type": "",
-        "IsRequired": true
-      },
-      {
-        "Name": "api-version",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "X-Version",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "FoodShop.Contract.Abstraction.Shared.Result\u00601[[FoodShop.Application.Common.DataTransferObjects.Respone.V1.UserResponse, FoodShop.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain; ver=1.0",
-          "application/json; ver=1.0",
-          "text/json; ver=1.0"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain; ver=1.0",
-          "application/json; ver=1.0",
-          "text/json; ver=1.0"
-        ],
-        "StatusCode": 404
-      }
-    ]
-  },
-  {
-    "ContainingType": "FoodShop.Presentation.Controllers.V1.UserController",
-    "Method": "DeleteUser",
-    "RelativePath": "api/v{version}/User/{Id}",
+    "ContainingType": "FoodShop.Presentation.Controllers.V1.RolesController",
+    "Method": "CreateOrUpdate",
+    "RelativePath": "api/v{version}/Roles",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
+        "Name": "id",
         "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "version",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "X-Version",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FoodShop.Presentation.Controllers.V1.RolesController",
+    "Method": "CreateOrUpdate",
+    "RelativePath": "api/v{version}/Roles/creatorupdate-role",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "FoodShop.Application.Common.DataTransferObjects.Request.V1.CreateOrUpdateRoleRequest",
         "IsRequired": true
       },
       {
@@ -562,25 +344,321 @@
         "IsRequired": false
       }
     ],
-    "ReturnTypes": [
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FoodShop.Presentation.Controllers.V1.RolesController",
+    "Method": "UpdatePermissionAsync",
+    "RelativePath": "api/v{version}/Roles/update-permissions",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
       {
-        "Type": "FoodShop.Contract.Abstraction.Shared.Result",
-        "MediaTypes": [
-          "text/plain; ver=1.0",
-          "application/json; ver=1.0",
-          "text/json; ver=1.0"
-        ],
-        "StatusCode": 200
+        "Name": "request",
+        "Type": "FoodShop.Application.Common.DataTransferObjects.Request.V1.UpdatePermissionRequest",
+        "IsRequired": true
       },
       {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain; ver=1.0",
-          "application/json; ver=1.0",
-          "text/json; ver=1.0"
-        ],
-        "StatusCode": 404
+        "Name": "version",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "X-Version",
+        "Type": "System.String",
+        "IsRequired": false
       }
-    ]
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FoodShop.Presentation.Controllers.V1.TokensController",
+    "Method": "RefreshToken",
+    "RelativePath": "api/v{version}/Tokens/refesh-token",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "FoodShop.Application.Common.DataTransferObjects.Request.V1.RefreshTokenRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "version",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "X-Version",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FoodShop.Presentation.Controllers.V1.UsersController",
+    "Method": "GetUserByIdAsync",
+    "RelativePath": "api/v{version}/Users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "version",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "X-Version",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FoodShop.Presentation.Controllers.V1.UsersController",
+    "Method": "ChangePasswordAsync",
+    "RelativePath": "api/v{version}/Users/change-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "FoodShop.Application.Common.DataTransferObjects.Request.V1.ChangePasswordRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "version",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "X-Version",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FoodShop.Presentation.Controllers.V1.UsersController",
+    "Method": "ConfirmEmailAsync",
+    "RelativePath": "api/v{version}/Users/confirm-email",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Token",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "version",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "X-Version",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FoodShop.Presentation.Controllers.V1.UsersController",
+    "Method": "ForgotPasswordAsync",
+    "RelativePath": "api/v{version}/Users/forgot-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "version",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "X-Version",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FoodShop.Presentation.Controllers.V1.UsersController",
+    "Method": "LoginAsync",
+    "RelativePath": "api/v{version}/Users/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginRequest",
+        "Type": "FoodShop.Application.Common.DataTransferObjects.Request.V1.LoginRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "version",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "X-Version",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FoodShop.Presentation.Controllers.V1.UsersController",
+    "Method": "LogoutAsync",
+    "RelativePath": "api/v{version}/Users/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "version",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "X-Version",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FoodShop.Presentation.Controllers.V1.UsersController",
+    "Method": "RegisterAsync",
+    "RelativePath": "api/v{version}/Users/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "FoodShop.Application.Common.DataTransferObjects.Request.V1.RegisterRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "version",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "X-Version",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FoodShop.Presentation.Controllers.V1.UsersController",
+    "Method": "ResetPasswordAsync",
+    "RelativePath": "api/v{version}/Users/reset-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "FoodShop.Application.Common.DataTransferObjects.Request.V1.ResetPasswordRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "version",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "X-Version",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

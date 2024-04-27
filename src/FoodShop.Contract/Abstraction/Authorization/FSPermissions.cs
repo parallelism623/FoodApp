@@ -32,6 +32,6 @@ namespace FoodShop.Contract.Abstraction.Authorization
     {
         public static string Permission = nameof(Permission);
         public string Name => NameFor(Action, Resource);
-        public static string NameFor(string action, string resource) => $"Permissions.{resource}.{action}";
+        public static string NameFor(string action, string resource) => $"Permission.{resource}.{action}";
     }
 }

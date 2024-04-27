@@ -8,6 +8,6 @@ namespace FoodShop.Domain.Exceptions
 {
     public sealed class UnAuthorizedException : DomainException
     {
-        public UnAuthorizedException(string title) : base(title, "UnAuthorized") { }
+        public UnAuthorizedException(string message) : base("UnAuthorized", message) { }
     }
 }
