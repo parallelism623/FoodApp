@@ -3,11 +3,6 @@ using FoodShop.Application.Common.DataTransferObjects.Request.V1;
 using FoodShop.Application.Common.DataTransferObjects.Respone.V1;
 using FoodShop.Domain.Entities;
 using FoodShop.Domain.Entities.Identity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FoodShop.Application.Common.Mapper
 {
@@ -24,7 +19,9 @@ namespace FoodShop.Application.Common.Mapper
             CreateMap<AppUser, UserAuthResponse>().ReverseMap();
             CreateMap<AppUser, RegisterRequest>().ReverseMap();
             CreateMap<AppUser, UserResponse>().ReverseMap();
-            CreateMap<AppUser, UserResponseList>().ReverseMap();    
+            CreateMap<AppUser, UserResponseList>().ReverseMap();
+            CreateMap<FoodShop.Domain.Entities.Category, CreateCategoryRequest>().ReverseMap();
+            CreateMap<FoodShop.Domain.Entities.Category, UpdateCategoryRequest>().ReverseMap();
         }
     }
 }

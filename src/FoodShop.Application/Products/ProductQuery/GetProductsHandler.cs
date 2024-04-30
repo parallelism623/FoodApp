@@ -6,6 +6,7 @@ using System.Linq.Expressions;
 using FoodShop.Domain.Entities;
 using FoodShop.Application.Common.DataTransferObjects.Respone.V1;
 using FoodShop.Application.Common.Repositories.Base;
+using FoodShop.Application.Common.Caching;
 
 namespace FoodShop.Application.Products.ProductQuery
 {
@@ -13,15 +14,23 @@ namespace FoodShop.Application.Products.ProductQuery
     {
         private readonly IQueryRepository _queryRepository;
         private readonly IMapper _mapper;
-        public GetProductsHandler(IQueryRepository queryRepository,
-                                  IMapper mapper)
+        private readonly ICacheServices _cacheServices;
+        
+        public GetProductsHandler(
+            IQueryRepository queryRepository,
+            IMapper mapper,
+            ICacheServices cacheServices)
         {
+            _cacheServices = cacheServices;
             _queryRepository = queryRepository;
             _mapper = mapper;
         }
 
         public async Task<Result<PagedResult<ProductResponseList>>> Handle(GetProductsQuery request, CancellationToken cancellationToken)
         {
+            var paramString =
+                $"{request.SearchTerm}:{request.SortOrder}:{request.SortOrder}:{request.SortColumnAndOrder}";
+            var cacheKey = _cacheServices.GetCacheKey(string.Empty, nameof(GetProductsQuery), paramString);
             var pageIndex = request.PageIndex <= 0 ? PagedResult<ProductResponseList>.DefaultPageIndex : request.PageIndex;
             var pageSize = request.PageSize <= 0 ? PagedResult<ProductResponseList>.DefaultPageSize :
                             request.PageSize > PagedResult<ProductResponseList>.UpperPageSize ?

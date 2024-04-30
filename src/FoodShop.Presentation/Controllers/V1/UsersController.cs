@@ -1,22 +1,29 @@
-﻿using FoodShop.Application.Common.DataTransferObjects.Request.V1;
+﻿using FluentValidation;
+using FoodShop.Application.Common.DataTransferObjects.Request.V1;
 using FoodShop.Application.Common.DataTransferObjects.Respone.V1;
 using FoodShop.Application.Identity.Users;
 using FoodShop.Contract.Abstraction.Authorization;
 using FoodShop.Contract.Abstraction.Shared;
 using FoodShop.Contract.Extensions;
+using FoodShop.Domain.Entities.Identity;
 using FoodShop.Infrastructure.Auth.Permission;
 using FoodShop.Presentation.Abstraction;
 using MediatR;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FoodShop.Presentation.Controllers.V1
 {
     public class UsersController : NatureApiController
     {
+        private readonly UserManager<AppUser> _userManager;
         private readonly IUserServices _userServices;
-        public UsersController(IUserServices userServices)
+        public UsersController(
+            UserManager<AppUser> userManager,
+            IUserServices userServices)
         {
+            _userManager = userManager;
             _userServices = userServices;
         }
 
@@ -73,6 +80,6 @@ namespace FoodShop.Presentation.Controllers.V1
             var result = await _userServices.GetUserByIdAsync(Id);
             return Ok(result);
         }
-        private string GetOriginFromRequest() => $"{Request.Scheme}://{Request.Host.Value}{Request.PathBase.Value}";
+        private string GetOriginFromRequest() => $"{Request.Scheme}://{Request.Host.Value}{Request.PathBase.Value}/api/v{Request.HttpContext.GetRequestedApiVersion()}/";
     }
 }

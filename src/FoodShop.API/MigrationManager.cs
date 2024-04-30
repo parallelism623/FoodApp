@@ -1,5 +1,7 @@
-﻿using FoodShop.Persistence;
+﻿using FoodShop.Domain.Entities.Identity;
+using FoodShop.Persistence;
 using Google;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace FoodShop.API
@@ -16,7 +18,10 @@ namespace FoodShop.API
                     try
                     {
                         appContext.Database.Migrate();
-                        new DataSeeder().DataRoleSeeder(appContext).Wait();
+                        new DataSeeder().DataRoleSeeder(
+                            appContext, 
+                            scope.ServiceProvider.GetService<UserManager<AppUser>>(),
+                            scope.ServiceProvider.GetService<RoleManager<AppRole>>()).Wait();
                     }
                     catch (Exception ex)
                     {

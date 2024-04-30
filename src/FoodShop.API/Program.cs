@@ -6,11 +6,9 @@ using FoodShop.Domain.Entities.Identity;
 using FoodShop.Infrastructure.Auth;
 using FoodShop.Infrastructure.Dapper.DependencyInjection.Extensions;
 using FoodShop.Infrastructure.DependencyInjection.Extensions;
-using FoodShop.Infrastructure.DependencyInjection.Options;
 using FoodShop.Persistence;
 using FoodShop.Persistence.DependencyInjection.Extensions;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Options;
 using Serilog;
 
 
@@ -30,9 +28,6 @@ builder.Host.UseSerilog();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddIdentity<AppUser, AppRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
-                .AddDefaultTokenProviders();
 builder.Services.AddTransient<ExceptionHandlingMiddleware>();
 #region AddServices
 builder
@@ -41,6 +36,7 @@ builder
     .Services.AddDistributedCacheConfig(builder.Configuration.GetRequiredSection("RedisSettings"));
 builder
     .Services.AddSqlConfiguration();
+
 builder
     .Services.AddConfigureMediatR()
                 .AddConfigureAutoMapper()

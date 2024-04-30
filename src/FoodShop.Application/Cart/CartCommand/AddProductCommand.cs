@@ -8,7 +8,5 @@ using System.Threading.Tasks;
 
 namespace FoodShop.Application.Cart.CartCommand
 {
-    public record AddProductsCommand(Guid ProductId) : ICommand
-    {
-    }
+    public record AddProductCommand(Guid ProductId) : ICommand<string>;
 }

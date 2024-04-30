@@ -2,32 +2,36 @@
 using FoodShop.Contract.Abstraction.Constrant;
 using FoodShop.Domain.Entities.Identity;
 using Microsoft.AspNetCore.Identity;
+using System.Security.Claims;
+
 
 
 namespace FoodShop.Persistence
 {
     public class DataSeeder
     {
-        public async Task DataRoleSeeder(ApplicationDbContext context)
+        public async Task DataRoleSeeder(
+            ApplicationDbContext context, 
+            UserManager<AppUser> userManager, 
+            RoleManager<AppRole> roleManager)
         {
+        
             PasswordHasher<AppUser> password = new PasswordHasher<AppUser>();
             var user = new AppUser()
             {
                 UserName = "admin",
-                Email = "admin",
+                Email = "admin@gmail.com",
                 EmailConfirmed = true,
             };
-            var passwordHash = password.HashPassword(user,"123123");
-            if (!context.Users.Any())
+            if (!context.Users.Where(x => x.Email.Equals("admin")).Any())
             {
-                context.Users.Add(user);
-                context.SaveChangesAsync();
+                var result = await userManager.CreateAsync(user, "12345678");
             }
             var roles = new List<AppRole>()
             {
                 new AppRole
                 {
-                    Id = Guid.NewGuid(),
+                    
                     Name = FSRoles.Admin,
                     NormalizedName = FSRoles.Admin.ToLower(),
                     Description = "Role Admin",
@@ -35,27 +39,39 @@ namespace FoodShop.Persistence
                 },
                 new AppRole
                 {
-                    Id = Guid.NewGuid(),
+                   
                     Name = FSRoles.Basic,
                     NormalizedName = FSRoles.Basic.ToLower(),
-                    Description = "Role User",
-                    RoleCode = "user"
+                    Description = "Role Basic",
+                    RoleCode = "basic"
                 }
             };
             if (!context.Roles.Any())
             {
-                await context.Roles.AddRangeAsync(roles);
+                foreach(var role in roles) 
+                {
+                    await roleManager.CreateAsync(role);
+                }
+                await context.UserRoles.AddAsync(new IdentityUserRole<Guid>
+                {
+                    RoleId = roles[0].Id,
+                    UserId = user.Id,
+                });
                 await context.SaveChangesAsync();
             }
-            if(!context.UserRoles.Any())
+
+            if (context.RoleClaims.Any() == false)
             {
-                var userRoles = new IdentityUserRole<Guid>()
+                var roleAdmin = await roleManager.FindByNameAsync("admin");
+                foreach (var fr in typeof(FSResource).GetFields())
                 {
-                    UserId = user.Id,
-                    RoleId = roles[0].Id
-                };
-                await context.UserRoles.AddAsync(userRoles);
-                await context.SaveChangesAsync();
+                    foreach (var fa in typeof(FSAction).GetFields())
+                    {
+                        var newClaim = new Claim("Permission", string.Concat(fr.Name + ".", fa.Name));
+                        await roleManager.AddClaimAsync(roleAdmin, newClaim);
+                    
+                    }
+                }
             }
         }
     }

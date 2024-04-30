@@ -62,5 +62,11 @@ namespace FoodShop.Infrastructure.Caching
 
         public async Task RemoveCacheAsync(string cacheKey, CancellationToken token = default)
             => await _distributedCache.RemoveAsync(cacheKey, token);
+
+        public string GetCacheKey(string userId, string function, string parameters)
+        {
+            var cacheKey = $"{userId}:{function}:{parameters}";
+            return cacheKey;
+        }
     }
 }

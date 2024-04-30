@@ -2,6 +2,7 @@
 using FoodShop.Application.Common.Caching;
 using FoodShop.Contract.Abstraction.Authorization;
 using FoodShop.Domain.Entities.Identity;
+using FoodShop.Domain.Exceptions;
 using FoodShop.Infrastructure.DependencyInjection.Extensions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -28,9 +29,13 @@ namespace FoodShop.Infrastructure.Auth.Permission
 
         protected override async Task HandleRequirementAsync(AuthorizationHandlerContext context, PermissionRequirement requirement)
         {
+            if (!context.User.Identity.IsAuthenticated)
+            {
+                throw new UnAuthorizedException("Unauthorize for this user");
+            }
             var user = await _userManager.FindByEmailAsync(context.User.GetMail());
             List<string> permissions = await _cacheServices.GetCacheAsync<List<string>>($"{user.Id}:permissions");
-            if (permissions == null) 
+            if (permissions == null)    
             {
                 var roles = await _userManager.GetRolesAsync(user);
                 var listPermission = new List<string>();

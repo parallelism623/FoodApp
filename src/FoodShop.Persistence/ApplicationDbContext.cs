@@ -4,23 +4,20 @@ using Microsoft.EntityFrameworkCore;
 using FoodShop.Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Identity;
 
 namespace FoodShop.Persistence
 {
     public class ApplicationDbContext : IdentityDbContext<Domain.Entities.Identity.AppUser, AppRole, Guid>
     {
-        private readonly IHttpContextAccessor _context;
-        public ApplicationDbContext(IHttpContextAccessor context, DbContextOptions<ApplicationDbContext> options) : base(options)
+
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
-            _context = context;
         }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.ApplyConfigurationsFromAssembly(AssemblyReference.Assembly);
         }
-
-        public DbSet<Domain.Entities.Identity.AppUser> Users { get; set; }
-        public DbSet<AppRole> Roles { get; set; }
 
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }

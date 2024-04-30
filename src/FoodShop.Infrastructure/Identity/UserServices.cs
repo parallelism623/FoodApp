@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using FluentValidation;
 using FoodShop.Application.Common.Auth;
 using FoodShop.Application.Common.Caching;
 using FoodShop.Application.Common.DataTransferObjects.Request.V1;
@@ -30,7 +31,9 @@ namespace FoodShop.Infrastructure.Identity
         private readonly ICurrentUser _userCurrent;
         private readonly IEmailServices _emailServices;
         private readonly ICacheServices _cacheServices;
+
         public UserServices(
+         
             IQueryRepository queryRepository,
             UserManager<AppUser> userManager, 
             ITokenServices tokenServices,
@@ -116,7 +119,7 @@ namespace FoodShop.Infrastructure.Identity
         public async Task<Result<UserAuthResponse>> LoginAsync(LoginRequest loginRequest, CancellationToken token = default)
         {
             var user = await _userManager.FindByEmailAsync(loginRequest.Email);
-            if (user is null || await _userManager.IsEmailConfirmedAsync(user))
+            if (user is null || !(await _userManager.IsEmailConfirmedAsync(user)))
             {
                 throw new BadRequestException("An Error has occured");
             }
@@ -129,7 +132,8 @@ namespace FoodShop.Infrastructure.Identity
             user.AccessToken = await _tokenServices.GenerateAccessToken(claims);
             user.RefreshToken = await _tokenServices.GenerateRefreshToken();
             user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(1);
-            await _userManager.UpdateAsync(user);
+            var resultUpdate =  await _userManager.UpdateAsync(user);
+          
             var returnUser = _mapper.Map<UserAuthResponse>(user); 
             return returnUser;
         }
@@ -150,6 +154,8 @@ namespace FoodShop.Infrastructure.Identity
 
         public async Task<Result<UserAuthResponse>> RegisterAsync(RegisterRequest request, string origin, CancellationToken token = default)
         {
+            var validator = new RegisterRequestValidation();
+            await validator.ValidateAndThrowAsync(request);
             var result = await _userManager.FindByEmailAsync(request.Email);
             if (result is not null)
             {

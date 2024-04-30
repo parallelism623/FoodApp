@@ -26,7 +26,7 @@ namespace FoodShop.Persistence.Configuration
         {
             builder.ToTable(TableName.AppRoleClaim);
 
-            builder.HasKey(x => x.RoleId);
+            builder.HasKey(x => x.Id);
         }
     }
 

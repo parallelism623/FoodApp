@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FoodShop.Application.UnitTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9676852b19ab8f842a9f1fd6288ccf36a450bb46")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1b590fe9720a9e121184ca28c70baf366c3fe80")]
 [assembly: System.Reflection.AssemblyProductAttribute("FoodShop.Application.UnitTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FoodShop.Application.UnitTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

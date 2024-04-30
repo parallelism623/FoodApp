@@ -30,11 +30,11 @@ namespace FoodShop.Infrastructure.DependencyInjection.Extensions
             services.AddOptions<JwtTokenOptions>(section.Value);
             services.AddAuthentication(opt =>
                 {
-                    opt.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+                    
                     opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                     opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
                 })
-                .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme,opt =>
+                .AddJwtBearer(opt =>
                 {
                     opt.RequireHttpsMetadata = false;
                     opt.SaveToken = true;

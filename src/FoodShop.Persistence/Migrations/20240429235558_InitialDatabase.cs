@@ -18,10 +18,10 @@ namespace FoodShop.Persistence.Migrations
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: false),
                     RoleCode = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    CreateBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    CreateDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    CreateBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    UpdateBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     NormalizedName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ConcurrencyStamp = table.Column<string>(type: "nvarchar(max)", nullable: true)
@@ -43,6 +43,9 @@ namespace FoodShop.Persistence.Migrations
                     FirstName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     LastName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Facebook = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    AccessToken = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    RefreshToken = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    RefreshTokenExpiryTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -74,9 +77,9 @@ namespace FoodShop.Persistence.Migrations
                     Slug = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Content = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    CreateBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    CreateBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                    UpdateBy = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -88,6 +91,7 @@ namespace FoodShop.Persistence.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Code = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     Description = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: false),
                     Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
@@ -100,9 +104,9 @@ namespace FoodShop.Persistence.Migrations
                     Quantity = table.Column<int>(type: "int", nullable: false),
                     View = table.Column<int>(type: "int", nullable: false),
                     CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    CreateBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    CreateBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                    UpdateBy = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -113,41 +117,17 @@ namespace FoodShop.Persistence.Migrations
                 name: "AppRoleClaim",
                 columns: table => new
                 {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     RoleId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Id = table.Column<int>(type: "int", nullable: false),
                     ClaimType = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ClaimValue = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_AppRoleClaim", x => x.RoleId);
+                    table.PrimaryKey("PK_AppRoleClaim", x => x.Id);
                     table.ForeignKey(
                         name: "FK_AppRoleClaim_AppRole_RoleId",
-                        column: x => x.RoleId,
-                        principalTable: "AppRole",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Permission",
-                columns: table => new
-                {
-                    RoleId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    CreateBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    PermissionCode = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    PermissionFunction = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Permission", x => x.RoleId);
-                    table.ForeignKey(
-                        name: "FK_Permission_AppRole_RoleId",
                         column: x => x.RoleId,
                         principalTable: "AppRole",
                         principalColumn: "Id",
@@ -225,10 +205,7 @@ namespace FoodShop.Persistence.Migrations
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     LoginProvider = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Value = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Discriminator = table.Column<string>(type: "nvarchar(34)", maxLength: 34, nullable: false),
-                    RefreshToken = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    RefreshTokenExpiryTime = table.Column<DateTime>(type: "datetime2", nullable: true)
+                    Value = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -249,9 +226,9 @@ namespace FoodShop.Persistence.Migrations
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Amout = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
                     CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    CreateBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    CreateBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                    UpdateBy = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -277,9 +254,9 @@ namespace FoodShop.Persistence.Migrations
                     AmoutTotal = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    CreateBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    CreateBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                    UpdateBy = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -372,6 +349,11 @@ namespace FoodShop.Persistence.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_AppRoleClaim_RoleId",
+                table: "AppRoleClaim",
+                column: "RoleId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_AppUserRole_UserId",
                 table: "AppUserRole",
                 column: "UserId");
@@ -395,6 +377,12 @@ namespace FoodShop.Persistence.Migrations
                 name: "IX_OrderProduct_ProductId",
                 table: "OrderProduct",
                 column: "ProductId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Product_Code",
+                table: "Product",
+                column: "Code",
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_ProductCategories_CategoryId",
@@ -427,19 +415,16 @@ namespace FoodShop.Persistence.Migrations
                 name: "OrderProduct");
 
             migrationBuilder.DropTable(
-                name: "Permission");
+                name: "ProductCategories");
 
             migrationBuilder.DropTable(
-                name: "ProductCategories");
+                name: "AppRole");
 
             migrationBuilder.DropTable(
                 name: "Cart");
 
             migrationBuilder.DropTable(
                 name: "Order");
-
-            migrationBuilder.DropTable(
-                name: "AppRole");
 
             migrationBuilder.DropTable(
                 name: "Categories");

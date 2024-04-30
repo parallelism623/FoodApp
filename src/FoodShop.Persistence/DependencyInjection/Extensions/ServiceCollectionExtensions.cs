@@ -1,6 +1,7 @@
 ﻿
 using FoodShop.Application.Common.Repositories.Base;
 using FoodShop.Domain.Abstraction;
+using FoodShop.Domain.Entities.Identity;
 using FoodShop.Persistence.Repositories.Base;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -24,8 +25,11 @@ namespace FoodShop.Persistence.DependencyInjection.Extensions
                             sqlServerOptionsAction: builder => builder.MigrationsAssembly(AssemblyReference.Assembly.GetName().Name)
                             .UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery)
                        );
-            }); 
-            
+            });
+            services.AddIdentity<AppUser, AppRole>()
+                    .AddEntityFrameworkStores<ApplicationDbContext>()
+                    .AddDefaultTokenProviders();
+
             services.Configure<IdentityOptions>(options =>
             {
                 options.Lockout.AllowedForNewUsers = true; //default true
@@ -39,6 +43,7 @@ namespace FoodShop.Persistence.DependencyInjection.Extensions
                 options.Password.RequiredLength = 6;
                 options.Password.RequiredUniqueChars = 1;
 
+                options.User.RequireUniqueEmail = true;
                 options.SignIn.RequireConfirmedEmail = true;
             });
         }

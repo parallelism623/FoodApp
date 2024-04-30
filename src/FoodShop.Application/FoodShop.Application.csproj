@@ -28,6 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Category\Query\" />
     <Folder Include="Identity\Tokens\" />
   </ItemGroup>
 

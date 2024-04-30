@@ -1,6 +1,7 @@
 ﻿
 using FluentValidation;
 using FluentValidation.Results;
+using FoodShop.Contract.Abstraction.Shared;
 using FoodShop.Domain.Exceptions;
 using System.Text.Json;
 
@@ -58,16 +59,19 @@ namespace FoodShop.API.Middleware
             DomainException applicationException => applicationException.Title,
             _ => "Server Error"
         };
-        public static IEnumerable<ValidationFailure> GetErrors(Exception exception)
+        public static IEnumerable<ValidationError> GetErrors(Exception exception)
         {
-            IEnumerable<ValidationFailure> errors = null;
+            IEnumerable<ValidationError> errors = null;
 
             if (exception is ValidationException validationException)
             {
-                errors = validationException.Errors;
+                errors = validationException.Errors
+                    .Select(x => new ValidationError(x.PropertyName, x.ErrorMessage));
+                
             }
 
             return errors;
         }
+
     }
 }
