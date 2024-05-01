@@ -21,7 +21,7 @@ namespace FoodShop.Application.Products.ProductQuery
         public async Task<Result<ProductResponse>> Handle(GetProductByIdQuery request, CancellationToken cancellationToken = default)
         {
             var findByIdQuery = $"SELECT * FROM Product WHERE Id = {request.Id}";
-            var product = await _queryRepository.QuerySingleAsync<Product>(findByIdQuery)
+            var product = await _queryRepository.QuerySingleAsync<FoodShop.Domain.Entities.Product>(findByIdQuery)
                           ?? throw new NotFoundException($"Product not found by Id: {request.Id}");
             var result = _mapper.Map<ProductResponse>(product);
             return result;

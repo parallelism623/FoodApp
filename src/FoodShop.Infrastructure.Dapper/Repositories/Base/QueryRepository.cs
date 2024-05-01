@@ -16,6 +16,13 @@ namespace FoodShop.Persistence.Repositories.Base
             _dapperContext = dapperContext;
         }
 
+        public async Task<T> IsExists<T>(Guid Id)
+            where T : class
+        {
+            var stringSql = $"SELECT * FROM {nameof(T)} WHERE Id = {Id}";
+            return await QueryFirstOrDefaultAsync<T>(stringSql);
+        }
+
         public async Task<IReadOnlyList<T>> QueryAsync<T>(string sql, object? param = null, IDbTransaction? transaction = null, CancellationToken token = default)
         where T : class
         {

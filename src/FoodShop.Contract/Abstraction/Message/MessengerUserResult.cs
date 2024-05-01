@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FoodShop.Contract.Abstraction.Constrant
+namespace FoodShop.Contract.Abstraction.Message
 {
-    public static class MessengerResult
-
+    public class MessengerUserResult
     {
         public const string InvalidTokenConfirm = "Token confirm by email is invalid";
         public const string InvalidPassword = "Password is invalid for user";

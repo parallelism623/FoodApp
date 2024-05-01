@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FoodShop.Persistence.DependencyInjection.Options
+namespace FoodShop.Persistence.Options
 {
     public class SqlServerRetryOption
     {

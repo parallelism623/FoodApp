@@ -1,5 +1,5 @@
 ﻿using FoodShop.Application.Common.Auth;
-using FoodShop.Infrastructure.DependencyInjection.Extensions;
+using FoodShop.Infrastructure.Common.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;

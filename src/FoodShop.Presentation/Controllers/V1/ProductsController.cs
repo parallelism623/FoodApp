@@ -1,12 +1,15 @@
 ﻿using Asp.Versioning;
 using FoodShop.Application.Common.DataTransferObjects.Request.V1;
 using FoodShop.Application.Common.DataTransferObjects.Respone.V1;
+using FoodShop.Application.Product.ProductCommand;
 using FoodShop.Application.Products.ProductCommand;
 using FoodShop.Application.Products.ProductQuery;
+using FoodShop.Contract.Abstraction.Authorization;
 using FoodShop.Contract.Abstraction.Constrant;
 using FoodShop.Contract.Abstraction.Shared;
 
 using FoodShop.Contract.Extensions;
+using FoodShop.Infrastructure.Auth.Permission;
 using FoodShop.Presentation.Abstraction;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -16,7 +19,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace FoodShop.Presentation.Controllers.V1
 {
     [ApiVersion(ApiVerions.Version1)]
-    
+
     public class ProductsController : ApiController
     {
 
@@ -27,9 +30,9 @@ namespace FoodShop.Presentation.Controllers.V1
         [ProducesResponseType(typeof(Result<PagedResult<ProductResponseList>>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetProducts(string? searchTerm, string? sortColumn, string? sortOrder,
-                                               string? sortOrderandColumn, int pageIndex = 1, int pageSize = 10) 
+                                               string? sortOrderandColumn, int pageIndex = 1, int pageSize = 10)
         {
-       
+
             var productsQuery = new GetProductsQuery(searchTerm, sortColumn,
                                                            SortOrderExtensions.ConvertStringToSortOrder(sortOrder),
                                                            SortOrderExtensions.ConvertStringToDictSortOrder(sortOrderandColumn),
@@ -69,18 +72,36 @@ namespace FoodShop.Presentation.Controllers.V1
             var result = await _sender.Send(productByIdCommand);
             return Ok(result);
         }
+        [HttpPut("{Id}/Category/{categoryId}")]
+        [MustHavePermission(FSResource.Products, FSAction.Update)]
+        public async Task<IActionResult> UpdateProductCategory(Guid id, Guid categoryId)
+        {
+            var productCategoryCommand = new AddProductCategoryCommand(id, categoryId);
+            var result = await _sender.Send(productCategoryCommand);
+            return Ok(result);
+        }
         #endregion PUT
         #region DELETE
         [HttpDelete("{Id}")]
         [ProducesResponseType(typeof(Result), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<IActionResult> UpdateProductById(Guid Id)
+        public async Task<IActionResult> DeleteProductById(Guid Id)
         {
             var productByIdCommand = new DeleteProductCommand(Id);
             var result = await _sender.Send(productByIdCommand);
             return Ok(result);
         }
+        [HttpDelete("{Id}/Category/{categoryId}")]
+        [MustHavePermission(FSResource.Products, FSAction.Delete)]
+        public async Task<IActionResult> DeleteProductCategory(Guid Id, Guid categoryId)
+        {
+            var deleteProductCategoryCommand = new DeleteProductCategoryCommand(Id, categoryId);
+            var result = await _sender.Send(deleteProductCategoryCommand);
+            return Ok(result);
+        }
         #endregion DELETE
+
+      
 
     }
 }

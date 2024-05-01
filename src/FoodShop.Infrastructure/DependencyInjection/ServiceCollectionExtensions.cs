@@ -8,7 +8,7 @@ using FoodShop.Domain.Exceptions;
 using FoodShop.Infrastructure.Auth;
 using FoodShop.Infrastructure.Auth.Permission;
 using FoodShop.Infrastructure.Caching;
-using FoodShop.Infrastructure.DependencyInjection.Options;
+using FoodShop.Infrastructure.Common.Options;
 using FoodShop.Infrastructure.EmailServices;
 using FoodShop.Infrastructure.Identity;
 using Microsoft.AspNetCore.Authentication;
@@ -21,16 +21,17 @@ using Microsoft.IdentityModel.Tokens;
 using StackExchange.Redis;
 using System.Text;
 
-namespace FoodShop.Infrastructure.DependencyInjection.Extensions
+namespace FoodShop.Infrastructure.DependencyInjection
 {
     public static class ServiceCollectionExtensions
     {
         public static void AddJwtTokenConfiguration(this IServiceCollection services, IConfigurationSection section)
         {
             services.AddOptions<JwtTokenOptions>(section.Value);
+
             services.AddAuthentication(opt =>
                 {
-                    
+
                     opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                     opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
                 })
@@ -44,15 +45,15 @@ namespace FoodShop.Infrastructure.DependencyInjection.Extensions
                         ValidateAudience = false,
                         ValidateLifetime = true,
                         ValidateIssuerSigningKey = true,
-                        
+
                         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(section["SecretKey"]))
                     };
                 });
-                
-            
+
+
         }
 
-        public static void AddExternalServices(this IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config)
+        public static void AddExternalServices(this IServiceCollection services, IConfiguration config)
         {
             services.Configure<MailSettingOptions>(config.GetRequiredSection("MailSettings"))
                     .Configure<JwtTokenOptions>(config.GetRequiredSection("JwtTokenOptions"))
@@ -62,11 +63,12 @@ namespace FoodShop.Infrastructure.DependencyInjection.Extensions
                     .AddTransient<IEmailServices, EmailSender>()
                     .AddSingleton<IAuthorizationPolicyProvider, PermissionPolicyProvider>()
                     .AddScoped<IAuthorizationHandler, PermissionAuthorizationHandler>()
-                    
+
                     .AddHttpClient()
                     .AddScoped<ICurrentUser, CurrentUser>()
                     .AddScoped<ICurrentUserInitialize, CurrentUser>()
-                    .AddScoped<CurrentUserMiddleware>();
+                    .AddScoped<CurrentUserMiddleware>()
+                    .AddOptions<CloudinarySettings>(config.GetRequiredSection("CloudinarySettings").Value);
         }
         public static void AddDistributedCacheConfig(this IServiceCollection services, IConfigurationSection redisSettings)
         {
@@ -74,7 +76,7 @@ namespace FoodShop.Infrastructure.DependencyInjection.Extensions
             services.AddStackExchangeRedisCache(opt =>
             {
                 opt.Configuration = redisSettings["Host"];
-                opt.ConfigurationOptions = new StackExchange.Redis.ConfigurationOptions()
+                opt.ConfigurationOptions = new ConfigurationOptions()
                 {
                     AbortOnConnectFail = true
                 };

@@ -3,7 +3,7 @@ using FoodShop.Application.Common.Caching;
 using FoodShop.Contract.Abstraction.Authorization;
 using FoodShop.Domain.Entities.Identity;
 using FoodShop.Domain.Exceptions;
-using FoodShop.Infrastructure.DependencyInjection.Extensions;
+using FoodShop.Infrastructure.Common.Extensions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;

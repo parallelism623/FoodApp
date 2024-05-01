@@ -3,7 +3,7 @@ using FoodShop.Contract.Abstraction.Constrant;
 using FoodShop.Contract.Abstraction.Message;
 using FoodShop.Contract.Abstraction.Shared;
 using System.Linq.Expressions;
-using FoodShop.Domain.Entities;
+
 using FoodShop.Application.Common.DataTransferObjects.Respone.V1;
 using FoodShop.Application.Common.Repositories.Base;
 using FoodShop.Application.Common.Caching;
@@ -38,8 +38,8 @@ namespace FoodShop.Application.Products.ProductQuery
             var productQuery = string.IsNullOrEmpty(request.SearchTerm) ?
                                 $@"SELECT * FROM {nameof(Product)} ORDER BY " :
                                 $@"SELECT * FROM {nameof(Product)} 
-                                    WHERE {nameof(Product.Name)} LIKE '%{request.SearchTerm}%'
-                                    OR WHERE {nameof(Product.Description)} LIKE '%{request.SearchTerm}%'
+                                    WHERE {nameof(FoodShop.Domain.Entities.Product.Name)} LIKE '%{request.SearchTerm}%'
+                                    OR WHERE {nameof(FoodShop.Domain.Entities.Product.Description)} LIKE '%{request.SearchTerm}%'
                                     ORDER BY ";
             foreach (var items in request.SortColumnAndOrder)
             {
@@ -49,14 +49,14 @@ namespace FoodShop.Application.Products.ProductQuery
             productQuery = productQuery.Remove(productQuery.Length - 2);
 
             productQuery += $" OFFSET {(pageIndex - 1) * pageSize} ROWS FETCH NEXT {pageSize} ROWS ONLY";
-            var products = await _queryRepository.QueryAsync<Product>(productQuery);
+            var products = await _queryRepository.QueryAsync<FoodShop.Domain.Entities.Product>(productQuery);
             var totalCount = products.Count();
             var productsResult = _mapper.Map<List<ProductResponseList>>(products);
             var result = new PagedResult<ProductResponseList>(productsResult, pageIndex, pageSize, totalCount);
             return result;
 
         }
-        public static Expression<Func<Product, object>> GetSortProperty(string? sortColumn)
+        public static Expression<Func<FoodShop.Domain.Entities.Product, object>> GetSortProperty(string? sortColumn)
             => sortColumn?.ToLower().Trim() switch
             {
                 "name" => product => product.Name,

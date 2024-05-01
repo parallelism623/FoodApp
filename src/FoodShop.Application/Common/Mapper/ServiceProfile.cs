@@ -10,10 +10,10 @@ namespace FoodShop.Application.Common.Mapper
     {
         public ServiceProfile()
         {
-            CreateMap<Product, ProductResponseList>();
-            CreateMap<Product, ProductResponse>();
-            CreateMap<CreateProductRequest, Product>();
-            CreateMap<UpdateProductRequest, Product>();
+            CreateMap<FoodShop.Domain.Entities.Product, ProductResponseList>();
+            CreateMap<FoodShop.Domain.Entities.Product, ProductResponse>();
+            CreateMap<CreateProductRequest, FoodShop.Domain.Entities.Product>();
+            CreateMap<UpdateProductRequest, FoodShop.Domain.Entities.Product>();
             CreateMap<AppUser, AuthExternalRequest>().ReverseMap();
             CreateMap<AppUser, LoginRequest>().ReverseMap();
             CreateMap<AppUser, UserAuthResponse>().ReverseMap();

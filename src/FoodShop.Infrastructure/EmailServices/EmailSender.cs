@@ -1,6 +1,6 @@
 ﻿using FoodShop.Application.Common.Mail;
 using FoodShop.Contract.Abstraction.Shared;
-using FoodShop.Infrastructure.DependencyInjection.Options;
+using FoodShop.Infrastructure.Common.Options;
 using MailKit.Net.Smtp;
 using Microsoft.Extensions.Options;
 using MimeKit;

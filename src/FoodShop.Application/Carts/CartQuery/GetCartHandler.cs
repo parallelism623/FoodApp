@@ -34,7 +34,7 @@ namespace FoodShop.Application.Cart.CartQuery
             if (resultQueryCartId is null)
                 throw new BadRequestException("An Error has occurred");
             var sqlQuery = $"SELECT * FROM Product WHERE Id IN (SELECT ProductId FROM CartProduct WHERE CartId = {resultQueryCartId})";
-            var resultQuery = await _queryRepository.QueryAsync<Product>(sqlQuery);
+            var resultQuery = await _queryRepository.QueryAsync<FoodShop.Domain.Entities.Product>(sqlQuery);
             var finalResult = _mapper.Map<List<ProductResponseList>>(resultQuery);
             return finalResult;
         }

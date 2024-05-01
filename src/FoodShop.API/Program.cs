@@ -5,7 +5,7 @@ using FoodShop.Application.DependencyInjection.Extensions;
 using FoodShop.Domain.Entities.Identity;
 using FoodShop.Infrastructure.Auth;
 using FoodShop.Infrastructure.Dapper.DependencyInjection.Extensions;
-using FoodShop.Infrastructure.DependencyInjection.Extensions;
+using FoodShop.Infrastructure.DependencyInjection;
 using FoodShop.Persistence;
 using FoodShop.Persistence.DependencyInjection.Extensions;
 using Microsoft.AspNetCore.Identity;

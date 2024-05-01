@@ -24,10 +24,10 @@ namespace FoodShop.Application.Products.ProductCommand
         public async Task<Result> Handle(CreateProductCommand request, CancellationToken cancellationToken)
         {
             var findIdSql = $"SELECT * FROM Product WHERE Id = {request.Id}";
-            var product = await _queryRepository.QuerySingleAsync<Product>(findIdSql);
+            var product = await _queryRepository.QuerySingleAsync<FoodShop.Domain.Entities.Product>(findIdSql);
             if (product != null)
                 throw new BadRequestException($"Product found by id: {request.Id}");
-            var newProduct = _mapper.Map<Product>(request.CreateProductRequest);
+            var newProduct = _mapper.Map<FoodShop.Domain.Entities.Product>(request.CreateProductRequest);
             await _commandRepository.AddAsync(newProduct);
             return Result.Success();
         }

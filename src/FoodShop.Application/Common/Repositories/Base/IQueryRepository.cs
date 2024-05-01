@@ -17,5 +17,8 @@ namespace FoodShop.Application.Common.Repositories.Base
             where T : class;
         Task<T> QuerySingleAsync<T>(string sql, object? param = null, IDbTransaction? transaction = null, CancellationToken token = default)
             where T : class;
+        Task<T> IsExists<T>(Guid Id)
+            where T : class;
+        
     }
 }

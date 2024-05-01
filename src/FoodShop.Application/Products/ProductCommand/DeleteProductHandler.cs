@@ -24,7 +24,7 @@ namespace FoodShop.Application.Products.ProductCommand
         public async Task<Result> Handle(DeleteProductCommand request, CancellationToken cancellationToken)
         {
             var findIdSql = $"SELECT * FROM Product WHERE Id = {request.Id}";
-            var product = await _queryRepository.QuerySingleAsync<Product>(findIdSql);
+            var product = await _queryRepository.QuerySingleAsync<FoodShop.Domain.Entities.Product >(findIdSql);
             if (product != null)
                 throw new NotFoundException($"Product not found by id: {request.Id}");
             await _commandRepository.AddAsync(product);

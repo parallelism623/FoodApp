@@ -11,6 +11,7 @@ using FoodShop.Application.Identity.Tokens;
 using FoodShop.Application.Identity.Users;
 using FoodShop.Contract.Abstraction.Authorization;
 using FoodShop.Contract.Abstraction.Constrant;
+using FoodShop.Contract.Abstraction.Message;
 using FoodShop.Contract.Abstraction.Shared;
 using FoodShop.Domain.Entities.Identity;
 using FoodShop.Domain.Exceptions;
@@ -70,11 +71,11 @@ namespace FoodShop.Infrastructure.Identity
             var user = await _userManager.FindByIdAsync(id.ToString());
             if (user == null)
             {
-                throw new BadRequestException(MessengerResult.NotFoundUser);
+                throw new BadRequestException(MessengerUserResult.NotFoundUser);
             }
             var result = await _userManager.ConfirmEmailAsync(user, code);
             if (!result.Succeeded)
-                throw new InternalServerException(MessengerResult.InvalidTokenConfirm);
+                throw new InternalServerException(MessengerUserResult.InvalidTokenConfirm);
             return "Account confirmed for Email. Please login";
         }
 
@@ -126,7 +127,7 @@ namespace FoodShop.Infrastructure.Identity
             var result = await _signInManager.CheckPasswordSignInAsync(user, loginRequest.Password, false);
             if (!result.Succeeded)
             {
-                throw new BadRequestException(MessengerResult.InvalidPassword);
+                throw new BadRequestException(MessengerUserResult.InvalidPassword);
             }
             var claims = _tokenServices.GetClaims(user);
             user.AccessToken = await _tokenServices.GenerateAccessToken(claims);
@@ -159,7 +160,7 @@ namespace FoodShop.Infrastructure.Identity
             var result = await _userManager.FindByEmailAsync(request.Email);
             if (result is not null)
             {
-                throw new BadRequestException(MessengerResult.EmailExit);
+                throw new BadRequestException(MessengerUserResult.EmailExit);
             }
             var user = _mapper.Map<AppUser>(request);
             var resultCreate = await _userManager.CreateAsync(user, request.Password);
@@ -189,7 +190,7 @@ namespace FoodShop.Infrastructure.Identity
         public async Task<Result<string>> ResetPasswordAsync(ResetPasswordRequest request, CancellationToken token = default)
         {
             var user = await _userManager.FindByEmailAsync(request.Email)
-                ?? throw new BadRequestException(MessengerResult.NotFoundUser);
+                ?? throw new BadRequestException(MessengerUserResult.NotFoundUser);
             var result = await _userManager.ResetPasswordAsync(user, request.Token, request.NewPassword);
             if (!result.Succeeded)
                 throw new InternalServerException("An Error has occurred!");

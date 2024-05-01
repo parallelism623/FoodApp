@@ -6,7 +6,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FoodShop.Infrastructure.DependencyInjection.Extensions
+namespace FoodShop.Infrastructure.Common.Extensions
 {
     public static class IdentityExtensions
     {

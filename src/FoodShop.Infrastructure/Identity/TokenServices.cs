@@ -5,7 +5,7 @@ using FoodShop.Contract.Abstraction.Authorization;
 using FoodShop.Contract.Abstraction.Shared;
 using FoodShop.Domain.Entities.Identity;
 using FoodShop.Domain.Exceptions;
-using FoodShop.Infrastructure.DependencyInjection.Extensions;
+using FoodShop.Infrastructure.Common.Extensions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;

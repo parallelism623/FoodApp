@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="CloudinaryDotNet" Version="1.26.2" />
     <PackageReference Include="Dapper" Version="2.1.35" />
     <PackageReference Include="FluentValidation" Version="11.9.0" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.0" />
@@ -28,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Category\Query\" />
+    <Folder Include="Categories\Query\" />
     <Folder Include="Identity\Tokens\" />
   </ItemGroup>
 

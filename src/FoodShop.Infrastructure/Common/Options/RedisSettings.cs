@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FoodShop.Infrastructure.DependencyInjection.Options
+namespace FoodShop.Infrastructure.Common.Options
 {
     public class RedisSettings
     {
