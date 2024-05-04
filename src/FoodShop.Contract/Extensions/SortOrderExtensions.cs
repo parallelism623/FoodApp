@@ -28,7 +28,7 @@ namespace FoodShop.Contract.Extensions
                             throw new FormatException("Sort condition should be follow by format: Column1-ASC, Column2-DESC....");
                         }
                         var itemSplit = item.Trim().Split("-");
-                        var key = ProductExtensions.GetSortProductProperty(itemSplit[0]);
+                        var key = itemSplit[0];
                         var value = ConvertStringToSortOrder(itemSplit[1]);
                         result.Add(key, value);
                     }

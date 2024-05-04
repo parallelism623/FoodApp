@@ -416,3 +416,4 @@ C:\Users\hieud\Code\C#\FoodApp-API\src\FoodShop.API\obj\Debug\net8.0\scopedcss\b
 C:\Users\hieud\Code\C#\FoodApp-API\src\FoodShop.API\obj\Debug\net8.0\FoodShop.0F7E077E.Up2Date
 C:\Users\hieud\Code\C#\FoodApp-API\src\FoodShop.API\obj\Debug\net8.0\FoodShop.API.genruntimeconfig.cache
 C:\Users\hieud\Code\C#\FoodApp-API\src\FoodShop.API\obj\Debug\net8.0\ref\FoodShop.API.dll
+C:\Users\hieud\Code\C#\FoodApp-API\src\FoodShop.API\bin\Debug\net8.0\CloudinaryDotNet.dll

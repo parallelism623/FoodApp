@@ -85,6 +85,7 @@ app.UseAuthentication();
 app.UseMiddleware<CurrentUserMiddleware>();
 app.UseAuthorization();
 app.MigrateDatabase();
+app.AddMapHubRoute();
 app.MapControllers();
 
 try

@@ -7,6 +7,7 @@ using System.Linq.Expressions;
 using FoodShop.Application.Common.DataTransferObjects.Respone.V1;
 using FoodShop.Application.Common.Repositories.Base;
 using FoodShop.Application.Common.Caching;
+using FoodShop.Contract.Extensions;
 
 namespace FoodShop.Application.Products.ProductQuery
 {
@@ -44,7 +45,8 @@ namespace FoodShop.Application.Products.ProductQuery
             foreach (var items in request.SortColumnAndOrder)
             {
                 productQuery += items.Value == SortOrder.Ascending
-                    ? $"{items.Key} ASC, " : $"{items.Key} DESC, ";
+                    ? $"{ProductExtensions.GetSortProductProperty(items.Key)} ASC, " 
+                    : $"{ProductExtensions.GetSortProductProperty(items.Key)} DESC, ";
             }
             productQuery = productQuery.Remove(productQuery.Length - 2);
 
@@ -56,13 +58,6 @@ namespace FoodShop.Application.Products.ProductQuery
             return result;
 
         }
-        public static Expression<Func<FoodShop.Domain.Entities.Product, object>> GetSortProperty(string? sortColumn)
-            => sortColumn?.ToLower().Trim() switch
-            {
-                "name" => product => product.Name,
-                "price" => product => product.Price,
-                "description" => product => product.Description,
-                _ => product => product.Id
-            };
+
     }
 }

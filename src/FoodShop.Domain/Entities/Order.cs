@@ -9,6 +9,7 @@ namespace FoodShop.Domain.Entities
 {
     public class Order : DomainEntity<Guid>
     {
+        public string Title { get; set; }
         public int Status { get; set; }
         public decimal Amout { get; set; }
         public decimal Tax { get; set; }

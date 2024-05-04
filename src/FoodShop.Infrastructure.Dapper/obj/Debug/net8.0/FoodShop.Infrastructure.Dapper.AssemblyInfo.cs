@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FoodShop.Infrastructure.Dapper")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2ec038f2b6c7ff553d4c7833afee366d6aa4bae")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd1b0411c758c11104ed13019792ea35464eb24a")]
 [assembly: System.Reflection.AssemblyProductAttribute("FoodShop.Infrastructure.Dapper")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FoodShop.Infrastructure.Dapper")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -22,6 +22,8 @@ namespace FoodShop.Application.Common.Mapper
             CreateMap<AppUser, UserResponseList>().ReverseMap();
             CreateMap<FoodShop.Domain.Entities.Category, CreateCategoryRequest>().ReverseMap();
             CreateMap<FoodShop.Domain.Entities.Category, UpdateCategoryRequest>().ReverseMap();
+            CreateMap<OrderListResponse, Order>().ReverseMap();
+            
         }
     }
 }
