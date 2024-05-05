@@ -19,7 +19,6 @@ namespace FoodShop.Domain.Entities
         public string ImageLink { get; set; }
         public string[] ImageList { get; set; }
         public string VideoLink { get; set; }
-        public Guid CategoryId { get; set; }
         public int Quantity { get; set; }
         
         public int View { get; set; }

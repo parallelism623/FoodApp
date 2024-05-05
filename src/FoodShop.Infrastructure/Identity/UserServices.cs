@@ -117,6 +117,12 @@ namespace FoodShop.Infrastructure.Identity
             throw new NotImplementedException();
         }
 
+        public async Task IsUserExists(Guid Id)
+        {
+            var user = await GetUserByIdAsync(Id)
+                ?? throw new NotFoundException(MessengerUserResult.NotFoundUser);
+        }
+
         public async Task<Result<UserAuthResponse>> LoginAsync(LoginRequest loginRequest, CancellationToken token = default)
         {
             var user = await _userManager.FindByEmailAsync(loginRequest.Email);

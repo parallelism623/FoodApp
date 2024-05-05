@@ -11,6 +11,7 @@ namespace FoodShop.Application.Identity.Users
 {
     public interface IUserServices
     {
+        Task IsUserExists(Guid Id);
         Task<Result<UserAuthResponse>> LoginAsync(LoginRequest loginRequest, CancellationToken token = default);
         Task<Result> LogoutAsync();
         Task<Result<PagedResult<UserResponseList>>> GetUsersAsync(ListRequest request, CancellationToken token = default);

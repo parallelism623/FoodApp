@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Infrastructure.Dapper\\FoodShop.Infrastructure.Dapper.csproj": {}
+    "C:\\Users\\Administrator\\source\\repos\\FoodApp-API\\src\\FoodShop.Infrastructure.Dapper\\FoodShop.Infrastructure.Dapper.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Application\\FoodShop.Application.csproj": {
+    "C:\\Users\\Administrator\\source\\repos\\FoodApp-API\\src\\FoodShop.Application\\FoodShop.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Application\\FoodShop.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\FoodApp-API\\src\\FoodShop.Application\\FoodShop.Application.csproj",
         "projectName": "FoodShop.Application",
-        "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Application\\FoodShop.Application.csproj",
-        "packagesPath": "C:\\Users\\hieud\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Application\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\source\\repos\\FoodApp-API\\src\\FoodShop.Application\\FoodShop.Application.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\source\\repos\\FoodApp-API\\src\\FoodShop.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\hieud\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,17 +26,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Contract\\FoodShop.Contract.csproj": {
-                "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Contract\\FoodShop.Contract.csproj"
+              "C:\\Users\\Administrator\\source\\repos\\FoodApp-API\\src\\FoodShop.Contract\\FoodShop.Contract.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\source\\repos\\FoodApp-API\\src\\FoodShop.Contract\\FoodShop.Contract.csproj"
               },
-              "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Domain\\FoodShop.Domain.csproj": {
-                "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Domain\\FoodShop.Domain.csproj"
+              "C:\\Users\\Administrator\\source\\repos\\FoodApp-API\\src\\FoodShop.Domain\\FoodShop.Domain.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\source\\repos\\FoodApp-API\\src\\FoodShop.Domain\\FoodShop.Domain.csproj"
               }
             }
           }
@@ -125,21 +130,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Contract\\FoodShop.Contract.csproj": {
+    "C:\\Users\\Administrator\\source\\repos\\FoodApp-API\\src\\FoodShop.Contract\\FoodShop.Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Contract\\FoodShop.Contract.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\FoodApp-API\\src\\FoodShop.Contract\\FoodShop.Contract.csproj",
         "projectName": "FoodShop.Contract",
-        "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Contract\\FoodShop.Contract.csproj",
-        "packagesPath": "C:\\Users\\hieud\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Contract\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\source\\repos\\FoodApp-API\\src\\FoodShop.Contract\\FoodShop.Contract.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\source\\repos\\FoodApp-API\\src\\FoodShop.Contract\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\hieud\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -147,6 +156,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -219,21 +229,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Domain\\FoodShop.Domain.csproj": {
+    "C:\\Users\\Administrator\\source\\repos\\FoodApp-API\\src\\FoodShop.Domain\\FoodShop.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Domain\\FoodShop.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\FoodApp-API\\src\\FoodShop.Domain\\FoodShop.Domain.csproj",
         "projectName": "FoodShop.Domain",
-        "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Domain\\FoodShop.Domain.csproj",
-        "packagesPath": "C:\\Users\\hieud\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\source\\repos\\FoodApp-API\\src\\FoodShop.Domain\\FoodShop.Domain.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\source\\repos\\FoodApp-API\\src\\FoodShop.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\hieud\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -241,14 +255,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Contract\\FoodShop.Contract.csproj": {
-                "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Contract\\FoodShop.Contract.csproj"
+              "C:\\Users\\Administrator\\source\\repos\\FoodApp-API\\src\\FoodShop.Contract\\FoodShop.Contract.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\source\\repos\\FoodApp-API\\src\\FoodShop.Contract\\FoodShop.Contract.csproj"
               }
             }
           }
@@ -317,21 +332,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Infrastructure.Dapper\\FoodShop.Infrastructure.Dapper.csproj": {
+    "C:\\Users\\Administrator\\source\\repos\\FoodApp-API\\src\\FoodShop.Infrastructure.Dapper\\FoodShop.Infrastructure.Dapper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Infrastructure.Dapper\\FoodShop.Infrastructure.Dapper.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\FoodApp-API\\src\\FoodShop.Infrastructure.Dapper\\FoodShop.Infrastructure.Dapper.csproj",
         "projectName": "FoodShop.Infrastructure.Dapper",
-        "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Infrastructure.Dapper\\FoodShop.Infrastructure.Dapper.csproj",
-        "packagesPath": "C:\\Users\\hieud\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Infrastructure.Dapper\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\source\\repos\\FoodApp-API\\src\\FoodShop.Infrastructure.Dapper\\FoodShop.Infrastructure.Dapper.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\source\\repos\\FoodApp-API\\src\\FoodShop.Infrastructure.Dapper\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\hieud\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -339,17 +358,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Application\\FoodShop.Application.csproj": {
-                "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Application\\FoodShop.Application.csproj"
+              "C:\\Users\\Administrator\\source\\repos\\FoodApp-API\\src\\FoodShop.Application\\FoodShop.Application.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\source\\repos\\FoodApp-API\\src\\FoodShop.Application\\FoodShop.Application.csproj"
               },
-              "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Contract\\FoodShop.Contract.csproj": {
-                "projectPath": "C:\\Users\\hieud\\Code\\C#\\FoodApp-API\\src\\FoodShop.Contract\\FoodShop.Contract.csproj"
+              "C:\\Users\\Administrator\\source\\repos\\FoodApp-API\\src\\FoodShop.Contract\\FoodShop.Contract.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\source\\repos\\FoodApp-API\\src\\FoodShop.Contract\\FoodShop.Contract.csproj"
               }
             }
           }
@@ -406,7 +426,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -55,6 +55,7 @@ namespace FoodShop.Application.Orders
                     ? $"{OrderExtensions.GetSortOrderProperty(items.Key)} ASC, "
                     : $"{OrderExtensions.GetSortOrderProperty(items.Key)} DESC, ";
             }
+            sqlQueryString += $"OFFSET {(pageIndex - 1) * pageSize} ROWS FETCH NEXT {pageIndex} ROWS ONLY, ";
             sqlQueryString.Remove(sqlQueryString.Length - 2);
             var resultQuery = (await _queryRepository.QueryAsync<Order>(sqlQueryString));
             var resultMap = _mapper.Map<IQueryable<OrderListResponse>>(resultQuery);

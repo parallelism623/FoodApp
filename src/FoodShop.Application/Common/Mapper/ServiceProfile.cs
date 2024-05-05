@@ -23,7 +23,10 @@ namespace FoodShop.Application.Common.Mapper
             CreateMap<FoodShop.Domain.Entities.Category, CreateCategoryRequest>().ReverseMap();
             CreateMap<FoodShop.Domain.Entities.Category, UpdateCategoryRequest>().ReverseMap();
             CreateMap<OrderListResponse, Order>().ReverseMap();
-            
+            CreateMap<Order, OrderResponse>().ReverseMap();
+            CreateMap<OrderProductRespone, Domain.Entities.Product>().ReverseMap();
+            CreateMap<Domain.Entities.Product, OrderProduct>()
+                .ForMember(dest => dest.ProductId, opt => opt.MapFrom(s => s.Id));
         }
     }
 }

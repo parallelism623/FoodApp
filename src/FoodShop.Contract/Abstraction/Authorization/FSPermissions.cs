@@ -20,6 +20,7 @@ namespace FoodShop.Contract.Abstraction.Authorization
     }
     public static class FSResource
     {
+        public const string Order = nameof(Order);  
         public const string Category = nameof(Category);
         public const string Cart = nameof(Cart);
         public const string Dashboard = nameof(Dashboard);
